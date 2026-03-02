@@ -1,0 +1,13 @@
+# Agent context files (local only)
+AGENTS.md
+.Claude/
+
+# Development planning (local only)
+DEVELOPMENT-PLAN.md
+
+# macOS
+.DS_Store
+
+# Editor
+.cursor/
+.vscode/
