@@ -1,3 +1,7 @@
+# Env / secrets (never commit)
+.env
+.env.*
+
 # Agent context files (local only)
 AGENTS.md
 .Claude/
@@ -11,3 +15,7 @@ DEVELOPMENT-PLAN.md
 # Editor
 .cursor/
 .vscode/
+
+# Honkit / GitBook
+_book/
+node_modules/

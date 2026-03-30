@@ -1,0 +1,9 @@
+{
+  "root": "./",
+  "structure": {
+    "readme": "README.md",
+    "summary": "SUMMARY.md"
+  },
+  "title": "Coding with Agents",
+  "description": "A book on how software engineers work effectively in the age of AI coding agents."
+}
