@@ -8,8 +8,8 @@ The project is framed around **Stanford CS146S** — *The Modern Software Develo
 
 The book is available in more than one language. Start from the landing page for your locale:
 
-- **[English](en/Readme.md)** — full table of contents and module links  
-- **[简体中文](zh-cn/Readme.md)** — Chinese edition entry point  
+- **[English](en/README.md)** — full table of contents and module links  
+- **[简体中文](zh-cn/README.md)** — Chinese edition entry point  
 
 See [`LANGS.md`](LANGS.md) for the language index used by GitBook-style setups.
 

@@ -1,6 +1,6 @@
-# Table of Contents
+# Summary
 
-* [Introduction](README.md)
+* [Home](README.md)
 
 ## Part I: Working with Coding Agents
 
