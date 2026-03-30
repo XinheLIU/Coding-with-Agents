@@ -5,5 +5,12 @@
     "summary": "SUMMARY.md"
   },
   "title": "Coding with Agents",
-  "description": "A book on how software engineers work effectively in the age of AI coding agents."
+  "description": "A book on how software engineers work effectively in the age of AI coding agents.",
+  "pluginsConfig": {
+    "theme-default": {
+      "styles": {
+        "website": "styles/website.css"
+      }
+    }
+  }
 }
