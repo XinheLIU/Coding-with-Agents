@@ -17,12 +17,12 @@
 ## Part II: Advanced Usage
 
 * [3. 成为高级玩家](03-power-user/README.md)
+    * [将 Claude Code 作为智能体框架](03-power-user/claude-code.md)
     * [上下文管理原则](03-power-user/context-management.md)
     * [子智能体](03-power-user/sub-agents.md)
     * [设计智能体工作流](03-power-user/agentic-workflows.md)
     * [安全与权限边界](03-power-user/security-boundaries.md)
     * [为你的智能体打造专属工具](03-power-user/building-tools.md)
-    * [将 Claude Code 作为智能体框架](03-power-user/claude-code.md)
     * [系统化思考](03-power-user/systematic-thinking.md)
 
 * [4. 团队级 AI 开发 (敬请期待)](../draft/zh-cn/04-team/README.md)

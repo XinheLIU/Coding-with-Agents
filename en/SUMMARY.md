@@ -17,12 +17,12 @@
 ## Part II: Advanced Usage
 
 * [3. Become a Power User](03-power-user/README.md)
+    * [Claude Code as an AI Agent Framework](03-power-user/claude-code.md)
     * [Context Management Principles](03-power-user/context-management.md)
     * [Sub-Agents](03-power-user/sub-agents.md)
     * [Designing Agentic Workflows](03-power-user/agentic-workflows.md)
     * [Security & Permission Boundaries](03-power-user/security-boundaries.md)
     * [Building Tools for Your Agent](03-power-user/building-tools.md)
-    * [Claude Code as an AI Agent Framework](03-power-user/claude-code.md)
     * [Systematic Thinking](03-power-user/systematic-thinking.md)
 
 * [4. Team Development with Coding Agents (Coming Soon)](../draft/en/04-team/README.md)
