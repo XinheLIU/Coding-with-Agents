@@ -50,6 +50,8 @@ The key insight: the prompts, specs, and plans you write *are* the product. The 
 
 ---
 
+![AI-Native Development: Shared Context Workspace](../assets/AI-Native-Development-Shared-Context.png)
+
 ## Context Management Principles
 
 > [Good Context Leads to Good Code: How We Built an AI-Native Eng Culture](https://blog.stockapp.com/good-context-good-code/)

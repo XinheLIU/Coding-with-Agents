@@ -25,13 +25,13 @@
     * [为你的智能体打造专属工具](03-power-user/building-tools.md)
     * [系统化思考](03-power-user/systematic-thinking.md)
 
-* [4. 团队级 AI 开发 (敬请期待)](../draft/zh-cn/04-team/README.md)
+* [4. 团队级 AI 开发 (敬请期待)](https://github.com/XinheLIU/Coding-with-Agents/blob/main/draft/zh-cn/04-team/README.md)
 
 ## Part III: 宏观视角 (The Bigger Picture)
 
-* [5. 成为 AI 架构师 (敬请期待)](../draft/zh-cn/05-architect/README.md)
+* [5. 成为 AI 架构师 (敬请期待)](https://github.com/XinheLIU/Coding-with-Agents/blob/main/draft/zh-cn/05-architect/README.md)
 
 ## Appendix
 
-* [草稿目录（进行中）](../draft/README.md)
+* [草稿目录（进行中）](https://github.com/XinheLIU/Coding-with-Agents/blob/main/draft/README.md)
 * [Resources & Reading List](RESOURCEs.md)

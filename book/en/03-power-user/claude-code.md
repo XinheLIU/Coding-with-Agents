@@ -14,13 +14,25 @@ Most people think of Claude Code as "ChatGPT in a terminal" or "a tool that writ
 
 Claude Code can read entire repositories, modify code, run tests, operate system tools, and orchestrate automated pipelines — far beyond "writing a few functions."
 
+> Core capabilities of ClaudeCode
+
+| Capability Dimension | OpenCode | Claude Code | Cursor | Gemini CLI | Antigravity | OpenAI Codex | Coder | Qwen (Tongyi Qianwen) |
+|---|---|---|---|---|---|---|---|---|
+| **Memory** | AGENTS.md | CLAUDE.md | .cursorrules | GEMINI.md | Project-level Rules/.agent/rules configuration | SKILL.md / Project-level configuration file | Workspace persistent configuration | Project-level rule configuration / RAG knowledge base persistence |
+| **Sub-Agents Delegation** | Native support | Native support | Composer | Native support (v0.38.1+) | Native support (multi-agent parallel) | Native support | Native support | Supported via Qwen-Agent framework |
+| **Skills** | Native support | Native support | Custom commands | Native support (Agent Skills) | Native support (Agent Skills) | Native support | Custom commands / Agent templates | Native support (Agent Skills / Custom tools) |
+| **Hooks Events** | Native support | Native support | Limited | Native support | Limited support | Native support | Limited support | Limited support |
+| **MCP Protocol** | Native support | Native support | Partial support | Native support | Native support | Native support | Native support | Native support |
+| **Headless CI/CD** | Native support | Native support | Not supported | Native support | No native support | Native support | Native support | Partial support |
+
+
 ### Two Paradigms of Interaction
 
-| | **User Paradigm** | **Operator Paradigm** |
-|---|---|---|
-| **Interaction** | You ask → Claude answers → you execute | You configure the agent → it works autonomously → tasks complete automatically |
-| **Essence** | A "fancy calculator" — ask and receive, one-off capability calls | You design rules, workflows, and responsibility boundaries; Claude executes within constraints |
-| **Your role** | Questioner | System designer + pilot |
+|                 | **User Paradigm**                                                | **Operator Paradigm**                                                                          |
+| --------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| **Interaction** | You ask → Claude answers → you execute                           | You configure the agent → it works autonomously → tasks complete automatically                 |
+| **Essence**     | A "fancy calculator" — ask and receive, one-off capability calls | You design rules, workflows, and responsibility boundaries; Claude executes within constraints |
+| **Your role**   | Questioner                                                       | System designer + pilot                                                                        |
 
 The goal of this chapter: take you from **questioner** to **system designer**.
 
@@ -48,19 +60,21 @@ A simple bug fix might complete in one cycle. A complex refactor might loop doze
 
 That harness is the foundation everything else is built on.
 
+![The Agentic Loop: Perceive → Act → Verify](../assets/Perceive-Act-Verify-Cycle.png)
+
 ### Five Atomic Operations and the Unix Philosophy
 
 Claude Code does not ship a "refactoring tool," a "debugging tool," and a "deployment tool." Instead, it provides a small set of **primitive operations** — and trusts that complex behaviors will *emerge* from their composition with LLM reasoning.
 
 Every development task decomposes into five atomic operations:
 
-| Operation | What a developer does | Primitive tool |
-|-----------|----------------------|----------------|
-| **Perceive** | Open a file, read code | Read |
-| **Search** | Find definitions, trace call chains | Glob, Grep |
-| **Modify** | Fix a bug, refactor, update config | Edit, Write |
-| **Execute** | Run tests, build, deploy | Bash |
-| **Fetch** | Look up docs, query APIs, check external state | WebFetch, MCP tools |
+| Operation    | What a developer does                          | Primitive tool      |
+| ------------ | ---------------------------------------------- | ------------------- |
+| **Perceive** | Open a file, read code                         | Read                |
+| **Search**   | Find definitions, trace call chains            | Glob, Grep          |
+| **Modify**   | Fix a bug, refactor, update config             | Edit, Write         |
+| **Execute**  | Run tests, build, deploy                       | Bash                |
+| **Fetch**    | Look up docs, query APIs, check external state | WebFetch, MCP tools |
 
 This is the Unix philosophy applied to AI agents: **small, sharp tools that do one thing well, composed through a universal interface.** In Unix, that interface is text pipes. In Claude Code, it is the LLM's reasoning loop. You do not build a specialized tool for every scenario. You build primitives and let the intelligence layer compose them.
 
@@ -93,11 +107,11 @@ The design tension is intentional: **Bash provides capability completeness; prim
 
 This primitive-first design extends outward in three concentric layers:
 
-| Layer | What it covers | Design role |
-|-------|---------------|-------------|
-| **Built-in primitives** | Read, Edit, Bash, Grep, Glob, WebFetch | The foundation — covers most software engineering tasks |
-| **Bash-reachable tools** | Any CLI, script, or system utility | The escape hatch — makes the agent Turing-complete |
-| **MCP extensions** | Structured interfaces to external systems (databases, Jira, Slack) | The integration layer — structured I/O, tool discovery, and security isolation beyond what raw Bash provides |
+| Layer                    | What it covers                                                     | Design role                                                                                                  |
+| ------------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| **Built-in primitives**  | Read, Edit, Bash, Grep, Glob, WebFetch                             | The foundation — covers most software engineering tasks                                                      |
+| **Bash-reachable tools** | Any CLI, script, or system utility                                 | The escape hatch — makes the agent Turing-complete                                                           |
+| **MCP extensions**       | Structured interfaces to external systems (databases, Jira, Slack) | The integration layer — structured I/O, tool discovery, and security isolation beyond what raw Bash provides |
 
 Why add MCP when Bash can already `curl` any API? For the same reasons you keep Read instead of using `cat`: **structured input/output** (no parsing raw text), **automatic tool discovery** (connect an MCP server, all its tools register automatically), and **security isolation** (access control lives on the server side, not in a fragile Bash permission rule).
 
@@ -105,11 +119,11 @@ Why add MCP when Bash can already `curl` any API? For the same reasons you keep 
 
 Not all tools carry equal risk. Claude Code classifies tools by their potential blast radius and gates access accordingly:
 
-| Risk level | Tools | Default behavior |
-|-----------|-------|-----------------|
-| **Low (read-only)** | Read, Glob, Grep | No approval needed — safe to run freely |
-| **Medium (local modification)** | Edit, Write | Session-scoped approval — expires when the conversation ends |
-| **High (global execution)** | Bash, some MCP tools | Persistent approval with explicit confirmation — because a shell command's blast radius is unbounded |
+| Risk level                      | Tools                | Default behavior                                                                                     |
+| ------------------------------- | -------------------- | ---------------------------------------------------------------------------------------------------- |
+| **Low (read-only)**             | Read, Glob, Grep     | No approval needed — safe to run freely                                                              |
+| **Medium (local modification)** | Edit, Write          | Session-scoped approval — expires when the conversation ends                                         |
+| **High (global execution)**     | Bash, some MCP tools | Persistent approval with explicit confirmation — because a shell command's blast radius is unbounded |
 
 This graduated model serves three design purposes: it lets you assign **minimal permission sets** to different agents (a code-reviewer gets only read tools), it makes **governance enforceable** (high-risk tools pass through Hooks and approval gates), and it gives the permission prompts **explainability** — you understand *why* some actions require approval and others do not.
 
@@ -123,12 +137,12 @@ The tool layer — its primitives, its risk model, its layered extensibility —
 
 Claude Code's technical stack has four distinct layers, each with a clear responsibility:
 
-| Layer | Purpose | Key Components |
-|-------|---------|----------------|
-| **Foundation** | Persistent memory and context | CLAUDE.md memory system |
-| **Extension** | Capability center | Commands, Skills, SubAgents, Hooks |
-| **Integration** | Connect to the outside world | Headless mode, MCP |
-| **Programming Interface** | Code-level control | Agent SDK |
+| Layer                     | Purpose                       | Key Components                     |
+| ------------------------- | ----------------------------- | ---------------------------------- |
+| **Foundation**            | Persistent memory and context | CLAUDE.md memory system            |
+| **Extension**             | Capability center             | Commands, Skills, SubAgents, Hooks |
+| **Integration**           | Connect to the outside world  | Headless mode, MCP                 |
+| **Programming Interface** | Code-level control            | Agent SDK                          |
 
 ---
 
@@ -145,11 +159,11 @@ Think of CLAUDE.md as an **employee handbook for your AI colleague**. Instead of
 
 ### Three-Level Memory Hierarchy
 
-| Level | Path | Scope |
-|-------|------|-------|
-| **Global** | `~/.claude/CLAUDE.md` | Universal rules across all projects |
-| **Project** | `<project-root>/CLAUDE.md` | Project-specific constraints and context |
-| **Module** | `<project-root>/.claude/rules/*.md` | Fine-grained rules for specific directories or modules |
+| Level       | Path                                | Scope                                                  |
+| ----------- | ----------------------------------- | ------------------------------------------------------ |
+| **Global**  | `~/.claude/CLAUDE.md`               | Universal rules across all projects                    |
+| **Project** | `<project-root>/CLAUDE.md`          | Project-specific constraints and context               |
+| **Module**  | `<project-root>/.claude/rules/*.md` | Fine-grained rules for specific directories or modules |
 
 ### Why This Matters
 
@@ -186,11 +200,11 @@ A design principle worth noting: Claude Code doesn't use a single monolithic sys
 - **Invocation**: User asks a natural language question; Claude **automatically decides** whether to activate a skill based on context
 - **Key distinction from Tools**:
 
-| | Tools | Skills |
-|---|---|---|
-| **Question answered** | "Can I do this?" | "Should I do this? How? To what depth?" |
-| **Contains** | External capability interface (read files, call APIs) | Trigger logic + prompt strategy + tool orchestration |
-| **Behavior** | Mechanical execution | Expert-level judgment |
+|                       | Tools                                                 | Skills                                               |
+| --------------------- | ----------------------------------------------------- | ---------------------------------------------------- |
+| **Question answered** | "Can I do this?"                                      | "Should I do this? How? To what depth?"              |
+| **Contains**          | External capability interface (read files, call APIs) | Trigger logic + prompt strategy + tool orchestration |
+| **Behavior**          | Mechanical execution                                  | Expert-level judgment                                |
 
 - **Best for**: Tasks with strong domain requirements (security, architecture, performance) that need contextual judgment rather than keyword-matching
 - **Example**: A `security-review` skill adjusts its inspection focus and depth based on language, context, and risk level
@@ -282,14 +296,14 @@ result = client.query(
 
 With four extension components, an integration layer, and an SDK, how do you decide what to use when? The quick heuristic:
 
-| Need | Choose |
-|------|--------|
-| **Must execute identically every time** | **Commands** (explicit) or **Hooks** (automatic) |
-| **Semantically intelligent** activation | **Skills** |
-| **Isolated, expensive, or parallel** work | **SubAgents** |
-| **Connect to external systems** | **MCP** |
-| **Unattended CI/CD execution** | **Headless mode** |
-| **Code-level orchestration** | **Agent SDK** |
+| Need                                      | Choose                                           |
+| ----------------------------------------- | ------------------------------------------------ |
+| **Must execute identically every time**   | **Commands** (explicit) or **Hooks** (automatic) |
+| **Semantically intelligent** activation   | **Skills**                                       |
+| **Isolated, expensive, or parallel** work | **SubAgents**                                    |
+| **Connect to external systems**           | **MCP**                                          |
+| **Unattended CI/CD execution**            | **Headless mode**                                |
+| **Code-level orchestration**              | **Agent SDK**                                    |
 
 For a deep dive into *how to think about* combining these components — including composition principles, architectural patterns, governance design, and worked examples — see [Systematic Thinking: Combining Skills, SubAgents, and More](systematic-thinking.md).
 
@@ -309,12 +323,12 @@ For a deep dive into *how to think about* combining these components — includi
 
 Claude Code's four layers are not arbitrary — they map to universal requirements that every agent system must solve:
 
-| Agent Need | Claude Code Layer | You'll Find This In... |
-|------------|------------------|----------------------|
-| Persistent context across sessions | Foundation (Memory) | Cursor's `.cursorrules`, Codex's project config, any agent with a config file |
-| Extensible capabilities beyond base tools | Extension (Commands, Skills, SubAgents, Hooks) | VS Code extensions, Devin's tool integrations, any plugin system |
-| Connection to external services | Integration (Headless, MCP) | API connectors, CI/CD hooks, any system that bridges AI to infrastructure |
-| Programmatic control for custom workflows | Programming Interface (SDK) | OpenAI Agents SDK, LangChain, any agent framework with a code API |
+| Agent Need                                | Claude Code Layer                              | You'll Find This In...                                                        |
+| ----------------------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------- |
+| Persistent context across sessions        | Foundation (Memory)                            | Cursor's `.cursorrules`, Codex's project config, any agent with a config file |
+| Extensible capabilities beyond base tools | Extension (Commands, Skills, SubAgents, Hooks) | VS Code extensions, Devin's tool integrations, any plugin system              |
+| Connection to external services           | Integration (Headless, MCP)                    | API connectors, CI/CD hooks, any system that bridges AI to infrastructure     |
+| Programmatic control for custom workflows | Programming Interface (SDK)                    | OpenAI Agents SDK, LangChain, any agent framework with a code API             |
 
 Once you internalize these four layers in Claude Code, you'll recognize the same architecture — sometimes with different names, sometimes with different boundaries — in every agent system you encounter. The specific tool changes; the structural thinking transfers.
 

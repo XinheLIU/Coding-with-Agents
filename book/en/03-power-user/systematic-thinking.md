@@ -296,6 +296,8 @@ CI/CD trigger (Headless)
 
 ## The Architecture Decision Matrix
 
+![Subagent Multi-Agent Architecture](../assets/Subagent-Multi-Agent.png)
+
 When facing any new requirement, run it through this matrix:
 
 | Scenario | Recommended Pattern | Why |

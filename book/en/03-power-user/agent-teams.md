@@ -1,4 +1,4 @@
-# Agent Teams and Multi-Agent Architecture
+# Agent Teams (Experimental Release, Feb 2026) — Peer Collaboration Beyond Sub-Agent
 
 **Agent Teams** extend the sub-agent model with direct peer-to-peer communication. Instead of sub-agents only reporting to a supervisor, teammates can send messages to each other, challenge each other's findings, and collaboratively converge on conclusions.
 
@@ -7,6 +7,26 @@
 > [Anthropic Agent Teams Documentation](https://code.claude.com/docs/en/agent-teams)
 
 **This is an experimental feature.** Enable by setting `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` in your environment or `settings.json`.
+
+### Architecture Highlights: Zero Infrastructure, Pure File-Based Coordination
+
+**Core file paths and definitions:**
+- `~/.claude/teams/{name}/config.json` ← Member Registry
+- `~/.claude/teams/{name}/inboxes/{agent}.json` ← Message Inbox
+- `~/.claude/tasks/{name}/{id}.json` ← Task Card
+
+**Coordination mechanism:** Exclusive Lock = `flock()`, Message Delivery = JSON append, Task Dependency = `blockedBy` array.
+
+#### Unix Philosophy Insights
+> "The most mature multi-Agent production systems today use JSON files and flock() for coordination."
+> "If your Agent orchestration requires a message queue, you have already over-engineered it."
+> Get the implementation right with the file system first, then consider whether to adopt Kafka.
+
+### Git Worktree Isolation — Each Agent Gets an Independent Code Copy
+
+- **Isolation logic:** `worktree` → Auto-create git worktree branches
+- No conflicts even when multiple Agents modify the same file simultaneously
+- Auto-cleanup of the worktree when no modifications are made
 
 ### Core Components
 
@@ -20,6 +40,9 @@
 **Important:** Teammates do not inherit the lead's conversation history. They receive only their spawn prompt. Provide all necessary context upfront: project structure, constraints, tools available, target deliverables, and output templates.
 
 ### Sub-Agents vs Agent Teams
+
+- **Sub-Agent**: One-way master-to-subordinate delegation, compressed result return, optimized for scenarios with clearly defined division of labor.
+- **Agent Teams**: Peer-to-peer communication, shared task board, self-coordination, optimized for exploratory tasks.
 
 | | Sub-Agents | Agent Teams |
 |---|---|---|

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "CS146S: The Modern Software Developer — GitBook-style course on AI coding agents",
   "scripts": {
-    "serve": "honkit serve",
-    "build": "honkit build"
+    "serve": "honkit serve ./book",
+    "build": "honkit build ./book"
   },
   "devDependencies": {
     "honkit": "^4.0.0"

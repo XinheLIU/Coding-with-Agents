@@ -4,6 +4,8 @@
 
 A **sub-agent** is a scoped, temporary agent spawned by the main conversation to handle an isolated task with its own context window, tool permissions, and system prompt. It does the work, discards its process state, and returns only its conclusion to the main thread.
 
+![Sub-Agents: Scoped, Temporary AI Workers](../assets/Sub-Agents-Scoped-Workers.png)
+
 ---
 
 ## The Core Problem: Context Pollution
@@ -222,6 +224,36 @@ Sub-agents add overhead: task prompt, context initialization, and result return.
 - System-level total cost can be lower for complex, multi-phase tasks where isolation saves repeated re-reading
 
 **Decision rule:** Simple, low-noise tasks → handle in the main conversation. Complex, noisy, or multi-phase tasks → sub-agents.
+
+---
+
+## Frontier Insight ②: Context Isolation = Divide-and-Conquer Algorithm for Attention
+
+### 1. Core Methodology
+
+- **Classic Divide-and-Conquer**: Large problem → Split into small sub-problems → Solve individually → Merge results
+- **Sub-Agent Isolation**: Large context window → Split into small context segments → Infer individually → Merge summaries
+
+### 2. Measured Attention Compression Ratio
+
+- Sub-Agent completes exploration with 50,000 internal tokens consumed → returns a 1,500-token summary
+- Compression ratio = 33:1, with zero attention consumption for the main Agent
+
+### 3. Google Research Quantitative Validation
+
+- Independent multi-Agent setup (no isolation): Error amplified by 17.2 times
+- Centralized coordination setup (with isolation): Error controlled at 4.4 times
+- Parallel task performance improved by +80.9%, while serial reasoning performance degraded by 39% to 70%
+
+### 4. Token Economics
+
+- Single Agent with 6 rounds of conversation: ~180,000 input tokens
+- Three-Agent pipeline: ~138,000 input tokens (over 23% token savings)
+
+### 5. Decision Rules
+
+- Context length < 5K: No splitting, as SP overhead is not cost-effective
+- Intermediate output > 500 tokens: Splitting is required, as attention has been contaminated
 
 ---
 

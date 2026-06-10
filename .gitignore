@@ -17,5 +17,5 @@ DEVELOPMENT-PLAN.md
 .vscode/
 
 # Honkit / GitBook
-_book/
+book/_book/
 node_modules/

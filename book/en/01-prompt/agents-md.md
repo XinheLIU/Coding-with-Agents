@@ -5,7 +5,6 @@
 - [The Agent Memory File: Your Codebase's Constitution](#the-agent-memory-file-your-codebases-constitution)
   - [Part 1: What AGENTS.md Is and Why It Matters](#part-1-what-agentsmd-is-and-why-it-matters)
     - [The Core Problem](#the-core-problem)
-    - [What the Research Says](#what-the-research-says)
     - [How Context Gets Loaded](#how-context-gets-loaded)
   - [Part 2: Principles of Writing an Effective Memory File](#part-2-principles-of-writing-an-effective-memory-file)
     - [Principle 1: Less Is More](#principle-1-less-is-more)
@@ -16,10 +15,8 @@
     - [Principle 6: Provide Alternatives, Not Just Prohibitions](#principle-6-provide-alternatives-not-just-prohibitions)
     - [Principle 7: Use /init as a Living Sync, Not a One-Time Setup](#principle-7-use-init-as-a-living-sync-not-a-one-time-setup)
     - [Principle 8: Use Hierarchical CLAUDE.md for Monorepos](#principle-8-use-hierarchical-claudemd-for-monorepos)
-    - [Principle 9: Encode Git Discipline as Rules](#principle-9-encode-git-discipline-as-rules)
-    - [Principle 10: Factor Repetition into Slash Commands and Sub-Agents](#principle-10-factor-repetition-into-slash-commands-and-sub-agents)
-    - [Principle 11: Connect the Agent to Live Context](#principle-11-connect-the-agent-to-live-context)
-    - [Principle 12: Build Domain Templates for Fast Project Bootstrap](#principle-12-build-domain-templates-for-fast-project-bootstrap)
+    - [Principle 9: Refactor Repetition into Skills](#principle-9-refactor-repetition-into-skills)
+    - [Principle 10: Build Domain Templates for Fast Project Bootstrap](#principle-10-build-domain-templates-for-fast-project-bootstrap)
     - [Meta-Principle: Adoption Order](#meta-principle-adoption-order)
   - [Part 3: Layered Memory Management](#part-3-layered-memory-management)
     - [The Five-Layer Architecture](#the-five-layer-architecture)
@@ -33,31 +30,15 @@
     - [The Bigger Picture: Prompt → Context → Agent Engineering](#the-bigger-picture-prompt--context--agent-engineering)
 
 
+![AGENTS.md Core Principles Summary](../assets/AGENTS-md-Core-Principles.png)
+
 ## Part 1: What AGENTS.md Is and Why It Matters
 
 ### The Core Problem
 
-LLMs are stateless. Every new session starts blind—your agent knows nothing about your tech stack, naming conventions, or the fact that refactoring the auth module will break three downstream services. AGENTS.md (or `CLAUDE.md` in Claude Code) is the file that fixes this: a persistent briefing document read at the start of every conversation, giving the agent context it cannot infer from code alone.
+LLMs are stateless. Every new session starts blind—your agent knows nothing about your tech stack, naming conventions, or the fact that refactoring the auth module will break three downstream services. [AGENTS.md](https://agents.md/) (or `CLAUDE.md` in Claude Code) is the file that fixes this: a persistent briefing document read at the start of every conversation, giving the agent context it cannot infer from code alone.
 
 The format emerged in mid-2025 and is now supported by Claude Code, Cursor, GitHub Copilot, Gemini CLI, Windsurf, Aider, Zed, Warp, and others—maintained by the Agentic AI Foundation under the Linux Foundation. Over 60,000 public repos contain context files; OpenAI's own monorepo has 88. Anthropic's `CLAUDE.md` adds hierarchical scoping, auto-memory, and import syntax on top of the same concept.
-
-
-
-### What the Research Says
-
-The [ETH Zurich (2026): "Evaluating AGENTS.md"](https://arxiv.org/abs/2602.11988) was the first rigorous empirical test—138 real-world tasks, four coding agents, three conditions. The findings:
-
-- **LLM-generated context files hurt**: success rates dropped ~2–3%, costs rose 20%+.
-- **Human-written files helped marginally**: +4% success, but also +19% cost.
-- **The root cause**: auto-generated files were redundant with information already in the repo. When all existing docs were stripped first, LLM-generated files *improved* performance by 2.7%.
-
-A concurrent study (Lulla et al., ICSE JAWs 2026) found AGENTS.md reduced wall-clock time by 28.64%—but measured *efficiency*, not *correctness*. Faster ≠ more correct.
-
-**The takeaway:** write one that contains **only what the agent cannot discover on its own.**
-
-Addy [Osmani's filter](https://addyosmani.com/blog/agents-md/): *Can the agent figure this out by reading your code? If yes, delete it.* 
-
-> Directory trees, tech stack obvious from `package.json`, test locations—all noise. What belongs: non-obvious tooling choices (`uv` over `pip`), hidden constraints, custom commands, architectural rationale, dangerous operations.
 
 ### How Context Gets Loaded
 
@@ -72,31 +53,50 @@ AGENTS.md is one of four mechanisms that bring information into an agent's conte
 
 The implication: put in AGENTS.md only what every session needs. Everything else belongs in skills, commands, or `@`-referenced docs—loaded only when relevant, costing tokens only when used.
 
+![Push vs Pull Context Loading Paradigms](../assets/Push-vs-Pull-Context-Loading.png)
+
 ## Part 2: Principles of Writing an Effective Memory File
 
 ### Principle 1: Less Is More
 
 Frontier LLMs can reliably follow ~150–200 instructions; Claude Code's system prompt already uses ~50. Every line in AGENTS.md competes for the remaining budget. LLMs also exhibit U-shaped attention—strong at the beginning and end of context, weak in the middle. A bloated file means your most important rules get lost in paragraph 6 of 12.
 
-> The ETH Zurich data confirms this: agents faithfully follow instructions, but more instructions means more tests, more file reads, more grep searches—thoroughness that's often unnecessary and expensive.
+
+> The [ETH Zurich (2026): "Evaluating AGENTS.md"](https://arxiv.org/abs/2602.11988) was the first rigorous empirical test—138 real-world tasks, four coding agents, three conditions. The findings:
+> 
+> - **LLM-generated context files hurt**: success rates dropped ~2–3%, costs rose 20%+.
+> - **Human-written files helped marginally**: +4% success, but also +19% cost.
+> - **The root cause**: auto-generated files were redundant with information already in the repo. When all existing docs were stripped first, LLM-generated files *improved* performance by 2.7%.
+>
+> A concurrent study (Lulla et al., ICSE JAWs 2026) found AGENTS.md reduced wall-clock time by 28.64%—but measured *efficiency*, not *correctness*. Faster ≠ more correct.
+
+**The takeaway:** write one that contains **only what the agent cannot discover on its own.**
+
+Addy [Osmani's filter](https://addyosmani.com/blog/agents-md/): *Can the agent figure this out by reading your code? If yes, delete it.* 
+
+> Directory trees, tech stack obvious from `package.json`, test locations—all noise. What belongs: non-obvious tooling choices (`uv` over `pip`), hidden constraints, custom commands, architectural rationale, dangerous operations.
 
 **Practical target:** 60–300 lines. One team allocates a "max token count" per tool's documentation like ad space—if you can't explain it concisely, it's not ready for AGENTS.md.
 
 ### Principle 2: Be Specific, Not Generic
 
-**Bad** (zero incremental value—the model already does this):
+The job of AGENTS.md is not to restate universal engineering advice. Its job is to encode project-specific decisions the agent cannot reliably infer from the codebase or its own default behavior. A good instruction narrows ambiguity: it tells the agent which path to take when multiple reasonable options exist.
+
+That usually means writing rules in terms of concrete defaults, boundaries, locations, and exceptions. "Be careful with errors" is too generic. "Controllers catch and format; services throw" is actionable because it changes how the agent structures the code. If a rule would still be true in almost any repository, it probably does not belong here.
+
+**Too generic** (zero incremental value):
 ```markdown
 - Write high-quality code
 - Use meaningful variable names
 ```
 
-**Bad** (use a linter instead):
+**Misplaced** (better handled by tooling):
 ```markdown
 - Use 2-space indentation
 - Always use semicolons
 ```
 
-**Good** (specific, enforceable, changes behavior):
+**Specific** (constrains implementation choices):
 ```markdown
 ## Error Handling
 - All errors extend `AppError` from `src/errors/base.ts`
@@ -109,15 +109,11 @@ Frontier LLMs can reliably follow ~150–200 instructions; Claude Code's system 
 - Transactions via `prisma.$transaction()` exclusively
 ```
 
-**The test:** if removing it wouldn't change the agent's behavior, delete it.
+**Rule of thumb:** if deleting the line would not change what the agent does, delete the line.
 
 ### Principle 3: Encode Style Through Tooling, Not Instructions
 
-Never send an LLM to do a linter's job—LLMs are slower, more expensive, and less reliable than deterministic formatters. Configure Prettier/ESLint/Black/`rustfmt`, then add a single line:
-
-```markdown
-After editing any file, run `pnpm format && pnpm lint:fix`.
-```
+Never send an LLM to do a linter's job—LLMs are slower, more expensive, and less reliable than deterministic formatters. Configure Prettier/ESLint/Black/`rustfmt`, then add a single line or use hooks
 
 Or better: set up a Claude Code hook that runs the formatter automatically after every edit. Save your AGENTS.md budget for decisions a linter *can't* enforce.
 
@@ -171,16 +167,20 @@ Update user.py according to @docs/api-spec.md
 
 ### Principle 6: Provide Alternatives, Not Just Prohibitions
 
+Rules that only say "don't" often leave the agent at a dead end. AGENTS.md works better when it not only blocks the wrong move, but also points to the preferred one. A prohibition without an alternative creates hesitation; a prohibition paired with a replacement creates a workflow.
+
+This matters because agents are action-oriented. If you forbid a common shortcut, unsafe command, or architectural pattern, you should also specify the approved substitute and, ideally, why it is safer. The goal is not just to prevent mistakes, but to preserve momentum while keeping the agent inside your team's guardrails.
+
 ```markdown
-# Bad — agent gets stuck
+# Bad — blocks an action without giving a path forward
 - Never use `--force` with git push
 
-# Good — agent knows what to do instead
+# Good — forbids the risky option and supplies the safe one
 - Never `git push --force` → use `git push --force-with-lease`
   (prevents overwriting others' work)
 ```
 
-Every "don't" should have a corresponding "do instead."
+**Rule of thumb:** every "don't" should come with a corresponding "do instead."
 
 ### Principle 7: Use /init as a Living Sync, Not a One-Time Setup
 
@@ -204,61 +204,28 @@ Push global rules up, push specifics down. Each folder can have its own CLAUDE.m
 
 When you work inside `frontend/`, the agent loads both the root and local files. This keeps each file lean and context-relevant—the frontend agent never loads backend database rules.
 
-### Principle 9: Encode Git Discipline as Rules
+### Principle 9: Refactor Repetition into Contexts / Skills
 
-AI agents can be sloppy with version control unless you make expectations explicit:
+When a workflow, checklist, or body of domain knowledge keeps reappearing across tasks, it no longer belongs inline in prompts or AGENTS.md. Refactor it into a Skill. Skills are the right home for reusable expertise because they load on demand, stay out of the base context, and can bundle instructions, references, and helper scripts around a clearly named task.
+
+This is the modern division of labor: AGENTS.md holds always-on project constraints; Skills hold reusable know-how for specific classes of work. Commands are separate from Skills: commands are explicit user-invoked entry points, while Skills are knowledge the agent can pull in when relevant. Sub-agents are separate again: they provide isolation and role specialization, and they can themselves load Skills when they need that expertise.
+
+The same logic applies to changing information. If the agent needs live context such as the current database schema, API spec, deployment state, or vendor docs, do not freeze that into AGENTS.md either. Instead, give the agent a way to fetch it: a Skill that teaches the lookup workflow, an MCP server for structured access, or ordinary CLI tools such as `curl`, project scripts, and local inspection commands. If the information changes faster than you will maintain the memory file, teach the agent how to retrieve it instead of writing it down.
+
+A practical test: if you keep pasting the same review rubric, migration checklist, release procedure, or Git workflow guidance, promote it into a Skill instead of expanding AGENTS.md.
 
 ```markdown
-## Git Workflow
+# .claude/skills/git-workflow/SKILL.md
+Use this skill when preparing commits, branches, or pull requests.
+
+## Rules
 - Commit after each logical feature or fix
-- Write commit messages: `<type>(<scope>): <description>` (e.g., `fix(auth): handle expired tokens`)
-- New features go on branches—never push directly to main
+- Write commit messages as `<type>(<scope>): <description>`
+- New features go on branches; never push directly to `main`
 - Run `make check` before committing
 ```
 
-Git history becomes your time machine when the agent goes sideways. Frequent commits mean you can always roll back to the last known-good state.
-
-### Principle 10: Factor Repetition into Slash Commands and Sub-Agents
-
-Once you notice yourself typing the same multi-line prompt repeatedly, extract it:
-
-**Slash commands** (`.claude/commands/*.md`) turn repeated workflows into one-key rituals:
-
-```markdown
-# .claude/commands/review.md
-Review the staged changes for:
-- Style violations against CLAUDE.md rules
-- Security issues (injection, auth bypass, secrets)
-- Performance regressions
-Output as a markdown table: file | issue | severity | suggestion
-```
-
-Invoke with `/review` or `/review user_auth.py` (`$ARGUMENTS` substitution).
-
-**Sub-agents** (`.claude/agents/*.md`) create focused personas for specialized tasks:
-
-```markdown
-# .claude/agents/security-reviewer.md
----
-name: security-reviewer
-description: Reviews code for security vulnerabilities
-tools: Read, Grep, Glob, Bash
-model: opus
----
-You are a senior security engineer. Review code for:
-- Injection vulnerabilities (SQL, XSS, command injection)
-- Auth and authorization flaws
-- Secrets or credentials in code
-Provide specific line references and severity ratings.
-```
-
-Sub-agents run in their own context window, so they don't clutter your main conversation. Keep them sharp and opinionated—they should say "no" to work outside their lane.
-
-### Principle 11: Connect the Agent to Live Context
-
-Static text in AGENTS.md has limits—it can't reflect a database schema that changed yesterday or docs for a library you just upgraded. When the agent needs dynamic, real-time information, give it tools rather than stale text.
-
-**CLI commands** are the simplest approach. Tell the agent what's available:
+You can also make live context discoverable from AGENTS.md without embedding the live data itself:
 
 ```markdown
 ## Live Context
@@ -267,11 +234,9 @@ Static text in AGENTS.md has limits—it can't reflect a database schema that ch
 - Run `cat .env.example` for available environment variables
 ``` 
 
-**MCP servers** formalize this for recurring needs (Postgres introspection, browser automation, live library docs). But they're not required—any tool the agent can invoke from the terminal works.
+For a full treatment of when to use Skills, how they relate to Commands and SubAgents, and how to structure them well, see the later chapter on [Skills](../03-power-user/skills.md). For deeper discussion of tool-based access patterns, see the later chapters on [Skills](../03-power-user/skills.md), [MCP](../03-power-user/MCP.md), and [Building Tools](../03-power-user/building-tools.md).
 
-The principle: **if the information changes faster than you'll update AGENTS.md, teach the agent how to look it up instead of writing it down.**
-
-### Principle 12: Build Domain Templates for Fast Project Bootstrap
+### Principle 10: Build Domain Templates for Fast Project Bootstrap
 
 For recurring project types, create a template AGENTS.md that encodes your personal "operating system." Clone and tweak rather than starting from scratch.
 
@@ -299,9 +264,9 @@ Don't over-engineer day one. Tighten the system where it hurts most:
 
 1. **Start with `@` references** to ground the agent in specs and schemas.
 2. **Add core rules** (architectural constraints, git discipline, key commands).
-3. **When you feel repetition**: factor into slash commands.
-4. **When tasks need specialized focus**: carve out sub-agents.
-5. **When you hit the limits of static text**: introduce MCP.
+3. **When guidance keeps repeating**: factor it into Skills; use Commands only for explicit user-invoked entry points.
+4. **When tasks need isolation or role specialization**: carve out sub-agents, and let them load Skills as needed.
+5. **When the agent needs live or changing context**: expose it through Skills, MCPs, or ordinary CLI tools instead of embedding snapshots in AGENTS.md.
 6. **When starting new projects**: layer in domain templates.
 
 ---

@@ -25,13 +25,13 @@
     * [Building Tools for Your Agent](03-power-user/building-tools.md)
     * [Systematic Thinking](03-power-user/systematic-thinking.md)
 
-* [4. Team Development with Coding Agents (Coming Soon)](../draft/en/04-team/README.md)
+* [4. Team Development with Coding Agents (Coming Soon)](https://github.com/XinheLIU/Coding-with-Agents/blob/main/draft/en/04-team/README.md)
 
 ## Part III: The Bigger Picture
 
-* [5. Be an AI Architect (Coming Soon)](../draft/en/05-architect/README.md)
+* [5. Be an AI Architect (Coming Soon)](https://github.com/XinheLIU/Coding-with-Agents/blob/main/draft/en/05-architect/README.md)
 
 ## Appendix
 
-* [Draft chapters index (work in progress)](../draft/README.md)
+* [Draft chapters index (work in progress)](https://github.com/XinheLIU/Coding-with-Agents/blob/main/draft/README.md)
 * [Resources & Reading List](RESOURCEs.md)
