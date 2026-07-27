@@ -1,5 +1,5 @@
 ---
-name: course-note-writer
+name: book-chapter-writer
 description: "Transform raw course notes into well-organized, professional markdown documents. Use when the user needs to clean up and restructure markdown course notes in a folder, with tasks including: (1) Analyzing and reorganizing somewhat-organized notes, (2) Removing repetitive concepts and redundant examples, (3) Inserting images at appropriate locations based on descriptive filenames, (4) Creating consolidated files (under 1000 lines) or split MECE structure (over 1000 lines with README.md linking to sub-notes), (5) Applying standard markdown formatting with proper headers, bold, bullets, tables, code blocks."
 ---
 
