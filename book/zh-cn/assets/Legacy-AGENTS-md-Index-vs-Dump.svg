@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="470" viewBox="0 0 1310 470" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <rect width="1310" height="470" fill="#ffffff"/>
+
+  <text x="320" y="44" text-anchor="middle" font-size="20" font-weight="700" fill="#2b2b2b">AGENTS.md 写成大段文字</text>
+  <text x="990" y="44" text-anchor="middle" font-size="20" font-weight="700" fill="#2b2b2b">AGENTS.md 写成索引加常识</text>
+
+  <line x1="655" y1="30" x2="655" y2="450" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+
+  <!-- Left panel: the prose dump -->
+  <rect x="40" y="64" width="560" height="366" rx="16" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+
+  <rect x="60" y="84" width="520" height="44" rx="10" fill="#fdf0ef" stroke="#c0564f" stroke-width="1.5"/>
+  <text x="320" y="111" text-anchor="middle" font-size="15" fill="#b5453c">把架构图改写成大段文字</text>
+
+  <rect x="60" y="142" width="520" height="44" rx="10" fill="#fdf0ef" stroke="#c0564f" stroke-width="1.5"/>
+  <text x="320" y="169" text-anchor="middle" font-size="15" fill="#b5453c">整份接口清单原样粘贴</text>
+
+  <rect x="60" y="200" width="520" height="44" rx="10" fill="#fdf0ef" stroke="#c0564f" stroke-width="1.5"/>
+  <text x="320" y="227" text-anchor="middle" font-size="15" fill="#b5453c">每张表、每个字段全部列出</text>
+
+  <rect x="60" y="258" width="520" height="44" rx="10" fill="#fdf0ef" stroke="#c0564f" stroke-width="1.5"/>
+  <text x="320" y="285" text-anchor="middle" font-size="15" fill="#b5453c">通用编码规范</text>
+
+  <rect x="60" y="316" width="520" height="44" rx="10" fill="#fdf0ef" stroke="#c0564f" stroke-width="1.5"/>
+  <text x="320" y="343" text-anchor="middle" font-size="15" fill="#b5453c">两千多行，每次启动都要加载</text>
+
+  <text x="320" y="402" text-anchor="middle" font-size="14" font-style="italic" fill="#b5453c">是复制，不是索引——智能体一启动就进入低效区</text>
+
+  <!-- Right panel: index + common sense -->
+  <rect x="710" y="64" width="560" height="366" rx="16" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+
+  <rect x="730" y="84" width="520" height="44" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="990" y="111" text-anchor="middle" font-size="15" fill="#1f6a51">项目是什么——一句话</text>
+
+  <rect x="730" y="142" width="520" height="44" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="990" y="169" text-anchor="middle" font-size="15" fill="#1f6a51">架构：一段话 + 指向 docs/ 的链接</text>
+
+  <rect x="730" y="200" width="520" height="44" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="990" y="227" text-anchor="middle" font-size="15" fill="#1f6a51">关键约定——只写硬规则，不写理由</text>
+
+  <rect x="730" y="258" width="520" height="44" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="990" y="285" text-anchor="middle" font-size="15" fill="#1f6a51">禁区——来自你的脑中</text>
+
+  <rect x="730" y="316" width="520" height="44" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="990" y="343" text-anchor="middle" font-size="15" fill="#1f6a51">历史包袱——来自你的脑中</text>
+
+  <text x="990" y="402" text-anchor="middle" font-size="14" font-style="italic" fill="#1f6a51">≤ 300 行：启动常识，或指向 docs/ 的入口</text>
+</svg>

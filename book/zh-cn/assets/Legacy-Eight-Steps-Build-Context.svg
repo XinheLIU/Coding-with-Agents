@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="650" viewBox="0 0 1310 650" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrowGray" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#9aa7b8"/>
+    </marker>
+  </defs>
+
+  <rect width="1310" height="650" fill="#ffffff"/>
+
+  <text x="40" y="42" font-size="16" font-weight="700" fill="#2b2b2b">建立理解（步骤 1–7）</text>
+
+  <!-- Row 1: steps 1-4 -->
+  <rect x="40" y="60" width="290" height="90" rx="12" fill="#e8f2fd" stroke="#7aabdd" stroke-width="1.5"/>
+  <text x="185" y="98" text-anchor="middle" font-size="15" font-weight="700" fill="#2b5d9b">1. 阅读 README</text>
+  <text x="185" y="122" text-anchor="middle" font-size="13" fill="#5a7ba6">获得最粗略的轮廓</text>
+
+  <line x1="334" y1="105" x2="346" y2="105" stroke="#9aa7b8" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <rect x="350" y="60" width="290" height="90" rx="12" fill="#e8f2fd" stroke="#7aabdd" stroke-width="1.5"/>
+  <text x="495" y="98" text-anchor="middle" font-size="15" font-weight="700" fill="#2b5d9b">2. 浏览结构</text>
+  <text x="495" y="122" text-anchor="middle" font-size="13" fill="#5a7ba6">构建模块图</text>
+
+  <line x1="644" y1="105" x2="656" y2="105" stroke="#9aa7b8" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <rect x="660" y="60" width="290" height="90" rx="12" fill="#e8f2fd" stroke="#7aabdd" stroke-width="1.5"/>
+  <text x="805" y="98" text-anchor="middle" font-size="15" font-weight="700" fill="#2b5d9b">3. 找到入口</text>
+  <text x="805" y="122" text-anchor="middle" font-size="13" fill="#5a7ba6">获得坐标系的原点</text>
+
+  <line x1="954" y1="105" x2="966" y2="105" stroke="#9aa7b8" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <rect x="970" y="60" width="290" height="90" rx="12" fill="#e8f2fd" stroke="#7aabdd" stroke-width="1.5"/>
+  <text x="1115" y="98" text-anchor="middle" font-size="15" font-weight="700" fill="#2b5d9b">4. 绘制整个系统</text>
+  <text x="1115" y="122" text-anchor="middle" font-size="13" fill="#5a7ba6">发现理解模糊之处</text>
+
+  <!-- Elbow from step 4 to step 5 -->
+  <path d="M 1115 150 L 1115 166 L 185 166 L 185 176" fill="none" stroke="#9aa7b8" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <!-- Row 2: steps 5-7 -->
+  <rect x="40" y="180" width="290" height="90" rx="12" fill="#e8f2fd" stroke="#7aabdd" stroke-width="1.5"/>
+  <text x="185" y="218" text-anchor="middle" font-size="15" font-weight="700" fill="#2b5d9b">5. 梳理接口与数据</text>
+  <text x="185" y="242" text-anchor="middle" font-size="13" fill="#5a7ba6">契约与骨架</text>
+
+  <line x1="334" y1="225" x2="346" y2="225" stroke="#9aa7b8" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <rect x="350" y="180" width="290" height="90" rx="12" fill="#e8f2fd" stroke="#7aabdd" stroke-width="1.5"/>
+  <text x="495" y="218" text-anchor="middle" font-size="15" font-weight="700" fill="#2b5d9b">6. 让它运行起来</text>
+  <text x="495" y="242" text-anchor="middle" font-size="13" fill="#5a7ba6">真正的检验</text>
+
+  <line x1="644" y1="225" x2="656" y2="225" stroke="#9aa7b8" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <rect x="660" y="180" width="290" height="90" rx="12" fill="#e8f2fd" stroke="#7aabdd" stroke-width="1.5"/>
+  <text x="805" y="218" text-anchor="middle" font-size="15" font-weight="700" fill="#2b5d9b">7. 带着任务深入</text>
+  <text x="805" y="242" text-anchor="middle" font-size="13" fill="#5a7ba6">带着目标阅读胜过泛读</text>
+
+  <!-- Divider -->
+  <text x="655" y="308" text-anchor="middle" font-size="13" font-style="italic" fill="#8a8a7e">提炼——把你脑中的内容变成智能体可见的资产</text>
+  <line x1="40" y1="326" x2="1270" y2="326" stroke="#d9d0b8" stroke-width="1.5" stroke-dasharray="7 6"/>
+
+  <text x="40" y="360" font-size="16" font-weight="700" fill="#2b2b2b">资产（步骤 8）</text>
+
+  <!-- Red highlight block -->
+  <rect x="40" y="376" width="1230" height="96" rx="12" fill="#fdefec" stroke="#d98a75" stroke-width="1.5"/>
+  <text x="655" y="414" text-anchor="middle" font-size="16" font-weight="700" fill="#a04c2e">8. 把理解写到智能体能读取的地方</text>
+  <text x="655" y="444" text-anchor="middle" font-size="14" fill="#a04c2e">AGENTS.md — 项目常识 · docs/ — 图表、接口清单、数据模型</text>
+
+  <line x1="40" y1="502" x2="1270" y2="502" stroke="#e5e5e0" stroke-width="1"/>
+
+  <text x="40" y="534" font-size="16" font-weight="700" fill="#2b2b2b">三条原则</text>
+
+  <!-- Green principle cards -->
+  <rect x="40" y="550" width="396" height="84" rx="12" fill="#eef7e8" stroke="#93bd78" stroke-width="1.5"/>
+  <text x="238" y="586" text-anchor="middle" font-size="15" font-weight="700" fill="#4a7c2f">螺旋，而非直线</text>
+  <text x="238" y="610" text-anchor="middle" font-size="13" fill="#6b9552">八个步骤都要走到——顺序可以灵活</text>
+
+  <rect x="457" y="550" width="396" height="84" rx="12" fill="#eef7e8" stroke="#93bd78" stroke-width="1.5"/>
+  <text x="655" y="586" text-anchor="middle" font-size="15" font-weight="700" fill="#4a7c2f">只在脑中 = 没有完成</text>
+  <text x="655" y="610" text-anchor="middle" font-size="13" fill="#6b9552">写下来，否则等于没发生</text>
+
+  <rect x="874" y="550" width="396" height="84" rx="12" fill="#eef7e8" stroke="#93bd78" stroke-width="1.5"/>
+  <text x="1072" y="586" text-anchor="middle" font-size="15" font-weight="700" fill="#4a7c2f">锚定在任务上</text>
+  <text x="1072" y="610" text-anchor="middle" font-size="13" fill="#6b9552">不是「读懂了」，而是「能改动」</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="420" viewBox="0 0 1310 420" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <rect width="1310" height="420" fill="#ffffff"/>
+
+  <!-- Row 1 -->
+  <rect x="40" y="40" width="396" height="150" rx="14" fill="#e8f2fc" stroke="#6ea8dc" stroke-width="1.5"/>
+  <text x="238" y="78" text-anchor="middle" font-size="14.5" font-style="italic" fill="#55554c">One symbol or call chain</text>
+  <text x="238" y="100" text-anchor="middle" font-size="14.5" font-style="italic" fill="#55554c">to verify</text>
+  <line x1="208" y1="116" x2="268" y2="116" stroke="#6ea8dc" stroke-width="2"/>
+  <text x="238" y="150" text-anchor="middle" font-size="17" font-weight="700" fill="#2b6cb0">JetBrains IDE</text>
+
+  <rect x="457" y="40" width="396" height="150" rx="14" fill="#e9f6f0" stroke="#4bab8d" stroke-width="1.5"/>
+  <text x="655" y="78" text-anchor="middle" font-size="14.5" font-style="italic" fill="#55554c">A quick structure, diff, or</text>
+  <text x="655" y="100" text-anchor="middle" font-size="14.5" font-style="italic" fill="#55554c">blast-radius view</text>
+  <line x1="625" y1="116" x2="685" y2="116" stroke="#4bab8d" stroke-width="2"/>
+  <text x="655" y="150" text-anchor="middle" font-size="17" font-weight="700" fill="#2e7d5f">Codemap</text>
+
+  <rect x="874" y="40" width="396" height="150" rx="14" fill="#f4f1fe" stroke="#9b8cf0" stroke-width="1.5"/>
+  <text x="1072" y="78" text-anchor="middle" font-size="14.5" font-style="italic" fill="#55554c">One large repo an agent</text>
+  <text x="1072" y="100" text-anchor="middle" font-size="14.5" font-style="italic" fill="#55554c">works in daily</text>
+  <line x1="1042" y1="116" x2="1102" y2="116" stroke="#9b8cf0" stroke-width="2"/>
+  <text x="1072" y="150" text-anchor="middle" font-size="17" font-weight="700" fill="#6a58c9">CodeGraph</text>
+
+  <!-- Row 2 -->
+  <rect x="40" y="210" width="396" height="150" rx="14" fill="#fdf4e3" stroke="#d9a648" stroke-width="1.5"/>
+  <text x="238" y="248" text-anchor="middle" font-size="14.5" font-style="italic" fill="#55554c">An unfamiliar system,</text>
+  <text x="238" y="270" text-anchor="middle" font-size="14.5" font-style="italic" fill="#55554c">design docs included</text>
+  <line x1="208" y1="286" x2="268" y2="286" stroke="#d9a648" stroke-width="2"/>
+  <text x="238" y="320" text-anchor="middle" font-size="17" font-weight="700" fill="#9c6d1f">Graphify</text>
+
+  <rect x="457" y="210" width="396" height="150" rx="14" fill="#fdeeee" stroke="#d98080" stroke-width="1.5"/>
+  <text x="655" y="248" text-anchor="middle" font-size="14.5" font-style="italic" fill="#55554c">More than one</text>
+  <text x="655" y="270" text-anchor="middle" font-size="14.5" font-style="italic" fill="#55554c">repository</text>
+  <line x1="625" y1="286" x2="685" y2="286" stroke="#d98080" stroke-width="2"/>
+  <text x="655" y="320" text-anchor="middle" font-size="17" font-weight="700" fill="#b25050">Sourcegraph</text>
+
+  <rect x="874" y="210" width="396" height="150" rx="14" fill="#f4f3ec" stroke="#b9b7a8" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="1072" y="248" text-anchor="middle" font-size="14.5" font-style="italic" fill="#55554c">An org that lost track of</text>
+  <text x="1072" y="270" text-anchor="middle" font-size="14.5" font-style="italic" fill="#55554c">who owns which service</text>
+  <line x1="1042" y1="286" x2="1102" y2="286" stroke="#b9b7a8" stroke-width="2"/>
+  <text x="1072" y="320" text-anchor="middle" font-size="17" font-weight="700" fill="#6b6b5e">Backstage</text>
+
+  <text x="655" y="398" text-anchor="middle" font-size="13" font-style="italic" fill="#8a8a7e">pick by the shape of your problem, not by feature count</text>
+</svg>

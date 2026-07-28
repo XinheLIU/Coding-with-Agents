@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="650" viewBox="0 0 1310 650" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrowGray" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#9aa7b8"/>
+    </marker>
+  </defs>
+
+  <rect width="1310" height="650" fill="#ffffff"/>
+
+  <text x="40" y="42" font-size="16" font-weight="700" fill="#2b2b2b">Build understanding (steps 1–7)</text>
+
+  <!-- Row 1: steps 1-4 -->
+  <rect x="40" y="60" width="290" height="90" rx="12" fill="#e8f2fd" stroke="#7aabdd" stroke-width="1.5"/>
+  <text x="185" y="98" text-anchor="middle" font-size="15" font-weight="700" fill="#2b5d9b">1. Read the README</text>
+  <text x="185" y="122" text-anchor="middle" font-size="13" fill="#5a7ba6">get the coarsest outline</text>
+
+  <line x1="334" y1="105" x2="346" y2="105" stroke="#9aa7b8" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <rect x="350" y="60" width="290" height="90" rx="12" fill="#e8f2fd" stroke="#7aabdd" stroke-width="1.5"/>
+  <text x="495" y="98" text-anchor="middle" font-size="15" font-weight="700" fill="#2b5d9b">2. Skim the structure</text>
+  <text x="495" y="122" text-anchor="middle" font-size="13" fill="#5a7ba6">build a module map</text>
+
+  <line x1="644" y1="105" x2="656" y2="105" stroke="#9aa7b8" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <rect x="660" y="60" width="290" height="90" rx="12" fill="#e8f2fd" stroke="#7aabdd" stroke-width="1.5"/>
+  <text x="805" y="98" text-anchor="middle" font-size="15" font-weight="700" fill="#2b5d9b">3. Find the entry points</text>
+  <text x="805" y="122" text-anchor="middle" font-size="13" fill="#5a7ba6">an origin for the coordinate system</text>
+
+  <line x1="954" y1="105" x2="966" y2="105" stroke="#9aa7b8" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <rect x="970" y="60" width="290" height="90" rx="12" fill="#e8f2fd" stroke="#7aabdd" stroke-width="1.5"/>
+  <text x="1115" y="98" text-anchor="middle" font-size="15" font-weight="700" fill="#2b5d9b">4. Draw the whole system</text>
+  <text x="1115" y="122" text-anchor="middle" font-size="13" fill="#5a7ba6">find where your thinking is fuzzy</text>
+
+  <!-- Elbow from step 4 to step 5 -->
+  <path d="M 1115 150 L 1115 166 L 185 166 L 185 176" fill="none" stroke="#9aa7b8" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <!-- Row 2: steps 5-7 -->
+  <rect x="40" y="180" width="290" height="90" rx="12" fill="#e8f2fd" stroke="#7aabdd" stroke-width="1.5"/>
+  <text x="185" y="218" text-anchor="middle" font-size="15" font-weight="700" fill="#2b5d9b">5. Map interfaces &amp; data</text>
+  <text x="185" y="242" text-anchor="middle" font-size="13" fill="#5a7ba6">the contract and the skeleton</text>
+
+  <line x1="334" y1="225" x2="346" y2="225" stroke="#9aa7b8" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <rect x="350" y="180" width="290" height="90" rx="12" fill="#e8f2fd" stroke="#7aabdd" stroke-width="1.5"/>
+  <text x="495" y="218" text-anchor="middle" font-size="15" font-weight="700" fill="#2b5d9b">6. Get it running</text>
+  <text x="495" y="242" text-anchor="middle" font-size="13" fill="#5a7ba6">the real test</text>
+
+  <line x1="644" y1="225" x2="656" y2="225" stroke="#9aa7b8" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <rect x="660" y="180" width="290" height="90" rx="12" fill="#e8f2fd" stroke="#7aabdd" stroke-width="1.5"/>
+  <text x="805" y="218" text-anchor="middle" font-size="15" font-weight="700" fill="#2b5d9b">7. Dig in with a task</text>
+  <text x="805" y="242" text-anchor="middle" font-size="13" fill="#5a7ba6">goal-driven reading beats broad reading</text>
+
+  <!-- Divider -->
+  <text x="655" y="308" text-anchor="middle" font-size="13" font-style="italic" fill="#8a8a7e">distill — what is in your head becomes an asset the agent can see</text>
+  <line x1="40" y1="326" x2="1270" y2="326" stroke="#d9d0b8" stroke-width="1.5" stroke-dasharray="7 6"/>
+
+  <text x="40" y="360" font-size="16" font-weight="700" fill="#2b2b2b">The asset (step 8)</text>
+
+  <!-- Red highlight block -->
+  <rect x="40" y="376" width="1230" height="96" rx="12" fill="#fdefec" stroke="#d98a75" stroke-width="1.5"/>
+  <text x="655" y="414" text-anchor="middle" font-size="16" font-weight="700" fill="#a04c2e">8. Write it down where the agent can read it</text>
+  <text x="655" y="444" text-anchor="middle" font-size="14" fill="#a04c2e">AGENTS.md — project common sense · docs/ — diagrams, interface inventory, data model</text>
+
+  <line x1="40" y1="502" x2="1270" y2="502" stroke="#e5e5e0" stroke-width="1"/>
+
+  <text x="40" y="534" font-size="16" font-weight="700" fill="#2b2b2b">Three principles</text>
+
+  <!-- Green principle cards -->
+  <rect x="40" y="550" width="396" height="84" rx="12" fill="#eef7e8" stroke="#93bd78" stroke-width="1.5"/>
+  <text x="238" y="586" text-anchor="middle" font-size="15" font-weight="700" fill="#4a7c2f">A spiral, not a line</text>
+  <text x="238" y="610" text-anchor="middle" font-size="13" fill="#6b9552">hit all eight steps — the order is flexible</text>
+
+  <rect x="457" y="550" width="396" height="84" rx="12" fill="#eef7e8" stroke="#93bd78" stroke-width="1.5"/>
+  <text x="655" y="586" text-anchor="middle" font-size="15" font-weight="700" fill="#4a7c2f">In your head = not done</text>
+  <text x="655" y="610" text-anchor="middle" font-size="13" fill="#6b9552">write it down or it did not happen</text>
+
+  <rect x="874" y="550" width="396" height="84" rx="12" fill="#eef7e8" stroke="#93bd78" stroke-width="1.5"/>
+  <text x="1072" y="586" text-anchor="middle" font-size="15" font-weight="700" fill="#4a7c2f">Anchor on a task</text>
+  <text x="1072" y="610" text-anchor="middle" font-size="13" fill="#6b9552">not “read and understood” — able to change it</text>
+</svg>

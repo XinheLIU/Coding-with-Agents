@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="470" viewBox="0 0 1310 470" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <rect width="1310" height="470" fill="#ffffff"/>
+
+  <text x="320" y="44" text-anchor="middle" font-size="20" font-weight="700" fill="#2b2b2b">AGENTS.md as a prose dump</text>
+  <text x="990" y="44" text-anchor="middle" font-size="20" font-weight="700" fill="#2b2b2b">AGENTS.md as index + common sense</text>
+
+  <line x1="655" y1="30" x2="655" y2="450" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+
+  <!-- Left panel: the prose dump -->
+  <rect x="40" y="64" width="560" height="366" rx="16" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+
+  <rect x="60" y="84" width="520" height="44" rx="10" fill="#fdf0ef" stroke="#c0564f" stroke-width="1.5"/>
+  <text x="320" y="111" text-anchor="middle" font-size="15" fill="#b5453c">Architecture diagram rewritten as prose</text>
+
+  <rect x="60" y="142" width="520" height="44" rx="10" fill="#fdf0ef" stroke="#c0564f" stroke-width="1.5"/>
+  <text x="320" y="169" text-anchor="middle" font-size="15" fill="#b5453c">Full interface inventory pasted in</text>
+
+  <rect x="60" y="200" width="520" height="44" rx="10" fill="#fdf0ef" stroke="#c0564f" stroke-width="1.5"/>
+  <text x="320" y="227" text-anchor="middle" font-size="15" fill="#b5453c">Every table and every column</text>
+
+  <rect x="60" y="258" width="520" height="44" rx="10" fill="#fdf0ef" stroke="#c0564f" stroke-width="1.5"/>
+  <text x="320" y="285" text-anchor="middle" font-size="15" fill="#b5453c">Generic coding standards</text>
+
+  <rect x="60" y="316" width="520" height="44" rx="10" fill="#fdf0ef" stroke="#c0564f" stroke-width="1.5"/>
+  <text x="320" y="343" text-anchor="middle" font-size="15" fill="#b5453c">2,000+ lines loaded on every startup</text>
+
+  <text x="320" y="402" text-anchor="middle" font-size="14" font-style="italic" fill="#b5453c">copying, not indexing — the agent starts in the dumb zone</text>
+
+  <!-- Right panel: index + common sense -->
+  <rect x="710" y="64" width="560" height="366" rx="16" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+
+  <rect x="730" y="84" width="520" height="44" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="990" y="111" text-anchor="middle" font-size="15" fill="#1f6a51">What the project is — one sentence</text>
+
+  <rect x="730" y="142" width="520" height="44" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="990" y="169" text-anchor="middle" font-size="15" fill="#1f6a51">Architecture: one paragraph + link into docs/</text>
+
+  <rect x="730" y="200" width="520" height="44" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="990" y="227" text-anchor="middle" font-size="15" fill="#1f6a51">Key conventions — hard rules, no rationale</text>
+
+  <rect x="730" y="258" width="520" height="44" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="990" y="285" text-anchor="middle" font-size="15" fill="#1f6a51">Forbidden zones — from your head</text>
+
+  <rect x="730" y="316" width="520" height="44" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="990" y="343" text-anchor="middle" font-size="15" fill="#1f6a51">Historical baggage — from your head</text>
+
+  <text x="990" y="402" text-anchor="middle" font-size="14" font-style="italic" fill="#1f6a51">≤ 300 lines: startup common sense, or an entry point into docs/</text>
+</svg>

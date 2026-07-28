@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="310" viewBox="0 0 1310 310" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrowGray" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#9aa7b8"/>
+    </marker>
+  </defs>
+
+  <rect width="1310" height="310" fill="#ffffff"/>
+
+  <!-- Ingestion chain -->
+  <rect x="40" y="50" width="250" height="70" rx="12" fill="#e8f2fd" stroke="#7aabdd" stroke-width="1.5"/>
+  <text x="165" y="80" text-anchor="middle" font-size="15" font-weight="700" fill="#2b5d9b">代码库</text>
+  <text x="165" y="102" text-anchor="middle" font-size="12.5" fill="#5a7ba6">代码本身</text>
+
+  <line x1="294" y1="85" x2="322" y2="85" stroke="#9aa7b8" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <rect x="330" y="50" width="250" height="70" rx="12" fill="#e8f2fd" stroke="#7aabdd" stroke-width="1.5"/>
+  <text x="455" y="80" text-anchor="middle" font-size="15" font-weight="700" fill="#2b5d9b">tree-sitter</text>
+  <text x="455" y="102" text-anchor="middle" font-size="12.5" fill="#5a7ba6">解析为 AST</text>
+
+  <line x1="584" y1="85" x2="612" y2="85" stroke="#9aa7b8" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <rect x="620" y="50" width="250" height="70" rx="12" fill="#e8f2fd" stroke="#7aabdd" stroke-width="1.5"/>
+  <text x="745" y="80" text-anchor="middle" font-size="15" font-weight="700" fill="#2b5d9b">符号索引</text>
+  <text x="745" y="102" text-anchor="middle" font-size="12.5" fill="#5a7ba6">函数 · 类 · 调用</text>
+
+  <line x1="874" y1="85" x2="902" y2="85" stroke="#9aa7b8" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <rect x="910" y="50" width="250" height="70" rx="12" fill="#f4f1fe" stroke="#9b8cf0" stroke-width="2"/>
+  <text x="1035" y="80" text-anchor="middle" font-size="15" font-weight="700" fill="#2b2b2b">图数据库</text>
+  <text x="1035" y="102" text-anchor="middle" font-size="12.5" fill="#6a58c9">Neo4j / Kuzu</text>
+
+  <!-- Fan-out rail -->
+  <line x1="1035" y1="120" x2="1035" y2="150" stroke="#c9c9bd" stroke-width="1.5"/>
+  <line x1="140" y1="150" x2="1170" y2="150" stroke="#c9c9bd" stroke-width="1.5"/>
+  <line x1="140" y1="150" x2="140" y2="166" stroke="#c9c9bd" stroke-width="1.5"/>
+  <line x1="346" y1="150" x2="346" y2="166" stroke="#c9c9bd" stroke-width="1.5"/>
+  <line x1="552" y1="150" x2="552" y2="166" stroke="#c9c9bd" stroke-width="1.5"/>
+  <line x1="758" y1="150" x2="758" y2="166" stroke="#c9c9bd" stroke-width="1.5"/>
+  <line x1="964" y1="150" x2="964" y2="166" stroke="#c9c9bd" stroke-width="1.5"/>
+  <line x1="1170" y1="150" x2="1170" y2="166" stroke="#c9c9bd" stroke-width="1.5"/>
+
+  <!-- View cards -->
+  <rect x="45" y="170" width="190" height="60" rx="10" fill="#e9f6f0" stroke="#4bab8d" stroke-width="1.5"/>
+  <text x="140" y="206" text-anchor="middle" font-size="14" fill="#2e7d5f">调用图</text>
+
+  <rect x="251" y="170" width="190" height="60" rx="10" fill="#e9f6f0" stroke="#4bab8d" stroke-width="1.5"/>
+  <text x="346" y="206" text-anchor="middle" font-size="14" fill="#2e7d5f">依赖图</text>
+
+  <rect x="457" y="170" width="190" height="60" rx="10" fill="#e9f6f0" stroke="#4bab8d" stroke-width="1.5"/>
+  <text x="552" y="206" text-anchor="middle" font-size="14" fill="#2e7d5f">API 图</text>
+
+  <rect x="663" y="170" width="190" height="60" rx="10" fill="#e9f6f0" stroke="#4bab8d" stroke-width="1.5"/>
+  <text x="758" y="206" text-anchor="middle" font-size="14" fill="#2e7d5f">ER 图</text>
+
+  <rect x="869" y="170" width="190" height="60" rx="10" fill="#e9f6f0" stroke="#4bab8d" stroke-width="1.5"/>
+  <text x="964" y="206" text-anchor="middle" font-size="14" fill="#2e7d5f">Git / 所有权</text>
+
+  <rect x="1075" y="170" width="190" height="60" rx="10" fill="#e9f6f0" stroke="#4bab8d" stroke-width="1.5"/>
+  <text x="1170" y="206" text-anchor="middle" font-size="14" fill="#2e7d5f">运行时视图</text>
+
+  <text x="655" y="278" text-anchor="middle" font-size="13" font-style="italic" fill="#8a8a7e">统一这些视图的是图数据库，而不是解析器</text>
+</svg>

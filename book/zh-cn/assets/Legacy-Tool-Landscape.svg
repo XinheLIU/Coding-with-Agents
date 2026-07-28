@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="520" viewBox="0 0 1310 520" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <rect width="1310" height="520" fill="#ffffff"/>
+
+  <!-- Parent card: primary agent -->
+  <rect x="395" y="30" width="520" height="120" rx="14" fill="#f4f1fe" stroke="#9b8cf0" stroke-width="2"/>
+  <text x="655" y="66" text-anchor="middle" font-size="18" font-weight="700" fill="#2b2b2b">主要智能体</text>
+  <text x="655" y="88" text-anchor="middle" font-size="12.5" fill="#8a8a7e">选定一个，然后继续前进——选择本身最不重要</text>
+  <text x="655" y="118" text-anchor="middle" font-size="14" fill="#6a58c9">Claude Code · Cursor · Copilot · Cline · Aider</text>
+
+  <!-- Connector -->
+  <line x1="655" y1="150" x2="655" y2="168" stroke="#c9c9bd" stroke-width="1.5"/>
+  <text x="655" y="188" text-anchor="middle" font-size="13" fill="#8a8a7e">辅助工具</text>
+  <line x1="655" y1="196" x2="655" y2="206" stroke="#c9c9bd" stroke-width="1.5"/>
+  <line x1="155" y1="206" x2="1155" y2="206" stroke="#c9c9bd" stroke-width="1.5"/>
+  <line x1="155" y1="206" x2="155" y2="222" stroke="#c9c9bd" stroke-width="1.5"/>
+  <line x1="405" y1="206" x2="405" y2="222" stroke="#c9c9bd" stroke-width="1.5"/>
+  <line x1="655" y1="206" x2="655" y2="222" stroke="#c9c9bd" stroke-width="1.5"/>
+  <line x1="905" y1="206" x2="905" y2="222" stroke="#c9c9bd" stroke-width="1.5"/>
+  <line x1="1155" y1="206" x2="1155" y2="222" stroke="#c9c9bd" stroke-width="1.5"/>
+
+  <!-- Card 1: Context management (green) -->
+  <rect x="40" y="226" width="230" height="240" rx="14" fill="#e9f6f0" stroke="#4bab8d" stroke-width="1.5"/>
+  <text x="155" y="264" text-anchor="middle" font-size="16" font-weight="700" fill="#2b2b2b">上下文</text>
+  <text x="155" y="286" text-anchor="middle" font-size="16" font-weight="700" fill="#2b2b2b">管理</text>
+  <line x1="125" y1="302" x2="185" y2="302" stroke="#4bab8d" stroke-width="2"/>
+  <text x="155" y="334" text-anchor="middle" font-size="13.5" fill="#2e7d5f">AGENTS.md / CLAUDE.md</text>
+  <text x="155" y="358" text-anchor="middle" font-size="13.5" fill="#2e7d5f">.cursorrules · SKILL.md</text>
+  <text x="155" y="382" text-anchor="middle" font-size="13.5" fill="#2e7d5f">记忆扩展</text>
+
+  <!-- Card 2: Capability extension (blue) -->
+  <rect x="290" y="226" width="230" height="240" rx="14" fill="#e8f2fc" stroke="#6ea8dc" stroke-width="1.5"/>
+  <text x="405" y="264" text-anchor="middle" font-size="16" font-weight="700" fill="#2b2b2b">能力</text>
+  <text x="405" y="286" text-anchor="middle" font-size="16" font-weight="700" fill="#2b2b2b">扩展</text>
+  <line x1="375" y1="302" x2="435" y2="302" stroke="#6ea8dc" stroke-width="2"/>
+  <text x="405" y="334" text-anchor="middle" font-size="13.5" fill="#2b6cb0">MCP 协议</text>
+  <text x="405" y="358" text-anchor="middle" font-size="13.5" fill="#2b6cb0">Sourcegraph</text>
+  <text x="405" y="382" text-anchor="middle" font-size="13.5" fill="#2b6cb0">GitHub / 数据库 MCP</text>
+
+  <!-- Card 3: Spec-driven (orange) -->
+  <rect x="540" y="226" width="230" height="240" rx="14" fill="#fdf4e3" stroke="#d9a648" stroke-width="1.5"/>
+  <text x="655" y="264" text-anchor="middle" font-size="16" font-weight="700" fill="#2b2b2b">规范</text>
+  <text x="655" y="286" text-anchor="middle" font-size="16" font-weight="700" fill="#2b2b2b">驱动</text>
+  <line x1="625" y1="302" x2="685" y2="302" stroke="#d9a648" stroke-width="2"/>
+  <text x="655" y="334" text-anchor="middle" font-size="13.5" fill="#9c6d1f">OpenSpec · Spec-Kit</text>
+  <text x="655" y="358" text-anchor="middle" font-size="13.5" fill="#9c6d1f">Tessl · Kiro</text>
+  <text x="655" y="382" text-anchor="middle" font-size="13.5" fill="#9c6d1f">从轻量开始</text>
+
+  <!-- Card 4: Engineering support (pink) -->
+  <rect x="790" y="226" width="230" height="240" rx="14" fill="#fdeeee" stroke="#d98080" stroke-width="1.5"/>
+  <text x="905" y="264" text-anchor="middle" font-size="16" font-weight="700" fill="#2b2b2b">工程</text>
+  <text x="905" y="286" text-anchor="middle" font-size="16" font-weight="700" fill="#2b2b2b">支持</text>
+  <line x1="875" y1="302" x2="935" y2="302" stroke="#d98080" stroke-width="2"/>
+  <text x="905" y="334" text-anchor="middle" font-size="13.5" fill="#b25050">SonarQube · CodeQL</text>
+  <text x="905" y="358" text-anchor="middle" font-size="13.5" fill="#b25050">测试框架 · CI</text>
+  <text x="905" y="382" text-anchor="middle" font-size="13.5" fill="#b25050">跨模型审查</text>
+
+  <!-- Card 5: Everything new (dashed beige) -->
+  <rect x="1040" y="226" width="230" height="240" rx="14" fill="#f4f3ec" stroke="#b9b7a8" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="1155" y="264" text-anchor="middle" font-size="16" font-weight="700" fill="#2b2b2b">其他</text>
+  <text x="1155" y="286" text-anchor="middle" font-size="16" font-weight="700" fill="#2b2b2b">新工具</text>
+  <line x1="1125" y1="302" x2="1185" y2="302" stroke="#b9b7a8" stroke-width="2"/>
+  <text x="1155" y="334" text-anchor="middle" font-size="13.5" fill="#6b6b5e">对照三层控制</text>
+  <text x="1155" y="358" text-anchor="middle" font-size="13.5" fill="#6b6b5e">校准新工具</text>
+  <text x="1155" y="382" text-anchor="middle" font-size="13.5" fill="#6b6b5e">够用即止</text>
+
+  <text x="655" y="500" text-anchor="middle" font-size="13" font-style="italic" fill="#8a8a7e">它们都是进入三层控制的入口——不是与三层并列的第四层</text>
+</svg>

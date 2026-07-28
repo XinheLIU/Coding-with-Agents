@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="235" viewBox="0 0 1310 235" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#8a8a7e"/>
+    </marker>
+  </defs>
+
+  <rect width="1310" height="235" fill="#ffffff"/>
+
+  <!-- Zone 1: Comprehension, steps 1-6 -->
+  <rect x="40" y="54" width="778" height="128" rx="16" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="429" y="80" text-anchor="middle" font-size="15" font-weight="700" fill="#2b2b2b">Establish context — steps 1–6 · ~70% of the time</text>
+
+  <rect x="58" y="92" width="112" height="76" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="114" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#3d8b70">STEP 1</text>
+  <text x="114" y="144" text-anchor="middle" font-size="13" fill="#1f6a51">Talk to people</text>
+
+  <rect x="184" y="92" width="112" height="76" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="240" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#3d8b70">STEP 2</text>
+  <text x="240" y="136" text-anchor="middle" font-size="13" fill="#1f6a51">Read what</text>
+  <text x="240" y="154" text-anchor="middle" font-size="13" fill="#1f6a51">exists</text>
+
+  <rect x="310" y="92" width="112" height="76" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="366" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#3d8b70">STEP 3</text>
+  <text x="366" y="136" text-anchor="middle" font-size="13" fill="#1f6a51">Skim the</text>
+  <text x="366" y="154" text-anchor="middle" font-size="13" fill="#1f6a51">structure</text>
+
+  <rect x="436" y="92" width="112" height="76" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="492" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#3d8b70">STEP 4</text>
+  <text x="492" y="144" text-anchor="middle" font-size="13" fill="#1f6a51">Get it running</text>
+
+  <rect x="562" y="92" width="112" height="76" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="618" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#3d8b70">STEP 5</text>
+  <text x="618" y="136" text-anchor="middle" font-size="13" fill="#1f6a51">Call the core</text>
+  <text x="618" y="154" text-anchor="middle" font-size="13" fill="#1f6a51">endpoints</text>
+
+  <rect x="688" y="92" width="112" height="76" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="744" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#3d8b70">STEP 6</text>
+  <text x="744" y="136" text-anchor="middle" font-size="13" fill="#1f6a51">Dig in with</text>
+  <text x="744" y="154" text-anchor="middle" font-size="13" fill="#1f6a51">questions</text>
+
+  <text x="429" y="206" text-anchor="middle" font-size="13" font-style="italic" fill="#b5453c">exactly the steps that get skipped — open the agent, accept the shallow answer, start editing</text>
+
+  <!-- Arrow between zones -->
+  <line x1="822" y1="118" x2="842" y2="118" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Zone 2: Modification, steps 7-9 -->
+  <rect x="848" y="54" width="400" height="128" rx="16" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="1048" y="80" text-anchor="middle" font-size="15" font-weight="700" fill="#2b2b2b">Modify — steps 7–9 · ~30%</text>
+
+  <rect x="866" y="92" width="112" height="76" rx="10" fill="#eef0f4" stroke="#8592a6" stroke-width="1.5"/>
+  <text x="922" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#8592a6">STEP 7</text>
+  <text x="922" y="136" text-anchor="middle" font-size="13" fill="#45536b">Draw the</text>
+  <text x="922" y="154" text-anchor="middle" font-size="13" fill="#45536b">core paths</text>
+
+  <rect x="992" y="92" width="112" height="76" rx="10" fill="#eef0f4" stroke="#8592a6" stroke-width="1.5"/>
+  <text x="1048" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#8592a6">STEP 8</text>
+  <text x="1048" y="136" text-anchor="middle" font-size="13" fill="#45536b">Change in</text>
+  <text x="1048" y="154" text-anchor="middle" font-size="13" fill="#45536b">small steps</text>
+
+  <rect x="1118" y="92" width="112" height="76" rx="10" fill="#eef0f4" stroke="#8592a6" stroke-width="1.5"/>
+  <text x="1174" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#8592a6">STEP 9</text>
+  <text x="1174" y="136" text-anchor="middle" font-size="13" fill="#45536b">Accept &amp;</text>
+  <text x="1174" y="154" text-anchor="middle" font-size="13" fill="#45536b">review</text>
+
+  <text x="1048" y="206" text-anchor="middle" font-size="13" font-style="italic" fill="#8a8a7e">only these steps touch the system</text>
+</svg>

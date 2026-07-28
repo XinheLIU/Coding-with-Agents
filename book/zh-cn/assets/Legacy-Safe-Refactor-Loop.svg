@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="300" viewBox="0 0 1310 300" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrowGray" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#8a8a7e"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#3d8b70"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#c0564f"/>
+    </marker>
+  </defs>
+
+  <rect width="1310" height="300" fill="#ffffff"/>
+
+  <rect x="45" y="60" width="210" height="64" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="150" y="86" text-anchor="middle" font-size="14" fill="#1f6a51">观察当前</text>
+  <text x="150" y="104" text-anchor="middle" font-size="14" fill="#1f6a51">行为</text>
+
+  <line x1="259" y1="92" x2="296" y2="92" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrowGray)"/>
+
+  <rect x="300" y="60" width="210" height="64" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="405" y="86" text-anchor="middle" font-size="14" fill="#1f6a51">用 Characterization</text>
+  <text x="405" y="104" text-anchor="middle" font-size="14" fill="#1f6a51">Test 固定不变量</text>
+
+  <line x1="514" y1="92" x2="551" y2="92" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrowGray)"/>
+
+  <rect x="555" y="60" width="210" height="64" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="660" y="86" text-anchor="middle" font-size="14" fill="#1f6a51">引入一个 Seam</text>
+  <text x="660" y="104" text-anchor="middle" font-size="14" fill="#1f6a51">（控制点）</text>
+
+  <line x1="769" y1="92" x2="806" y2="92" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrowGray)"/>
+
+  <rect x="810" y="60" width="210" height="64" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="915" y="86" text-anchor="middle" font-size="14" fill="#1f6a51">做一次</text>
+  <text x="915" y="104" text-anchor="middle" font-size="14" fill="#1f6a51">结构性改动</text>
+
+  <line x1="1024" y1="92" x2="1061" y2="92" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrowGray)"/>
+
+  <rect x="1065" y="60" width="210" height="64" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="1170" y="86" text-anchor="middle" font-size="14" fill="#1f6a51">自动</text>
+  <text x="1170" y="104" text-anchor="middle" font-size="14" fill="#1f6a51">验证</text>
+
+  <!-- Pass loop: back to "make one structural change" -->
+  <path d="M 1120 124 L 1120 176 L 915 176 L 915 132" fill="none" stroke="#3d8b70" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <text x="1017" y="168" text-anchor="middle" font-size="13" fill="#1f6a51">测试通过 → 下一个改动</text>
+
+  <!-- Fail path: revert, then retry smaller -->
+  <line x1="1220" y1="124" x2="1220" y2="206" stroke="#c0564f" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrowRed)"/>
+  <text x="1232" y="170" font-size="12" fill="#b5453c">任意失败</text>
+
+  <rect x="1100" y="210" width="200" height="48" rx="10" fill="#fdf0ef" stroke="#c0564f" stroke-width="1.5"/>
+  <text x="1200" y="239" text-anchor="middle" font-size="14" fill="#b5453c">立即回退</text>
+
+  <path d="M 1100 234 L 870 234 L 870 132" fill="none" stroke="#c0564f" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrowRed)"/>
+  <text x="985" y="226" text-anchor="middle" font-size="12" fill="#8a8a7e">然后尝试更小的改动</text>
+</svg>

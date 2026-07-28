@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="400" viewBox="0 0 1310 400" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <rect width="1310" height="400" fill="#ffffff"/>
+
+  <!-- Legend -->
+  <rect x="40" y="24" width="14" height="14" rx="3" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="62" y="36" font-size="13" fill="#5a5a52">agent share</text>
+  <rect x="160" y="24" width="14" height="14" rx="3" fill="#eef0f4" stroke="#8592a6" stroke-width="1.5"/>
+  <text x="182" y="36" font-size="13" fill="#5a5a52">human share</text>
+
+  <!-- Row 1: Agent-led ~80% -->
+  <text x="40" y="92" font-size="15" font-weight="700" fill="#2b2b2b">Agent-led</text>
+  <rect x="240" y="66" width="560" height="40" rx="8" fill="#eef0f4" stroke="#b8c0cc" stroke-width="1.5"/>
+  <rect x="240" y="66" width="448" height="40" rx="8" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="464" y="91" text-anchor="middle" font-size="14" font-weight="700" fill="#1f6a51">≈80%</text>
+  <text x="744" y="91" text-anchor="middle" font-size="14" fill="#5a6472">20%</text>
+  <text x="830" y="82" font-size="13" fill="#2b2b2b">Read the docs (2) · skim the structure (3) · endpoints (5)</text>
+  <text x="830" y="100" font-size="13" font-style="italic" fill="#8a8a7e">already written down — the agent reads it directly</text>
+
+  <!-- Row 2: Split evenly ~50% -->
+  <text x="40" y="182" font-size="15" font-weight="700" fill="#2b2b2b">Split evenly</text>
+  <rect x="240" y="156" width="560" height="40" rx="8" fill="#eef0f4" stroke="#b8c0cc" stroke-width="1.5"/>
+  <rect x="240" y="156" width="280" height="40" rx="8" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="380" y="181" text-anchor="middle" font-size="14" font-weight="700" fill="#1f6a51">≈50%</text>
+  <text x="660" y="181" text-anchor="middle" font-size="14" fill="#5a6472">50%</text>
+  <text x="830" y="172" font-size="13" fill="#2b2b2b">People (1) · run it (4) · dig in (6) · draw (7) · change (8)</text>
+  <text x="830" y="190" font-size="13" font-style="italic" fill="#8a8a7e">half agent, half human judgment and relationships</text>
+
+  <!-- Row 3: Human-led ~20% -->
+  <text x="40" y="272" font-size="15" font-weight="700" fill="#2b2b2b">Human-led</text>
+  <rect x="240" y="246" width="560" height="40" rx="8" fill="#eef0f4" stroke="#b8c0cc" stroke-width="1.5"/>
+  <rect x="240" y="246" width="112" height="40" rx="8" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="296" y="271" text-anchor="middle" font-size="14" font-weight="700" fill="#1f6a51">≈20%</text>
+  <text x="576" y="271" text-anchor="middle" font-size="14" fill="#5a6472">80%</text>
+  <text x="830" y="262" font-size="13" fill="#2b2b2b">Forbidden zones · dependents · acceptance (9) · release risk</text>
+  <text x="830" y="280" font-size="13" font-style="italic" fill="#8a8a7e">in someone's head, not in the repo</text>
+
+  <!-- Warning -->
+  <rect x="295" y="326" width="720" height="46" rx="10" fill="#fdf0ef" stroke="#c0564f" stroke-width="1.5"/>
+  <text x="655" y="354" text-anchor="middle" font-size="15" fill="#b5453c">The trap: treating the agent's 80% as 100% — and skipping verification of the rest</text>
+</svg>
