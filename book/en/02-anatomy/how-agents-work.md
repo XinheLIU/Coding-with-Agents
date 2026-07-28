@@ -1,5 +1,7 @@
 # How Coding Agents Work
 
+Last updated: 2026-07-27
+
 > *In [Chapter 1](../01-prompt/README.md), you learned to communicate with coding agents — giving them context, writing clear prompts, and building persistent memory systems. Now, let's look under the hood: what actually happens when you press Enter?*
 
 *From simple autocomplete to autonomous digital engineers — a deep dive into the system architecture, context strategies, and core design patterns powering today's elite AI coding tools.*
@@ -72,7 +74,7 @@ Elite agents use these core tactics:
 
 Claude Code, one of the most widely adopted and lauded production-grade agents, perfectly demonstrates these pillars: it has abandoned monolithic system prompts for layered **micro-prompt** scaffolding; it uses a brutal toolset ranging from file manipulation to sub-agent cloning; and it employs an aggressive context strategy that combines front-loaded "House Rules" with JIT exploration and 95%-threshold **auto-compaction**.
 
-To truly understand its inner workings—from "Memory Management" to "Capability Extensions" (Commands, Skills, SubAgents, Hooks) and "Integration" (Headless mode, MCP), see the specialized report: [Claude Code as an AI Agent Framework](../03-power-user/claude-code.md).
+To truly understand its inner workings—from "Memory Management" to "Capability Extensions" (Commands, Skills, SubAgents, Hooks) and "Integration" (Headless mode, MCP), see the specialized report: [Claude Code as an AI Agent Framework](claude-code.md).
 
 ---
 
@@ -103,9 +105,9 @@ The next wave is forming. **Background Agents** (asynchronous cloud agents) act 
 
 **Multi-Agent Grid Warfare** is also maturing. Rather than one agent doing everything, an **Orchestrator** coordinates specialized squads: a "Radar Scout" (logic tracing), a "Blacksmith" (implementation), and a "Disciplinarian" (QA/Review). Information flows between them as distilled "Intelligence Briefings," avoiding context bloat.
 
-**MCP (Model Context Protocol)** is the unified "power strip" for this world, allowing any third-party tool or service to be "hot-swapped" into an agent's arsenal. Explore the total anatomy of this bus: [MCP Standard](../03-power-user/MCP.md).
+**MCP (Model Context Protocol)** is the unified "power strip" for this world, allowing any third-party tool or service to be "hot-swapped" into an agent's arsenal. Explore the total anatomy of this bus: [MCP Standard](MCP.md).
 
-For the macro-controls and governance of these multi-agent systems, see: [Systematic Thinking & Governance](../03-power-user/systematic-thinking.md).
+For the macro-controls and governance of these multi-agent systems, see: [Systematic Thinking & Governance](systematic-thinking.md).
 
 ---
 

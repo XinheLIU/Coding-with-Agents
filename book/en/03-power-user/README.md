@@ -1,21 +1,25 @@
 # Level 3: Become a Power User
 
-> *The difference between using a coding agent and mastering one is like the difference between driving a car and understanding the engine, the road, and the weather.*
+Last updated: 2026-07-27
 
-[Chapters 1](../01-prompt/README.md) and [2](../02-anatomy/README.md) gave you the fundamentals: how to prompt agents and how they work. This chapter is where you go from "I can use this tool" to "I can orchestrate it." The techniques here represent the difference between a developer who gets 2x leverage from AI and one who gets 10x.
+> *The difference between using a coding agent and mastering one is like the difference between driving a car and running a fleet.*
 
-This is the largest chapter in the book — deliberately so. Power-user techniques are where the compound returns live, and each section builds on the last. Here's how it's structured:
+[Chapter 2](../02-anatomy/README.md) took the machine apart: how agents work, how much autonomy to give them, and how Claude Code's memory, extension, and integration layers fit together. This chapter is where that anatomy becomes engineering practice — the systems and disciplines that separate a developer who gets 2x leverage from one who gets 10x.
 
-1. **The platform deep-dive** — [Claude Code as an AI Agent Framework](claude-code.md) is the chapter opener. It explains *why* we use Claude Code as the primary lens — its four-layer architecture (Memory, Extension, Integration, SDK) maps directly to the three pillars from Chapter 2, and mastering it builds transferable intuition for any agent system. This section also absorbs the implementation details (micro-prompts, command safety, auto-compaction) that make the architecture concrete.
+Four chapters make up this level. One is written; the other three are outlined
+below and not yet in the navigation. Progress is tracked in
+[`ROADMAP.md`](../../../ROADMAP.md).
 
-2. **Delegation patterns** — [Sub-Agents](sub-agents.md) introduces the concept of spawning scoped, temporary agents for isolated tasks — how you avoid context pollution and parallelize work. [Agent Teams](agent-teams.md) extends this to coordinating multiple agents on larger projects.
+1. **The orchestration layer** — how to design the layer above individual agents: routing work between sessions, agents, and workflows; deciding what runs autonomously versus interactively; and composing sub-agents, hooks, and skills into repeatable pipelines instead of one-off tricks.
 
-3. **Extending the agent** — [Skills](skills.md) and [Hooks](hooks.md) show you how to teach agents new capabilities and wire them into your development workflow with event-driven automation. [Building Tools for Your Agent](building-tools.md) covers MCP servers, custom tools, and environment setup.
+2. **Engineering frameworks** — the reusable structures that make agent-assisted development reliable: project scaffolding, verification loops, task decomposition templates, and the frameworks emerging around agent-native engineering.
 
-4. **The capstone** — [Systematic Thinking](systematic-thinking.md) ties everything together. It teaches the *composition principles* for combining Skills, SubAgents, Hooks, and more into production-grade agent systems — including governance design, context isolation, and worked architectural examples.
+3. **Spec coding** — specification-first development in depth: writing specs that agents can execute against, the six-dimension requirements system, and the delivery loop from spec to verified change.
+
+4. **[Working with Legacy Codebases](legacy-codebases.md)** — power-user strategies for pointing agents at large existing systems: the three kinds of debt legacy work accrues, the three layers of control (comprehension, constraint, verification), and the characterization test → seam → incremental refactor workflow that keeps agent-driven changes reversible.
 
 ---
 
-**Where you've been:** [Chapter 2](../02-anatomy/README.md) gave you the mental model of how agents work. Now you have the techniques to exploit that understanding.
+**Where you've been:** [Chapter 2](../02-anatomy/README.md) gave you the full anatomy — mental model, autonomy framework, collaboration modes, and the complete Claude Code toolkit from context management to systematic composition.
 
 **What's next:** Individual mastery is powerful, but real impact comes from scaling these practices across a team. [Chapter 4](../04-team/README.md) tackles the hard problems of team development with agents: shared context, code review at AI speed, and testing strategies that keep quality high when output volume explodes.

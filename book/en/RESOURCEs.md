@@ -1,5 +1,7 @@
 # Resources
 
+Last updated: 2026-07-27
+
 - [CS146S: the Modern Software Developer](https://themodernsoftware.dev/)
 - [DataWhale: Easy Vibe Project](https://github.com/datawhalechina/easy-vibe)
 - [DataWhale: Vibe-Vibe Project](https://github.com/datawhalechina/vibe-vibe)
@@ -18,10 +20,6 @@
 
 [How OpenAI Uses Codex](https://cdn.openai.com/pdf/6a2631dc-783e-479b-b1a4-af0cfbd38630/how-openai-uses-codex.pdf)
 [How Anthropic Uses Claude Code](https://www-cdn.anthropic.com/58284b19e702b49db9302d5b6f135ad8871e7658.pdf)
-
----
-
-## 03 Power User
 
 ### Context Engineering
 
@@ -44,6 +42,26 @@
 [Anthropic: How to Build Multi-Agent Research System](https://www.anthropic.com/engineering/multi-agent-research-system)
 [LangChain: Choosing the Right Multi-Agent Architecture](https://blog.langchain.com/choosing-the-right-multi-agent-architecture/)
 [Anthropic Agent Teams Documentation](https://code.claude.com/docs/en/agent-teams)
+
+---
+
+## 03 Power User
+
+### Working with Legacy Codebases
+
+[Comprehension Debt — Addy Osmani](https://addyosmani.com/blog/comprehension-debt/)
+[Sonar State of Code Developer Survey](https://www.sonarsource.com/state-of-code/)
+[Working Effectively with Legacy Code — Michael Feathers](https://www.oreilly.com/library/view/working-effectively-with/0131177052/)
+[How to Refactor Legacy Code — Augment Code (guide)](https://www.augmentcode.com/learn/how-to-refactor-legacy-code)
+[How to Refactor Legacy Code — Augment Code (article)](https://www.augmentcode.com/blog/how-to-refactor-legacy-code)
+[Chain of Understanding: Supporting End-user Developers' Code Understanding with Large Language Models](https://arxiv.org/abs/2504.04553)
+[Using GenAI to Understand Legacy Codebases — Thoughtworks](https://www.thoughtworks.com/radar/techniques/generative-ai-for-legacy-code-comprehension)
+[AI-Assisted Legacy Code Modernization Guide — Cleveroad](https://www.cleveroad.com/blog/ai-assisted-legacy-code-modernization)
+[The State of AI-Native Engineering in 2026 — Augment Code](https://www.augmentcode.com/resources/state-of-ai-native-engineering-2026)
+[Veracode State of Software Security 2025](https://www.veracode.com/research/state-of-software-security-report-2025)
+[Army of Juniors — OX Security](https://www.ox.security/research/army-of-juniors/)
+[Graphify overview](https://blog.csdn.net/zhangay1998/article/details/161003084)
+[《Claude Code 企业级老项目改造实战》— 极客时间](https://time.geekbang.org/column/article/976338)
 
 ---
 

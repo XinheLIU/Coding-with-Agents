@@ -1,5 +1,7 @@
 # 与智能体结对编程
 
+Last updated: 2026-07-27
+
 一门关于软件工程师如何在 AI 编程智能体时代高效工作的课程。
 
 ## 课程笔记
@@ -7,12 +9,13 @@
 | #   | 模块                                                                 | 主题                                                                                                                                   |
 | --- | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | 1   | [如何提示编程智能体](01-prompt/README.md)                           | AI 如何改变开发工作流 · 提示原则 · 防御性提示 · AGENTS.md · 时间管理                                                                   |
-| 2   | [编程智能体剖析](02-anatomy/README.md)                              | 编程工具演进 · 智能体如何工作 · 局限性 · 自主程度 · 人工介入 · 氛围编程 vs 规格驱动编程 · 失败模式                                       |
-| 3   | [成为高级用户](03-power-user/README.md)                             | 上下文工程 · 长上下文失效模式 · 委派大任务 · 智能体工作流 · 安全边界 · 构建智能体工具                                                   |
-| 4   | [团队开发与编程智能体（草稿）](https://github.com/XinheLIU/Coding-with-Agents/blob/main/draft/zh-cn/04-team/README.md)     | 规格即单一事实来源 · 团队级上下文工程 · 有意压缩 · AI 规模下的代码审查 · 测试与安全                                                     |
-| 5   | [成为 AI 架构师（草稿）](https://github.com/XinheLIU/Coding-with-Agents/blob/main/draft/zh-cn/05-architect/README.md)      | Software 3.0 · 构建者心态 · 软件工程的未来                                                                                             |
+| 2   | [编程智能体剖析](02-anatomy/README.md)                              | 智能体如何工作 · 自主程度 · 人机协作模式 · Claude Code 架构 · 上下文管理 · 子智能体与智能体团队 · 技能、Hooks、MCP · 系统化思考         |
+| 3   | [成为高级用户（规划中）](03-power-user/README.md)                   | 编排层 · 工程框架 · 规格编码 · 老代码库实战                                                                                             |
+| 4   | [团队开发与编程智能体（草稿）](04-team/README.md)     | 团队工程化 · 产品与业务定义 · 技术架构与部署设计 · 上下文资产 · AI 规模下的代码审查 · 测试与安全                                                     |
+| 5   | [成为 AI 架构师（规划中）](05-architect/README.md)      | Software 3.0 · 构建者心态 · 软件工程的未来                                                                                             |
 
-**第 4、5 模块**为**草稿**：正文暂放在 [`draft/`](https://github.com/XinheLIU/Coding-with-Agents/blob/main/draft/README.md)，定稿后会并入本目录；结构可能与现稿不同。
+**第 4 模块**为**草稿**；**第 3、5 模块**已规划但尚未撰写。按章节的进度见仓库根目录的
+[`ROADMAP.md`](https://github.com/XinheLIU/Coding-with-Agents/blob/main/ROADMAP.md)。
 
 ## 资料
 

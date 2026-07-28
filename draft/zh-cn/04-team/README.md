@@ -1,3 +1,0 @@
-# Level 4: Team Development with Coding Agents
-
-_内容正在翻译中 (Content pending translation)_...

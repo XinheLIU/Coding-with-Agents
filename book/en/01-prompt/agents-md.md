@@ -1,5 +1,7 @@
 # The Agent Memory File: Your Codebase's Constitution
 
+Last updated: 2026-07-27
+
 > *"The gap between 'Claude, we use pnpm' every session and 'Claude already knows' is the difference between a tool and a teammate."*
 
 - [The Agent Memory File: Your Codebase's Constitution](#the-agent-memory-file-your-codebases-constitution)
@@ -234,7 +236,7 @@ You can also make live context discoverable from AGENTS.md without embedding the
 - Run `cat .env.example` for available environment variables
 ``` 
 
-For a full treatment of when to use Skills, how they relate to Commands and SubAgents, and how to structure them well, see the later chapter on [Skills](../03-power-user/skills.md). For deeper discussion of tool-based access patterns, see the later chapters on [Skills](../03-power-user/skills.md), [MCP](../03-power-user/MCP.md), and [Building Tools](../03-power-user/building-tools.md).
+For a full treatment of when to use Skills, how they relate to Commands and SubAgents, and how to structure them well, see the later chapter on [Skills](../02-anatomy/skills.md). For deeper discussion of tool-based access patterns, see the later chapters on [Skills](../02-anatomy/skills.md), [MCP](../02-anatomy/MCP.md), and [Building Tools](../02-anatomy/building-tools.md).
 
 ### Principle 10: Build Domain Templates for Fast Project Bootstrap
 

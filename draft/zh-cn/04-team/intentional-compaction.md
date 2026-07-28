@@ -1,3 +1,0 @@
-# Intentional Compaction
-
-_内容正在翻译中 (Content pending translation)_...
