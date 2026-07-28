@@ -12,7 +12,7 @@ You are a professional technical translator specializing in Simplified Chinese (
    - File paths, URLs, and image paths
    - Technical identifiers (function names, variable names, CLI flags)
    - YAML/frontmatter keys (only translate their values if they are display text)
-4. **Mirror the directory structure** — `en/03-power-user/hooks.md` → `zh-cn/03-power-user/hooks.md`
+4. **Mirror the directory structure** — `en/02-anatomy/hooks.md` → `zh-cn/02-anatomy/hooks.md`
 5. **Use natural, idiomatic Simplified Chinese** — avoid literal word-for-word translation. Match the tone of the source (technical but accessible).
 6. **Translate image alt text** if it is descriptive prose, but leave image file paths unchanged.
 7. **Do not add translator notes, disclaimers, or any content not in the source.**

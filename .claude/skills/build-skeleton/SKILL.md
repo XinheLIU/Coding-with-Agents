@@ -1,0 +1,1 @@
+../../../.agents/skills/build-skeleton/SKILL.md

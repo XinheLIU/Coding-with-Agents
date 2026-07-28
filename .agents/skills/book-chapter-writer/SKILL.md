@@ -3,6 +3,8 @@ name: book-chapter-writer
 description: "Transform raw course notes into well-organized, professional markdown documents. Use when the user needs to clean up and restructure markdown course notes in a folder, with tasks including: (1) Analyzing and reorganizing somewhat-organized notes, (2) Removing repetitive concepts and redundant examples, (3) Inserting images at appropriate locations based on descriptive filenames, (4) Creating consolidated files (under 1000 lines) or split MECE structure (over 1000 lines with README.md linking to sub-notes), (5) Applying standard markdown formatting with proper headers, bold, bullets, tables, code blocks."
 ---
 
+Last updated: 2026-07-28
+
 # Course Note Writer
 
 Transform raw course notes into well-organized, professional markdown documentation with proper structure, minimal redundancy, and appropriately placed images.
@@ -35,8 +37,10 @@ Read all markdown files and analyze:
 
 1. **Topic identification**: What are the main concepts/modules covered?
 2. **Redundancy detection**: Which concepts are repeated multiple times?
-3. **Structure quality**: Are headers hierarchical and logical?
-4. **Image-content mapping**: Which images relate to which concepts based on filenames?
+3. **Narrative structure**: What is the main argument, and how does each section advance it?
+4. **Heading outline**: If the body is hidden, do the headings alone still communicate the article's main logic?
+5. **Summary target**: What is the article about, what main problem does it solve, and what is its core logic?
+6. **Image-content mapping**: Which images relate to which concepts based on filenames?
 
 ### Step 3: Organization Decision
 
@@ -60,19 +64,37 @@ For each output file:
    - Remove duplicate examples that don't add new insight
    - Merge overlapping bullet points
 
-2. **Organize hierarchically**:
+2. **Design a continuous heading narrative**:
+   - Draft the heading outline before polishing the body
+   - Read the headings alone from top to bottom; they must communicate the chapter's main argument
+   - Make each child heading continue, explain, or logically decompose its parent heading
+   - Make adjacent headings form a coherent narrative or logical progression, not a collection of independent labels
+   - Prefer headings that express a claim or reader task; this applies equally to English and Chinese
+   - Create a heading only for a distinct concept, question, argument, or reader-navigable task
+   - Do not create headings merely to label local formatting such as "Procedure," "Pitfalls," "Examples," or "Tools"; use a bold run-in label when local structure is still useful
+   - Do not optimize for fewer or more headings; use only the headings required by the argument
+
+3. **Organize hierarchically**:
    - Use `#` for main title (one per file)
    - Use `##` for major sections
    - Use `###` for subsections
    - Use `####` sparingly for fine-grained details
 
-3. **Apply formatting**:
+4. **Apply formatting**:
    - **Bold** for key terms, concepts, and emphasis
    - Bullet points for lists of items, features, or characteristics
    - Numbered lists for sequential steps or ordered items
    - Tables for structured comparisons or data
    - Code blocks with language tags for code examples
    - Blockquotes for important callouts or citations
+
+5. **Write a standalone summary**:
+   - Treat the summary as a compressed model of the article, not a closing remark or list of section names
+   - Make it answer three questions without requiring the body: What is this article about? What main problem does it solve? What is the core argument or logical chain?
+   - State how the major ideas depend on or lead to one another; naming the ideas without their relationship is not enough
+   - Include the resulting principle, decision, or workflow so the reader understands the article's practical conclusion
+   - Do not introduce claims, evidence, or recommendations that the body does not support
+   - Use the shortest form that remains semantically complete; this applies equally to English and Chinese
 
 ### Step 5: Image Integration
 
@@ -98,6 +120,11 @@ Insert images at appropriate locations:
 
 Before finalizing, verify:
 
+- [ ] The heading-only outline communicates the chapter's main logic
+- [ ] Every child heading logically develops its parent, and adjacent headings form a continuous narrative
+- [ ] No heading exists only to label local formatting or a short content block
+- [ ] The summary alone explains the subject, main problem, core logic, and practical conclusion
+- [ ] The summary synthesizes relationships between ideas instead of listing section names
 - [ ] Clear hierarchical structure (proper header levels)
 - [ ] No duplicate concepts or redundant explanations
 - [ ] All images inserted in relevant sections
@@ -127,6 +154,14 @@ Before finalizing, verify:
 - Level 2 (`##`): Major sections
 - Level 3 (`###`): Subsections
 - Level 4 (`####`): Fine details (use sparingly)
+- Heading levels express narrative relationships, not visual size
+- Use claim-oriented or reader-task-oriented titles in both English and Chinese
+
+### Summary
+- Must stand on its own for a reader who skips the body
+- Must identify the article's subject, main problem, core logic, and practical conclusion
+- Must explain the relationships among the main ideas, not merely repeat their names
+- Must not introduce unsupported information
 
 ### Emphasis
 - **Bold**: Key terms, important concepts, emphasis

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Book Translator"
+  short_description: "Translate bilingual chapters with glossary-aware voice"
+  default_prompt: "Use $book-translator to translate a chapter between book/en and book/zh-cn while preserving its structure, terminology, and voice."

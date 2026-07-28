@@ -3,8 +3,9 @@
 .env.*
 
 # Agent context files (local only)
-AGENTS.md
-.Claude/
+# Root-only: the book's own AGENTS.md style guides (book/*/AGENTS.md) stay tracked.
+/AGENTS.md
+.claude/settings.local.json
 
 # Development planning (local only)
 DEVELOPMENT-PLAN.md
