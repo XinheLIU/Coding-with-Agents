@@ -1,8 +1,8 @@
-# Working with Legacy Codebases
+# Working with Brownfield Codebases
 
-Last updated: 2026-07-28
+Last updated: 2026-08-05
 
-> *On a greenfield project the bottleneck is what the agent can do. On a legacy project the bottleneck is what you can transfer.*
+> *On a greenfield project the bottleneck is what the agent can do. On a brownfield project the bottleneck is what you can transfer.*
 
 Most advice about coding agents assumes a codebase you wrote, or one small enough to hold in your head. Real work is the opposite: a system that predates you, whose design decisions were made for reasons nobody wrote down.
 
@@ -10,7 +10,7 @@ Tools are not the point of this chapter. **Using tools to build context** is the
 
 | Section | Theory | Attached tooling |
 | --- | --- | --- |
-| Why legacy code is harder | The agent as an intern without context; three kinds of debt | — (mental model only) |
+| Why brownfield code is harder | The agent as an intern without context; three kinds of debt | — (mental model only) |
 | The handover path | The nine-step human path; three tiers of division of labor | Responsibility table |
 | Three layers of control | Comprehension → constraint → verification | The chapter skeleton |
 | Comprehension layer | Eight steps to build context | Agent-assisted reading, diagram generation, interface and data-model assets, traditional IDEs, repository graphs, history tracing, MCP extensions |
@@ -19,17 +19,25 @@ Tools are not the point of this chapter. **Using tools to build context** is the
 
 ---
 
-## Why Legacy Code Is Harder
+## Why Brownfield Code Is Harder
+
+### Greenfield, Brownfield, Legacy
+
+Three terms, often used interchangeably, that mean different things:
+
+**Greenfield** work starts on empty ground. **Brownfield** work starts on an occupied site — an existing system with existing constraints, callers, and data. **Legacy** is the subset of brownfield where the occupants left no map: no tests, no recorded rationale, and often nobody still around who knows why.
+
+This chapter is about brownfield work generally. Most of it — building context, writing constraints, verifying output — applies to any system you inherited, including a well-tested one written last year. Where the distinction matters is the verification layer: with no tests to inherit, you have to manufacture the baseline yourself, which is why Layer 3 is the heaviest part of legacy work specifically.
 
 ### Faster Coding Makes Understanding More Important
 
-In a legacy codebase, an agent is not "a stronger developer." It is **an intern without context**. That intern may well out-code you — faster typing, sharper on algorithms, more open-source patterns memorized — with one fatal gap: it knows nothing about *this* system.
+In a brownfield codebase, an agent is not "a stronger developer." It is **an intern without context**. That intern may well out-code you — faster typing, sharper on algorithms, more open-source patterns memorized — with one fatal gap: it knows nothing about *this* system.
 
 What works for an intern works here. Walk them through the project first. Tell them what must not be touched. Give small, explicit tasks. Review before continuing.
 
 Which reframes the whole problem. The limit is not the agent's capability. The limit is **how much of your understanding you can transfer**.
 
-Three named failure patterns describe why agent-assisted work on old systems degrades in ways that greenfield work does not.
+Three named failure patterns describe why agent-assisted work on existing systems degrades in ways that greenfield work does not.
 
 > [Comprehension Debt — Addy Osmani](https://addyosmani.com/blog/comprehension-debt/)
 >
@@ -39,9 +47,9 @@ Three named failure patterns describe why agent-assisted work on old systems deg
 | --- | --- |
 | **Comprehension debt** | The gap between how fast AI writes code and how fast the team actually understands it. The more the agent writes, the wider the gap. |
 | **Verification debt** | Roughly 42% of code is AI-assisted, 96% of developers do not fully trust agent output, and only 48% review every time. The result: tests pass, the diff looks fine, production breaks. |
-| **Brownfield tax** | Three ways agents specifically fail on old systems — output quality degrades as the context window fills; decisions from yesterday's session are gone today; and because the agent cannot see *why* the old code is shaped that way, its "modern" suggestions are incompatible with the existing architecture. |
+| **Brownfield tax** | Three ways agents specifically fail on existing systems — output quality degrades as the context window fills; decisions from yesterday's session are gone today; and because the agent cannot see *why* the old code is shaped that way, its "modern" suggestions are incompatible with the existing architecture. |
 
-All three point at the same thing: **the hard part of legacy work is not writing code, it is establishing and holding context.**
+All three point at the same thing: **the hard part of brownfield work is not writing code, it is establishing and holding context.**
 
 ---
 
@@ -73,7 +81,7 @@ The boundary is not set by how much work the agent can finish. It is set by **wh
 | **Split evenly** | ~50% | Talk to people (1), get it running (4), dig in (6), draw the paths (7), make the change (8) | The agent does half; the other half needs human judgment or human relationships |
 | **Human-led** | ~20% or less | Decide what must not be touched, identify who depends on it, final acceptance (9), release-risk calls | The answer is in someone's head or in engineering judgment, not in the repo |
 
-This mirrors the general split in [Human-Agent Collaboration Modes](../02-anatomy/human-agent-collaboration-modes.md); what changes in legacy work is how large the third tier gets.
+This mirrors the general split in [Human-Agent Collaboration Modes](../02-anatomy/human-agent-collaboration-modes.md); what changes in brownfield work is how large the third tier gets.
 
 The dangerous failure is not that the agent finishes 80%. It is that **a human treats 80% as 100%** and skips verifying the rest.
 
@@ -85,7 +93,7 @@ Nothing was wrong with the 80%. What was wrong was forgetting the other 20% exis
 
 ## Giving the Agent Context
 
-Putting an agent into a legacy system creates three specific problems:
+Putting an agent into a brownfield system creates three specific problems:
 
 1. **The agent only sees the files you give it.** Undocumented old endpoints and tacit conventions are invisible to it.
 2. **The agent takes liberties.** You ask for a small change; it refactors adjacent old code on the way, because nobody told it what is off-limits.
@@ -99,7 +107,7 @@ Three problems, three layers of control — and the order of the rest of this ch
 | **Constraint** | Taking liberties | Make the agent **obey** | `AGENTS.md`, skills, per-task instructions, lightweight specs (OpenSpec, Spec-Kit) |
 | **Verification** | Untrustworthy output | Make the agent **checkable** | Characterization tests, seams, SonarQube/CodeQL, CI gates, cross-model review |
 
-Claude Code, Cursor, Copilot, Cline, Aider, Windsurf, and the rest are entry points into these three layers, not a fourth layer beside them. IDE-shaped tools suit working next to the code; CLI-shaped tools suit large-repo and terminal workflows, and are the better fit for most legacy work. **Pick one primary agent and move on** — the choice matters far less than the three layers you build around it, and comparing the field is [Chapter 1](../01-prompt/how-agents-change-dev.md)'s job, not this chapter's.
+Claude Code, Cursor, Copilot, Cline, Aider, Windsurf, and the rest are entry points into these three layers, not a fourth layer beside them. IDE-shaped tools suit working next to the code; CLI-shaped tools suit large-repo and terminal workflows, and are the better fit for most brownfield work. **Pick one primary agent and move on** — the choice matters far less than the three layers you build around it, and comparing the field is [Chapter 1](../01-prompt/how-agents-change-dev.md)'s job, not this chapter's.
 
 ![The tool landscape: one primary agent on top, auxiliary tooling grouped by the layer it serves — context management, capability extension, spec-driven, engineering support, and everything new](../assets/Legacy-Tool-Landscape.svg)
 
@@ -117,7 +125,7 @@ Claude Code, Cursor, Copilot, Cline, Aider, Windsurf, and the rest are entry poi
 
 ## Layer 1: Comprehension — Make the Agent See
 
-The context of a legacy system is more than its code: what the project is for, its core business scenarios, how the architecture is organized, the key modules, the external and internal interfaces, table relationships, field semantics — plus the conventions that live outside the code entirely ("don't touch this"). Some of that is in the repository, some in the README or wiki, and **some only in people's heads**.
+The context of a brownfield system is more than its code: what the project is for, its core business scenarios, how the architecture is organized, the key modules, the external and internal interfaces, table relationships, field semantics — plus the conventions that live outside the code entirely ("don't touch this"). Some of that is in the repository, some in the README or wiki, and **some only in people's heads**.
 
 Comprehension tooling widens what the agent can see. Code search and LSP cover the repository; Sourcegraph covers cross-repository symbols and references; GitHub/GitLab and database MCP servers pull history, data, and external systems into context. None of it substitutes for a human supplying the tacit rules.
 
@@ -190,7 +198,7 @@ The value of three passes: the first indexes the documentation, the second fills
 
 ### Using Diagrams Effectively
 
-A diagram is a checkable view of facts in the code. When taking over a legacy system, draw these four first: **one diagram should answer one question, and every node and relationship must trace back to code, configuration, database, or runtime evidence.**
+A diagram is a checkable view of facts in the code. When taking over a brownfield system, draw these four first: **one diagram should answer one question, and every node and relationship must trace back to code, configuration, database, or runtime evidence.**
 
 | Diagram | Question it answers | Watch for | Prompt |
 | --- | --- | --- | --- |
@@ -331,7 +339,7 @@ The `--importers` query is the cheapest blast-radius check available before a ri
 
 **Graphify** goes wider instead of deeper: a persistent, queryable graph spanning code **and** the surrounding corpus — design docs, PDFs, diagrams. Code is parsed locally with tree-sitter so source never leaves the machine; the non-code material is extracted semantically with an LLM. The properties that earn the setup cost:
 
-| Property | Why it matters on a legacy project |
+| Property | Why it matters on a brownfield project |
 | --- | --- |
 | **Confidence labels** | Every node and edge is marked `EXTRACTED`, `INFERRED`, or `AMBIGUOUS` — you can tell the agent's facts from its guesses, which is exactly the discipline the review step demands |
 | **Multi-modal corpus** | The design doc explaining *why* a module is shaped that way is usually not in the code. This is the only tool here that reads both |
@@ -354,7 +362,7 @@ The caveat applies to all three. A graph is derived context, not runtime truth. 
 - **`git blame` / `git rebase -i`** — finer-grained tracing of changes and ownership.
 - **Gitql** — SQL-style queries over Git history, for custom analysis.
 
-The real value of history tooling on a legacy project: **the strange commits in `git log` are the raw material for the "historical baggage" section** described below.
+The real value of history tooling on a brownfield project: **the strange commits in `git log` are the raw material for the "historical baggage" section** described below.
 
 #### Do Not Look for an All-in-One Repository Graph
 
@@ -422,13 +430,13 @@ CodeGraph or Graphify over MCP, plus a diagram generator, is the closest thing a
 
 ### Using MCP
 
-Repository graphs cover the code. The rest of a legacy system's context lives in systems the agent cannot see by default, and **MCP** is the standard for connecting them. It is worth understanding as infrastructure rather than as a feature — see [Tools, MCP, CLI and More](../02-anatomy/MCP.md) for the mechanics.
+Repository graphs cover the code. The rest of a brownfield system's context lives in systems the agent cannot see by default, and **MCP** is the standard for connecting them. It is worth understanding as infrastructure rather than as a feature — see [Tools, MCP, CLI and More](../02-anatomy/MCP.md) for the mechanics.
 
 | Extension | Brings into context | Why it matters here |
 | --- | --- | --- |
 | **GitHub / GitLab MCP** | PRs, issues, review history, branch state | The *why* behind strange code is usually in a PR discussion or a ticket, not a comment |
 | **Database MCP** | Live schema, controlled queries | Settles the DDL-versus-ORM disagreements the data-model step keeps surfacing |
-| **Sourcegraph** | Cross-repository symbols, references, definitions | Necessary the moment the legacy system is more than one repo |
+| **Sourcegraph** | Cross-repository symbols, references, definitions | Necessary the moment the brownfield system is more than one repo |
 | **Zoekt** | Fast trigram code search | Sourcegraph's search engine, usable standalone when you want speed without the platform. No symbol-level analysis |
 
 Grant these deliberately. A database connection with write access, handed to an agent working on unfamiliar code, is a much larger blast radius than a wrong refactor.
@@ -437,7 +445,7 @@ Grant these deliberately. A database connection with write access, handed to an 
 
 ## Layer 2: Constraint — Make the Agent Obey
 
-The comprehension layer makes the agent see the project, but **seeing is not obeying**. The agent writes code according to the best practices it knows; a legacy system is full of things that exist for historical reasons. The constraint layer writes down what not to change, how to change it, and what the result should look like — so the agent works inside the lines you drew.
+The comprehension layer makes the agent see the project, but **seeing is not obeying**. The agent writes code according to the best practices it knows; a brownfield system is full of things that exist for historical reasons. The constraint layer writes down what not to change, how to change it, and what the result should look like — so the agent works inside the lines you drew.
 
 Constraints come in two kinds:
 
@@ -450,7 +458,7 @@ Anthropic calls this discipline of building constraints for an agent **harness e
 
 ### Static Constraints
 
-Every agent reads a different file, which matters more on a legacy project than a new one: the rules you spent a month excavating should not be locked to whichever tool you happened to start with.
+Every agent reads a different file, which matters more on a brownfield project than a new one: the rules you spent a month excavating should not be locked to whichever tool you happened to start with.
 
 | File | Read by | Scope |
 | --- | --- | --- |
@@ -465,30 +473,30 @@ One gap none of these files closes is **cross-session memory** — the second fa
 
 #### When to Use SDD
 
-Spec-driven development belongs to this layer too. But a legacy project rarely has a complete spec, and **writing one for the whole system just to satisfy a tool is not worth it** — write a lightweight spec for the change at hand instead.
+Spec-driven development belongs to this layer too. But a brownfield project rarely has a complete spec, and **writing one for the whole system just to satisfy a tool is not worth it** — write a lightweight spec for the change at hand instead.
 
 | Tool | Weight | Fits |
 | --- | --- | --- |
-| **OpenSpec** | Lightest | Local brownfield changes; extends an existing OpenAPI setup rather than replacing it. The default for legacy work |
+| **OpenSpec** | Lightest | Local brownfield changes; extends an existing OpenAPI setup rather than replacing it. The default for brownfield work |
 | **Spec-Kit** | Medium | Open-source and unopinionated about vendor, but you assemble the pipeline yourself. Heavier process, better suited to zero-to-one |
-| **Tessl** | Medium | Contract-first: interface spec generates both sides. Good where the legacy pain is API-boundary churn |
+| **Tessl** | Medium | Contract-first: interface spec generates both sides. Good where the brownfield pain is API-boundary churn |
 | **Kiro (AWS)** | Heaviest | End-to-end spec → code → test, tightly bound to AWS. A standardization decision, not a per-change tool |
 
 The order in that table is roughly the order to try them on an existing system. Spec coding in depth is a separate chapter in this level.
 
 > The `AGENTS.md` and skills material in this section draws on 《Claude Code 企业级老项目改造实战》, lectures 10–11: [老项目的 CLAUDE.md 怎么写？从五份资产到一份项目常识](https://time.geekbang.org/column/article/976338)
 
-### `AGENTS.md` for a Legacy Project: Index Plus Common Sense
+### `AGENTS.md` for a Brownfield Project: Index Plus Common Sense
 
-Writing an agent memory file for a new project is easy: you wrote the code and you set the rules. A legacy project is different. You inherited it, and you have not yet worked out the reasons behind many of its design decisions. Written from scattered impressions, the file comes out vacuous, wrong, or incomplete.
+Writing an agent memory file for a new project is easy: you wrote the code and you set the rules. A brownfield project is different. You inherited it, and you have not yet worked out the reasons behind many of its design decisions. Written from scattered impressions, the file comes out vacuous, wrong, or incomplete.
 
-**The right move on a legacy project is not to write it from scratch but to distill it from assets you already have.** The five assets from the comprehension layer — architecture diagram, module graph, dependency graph, interface inventory, data model — are not just notes. They are the **precondition** for this file.
+**The right move on a brownfield project is not to write it from scratch but to distill it from assets you already have.** The five assets from the comprehension layer — architecture diagram, module graph, dependency graph, interface inventory, data model — are not just notes. They are the **precondition** for this file.
 
-The most common mistake is writing too much: prose versions of the architecture diagram, the whole interface inventory, every table and every column. Thousands of lines, loaded on every startup, pushing the agent into the dumb zone. **On a legacy project, the file's job is "index plus common sense"** — the index points at the detail in `docs/`, the common sense is what the agent must know the moment it starts. Past 300 lines you have written too much.
+The most common mistake is writing too much: prose versions of the architecture diagram, the whole interface inventory, every table and every column. Thousands of lines, loaded on every startup, pushing the agent into the dumb zone. **On a brownfield project, the file's job is "index plus common sense"** — the index points at the detail in `docs/`, the common sense is what the agent must know the moment it starts. Past 300 lines you have written too much.
 
-![AGENTS.md on a legacy project: a prose dump versus an index plus common sense](../assets/Legacy-AGENTS-md-Index-vs-Dump.svg)
+![AGENTS.md on a brownfield project: a prose dump versus an index plus common sense](../assets/Legacy-AGENTS-md-Index-vs-Dump.svg)
 
-For the general principles of writing this file — progressive disclosure, specificity, hierarchical files — see [The Agent Memory File](../01-prompt/agents-md.md). What follows is legacy-specific.
+For the general principles of writing this file — progressive disclosure, specificity, hierarchical files — see [The Agent Memory File](../01-prompt/agents-md.md). What follows is brownfield-specific.
 
 | Include (6 kinds) | How to write it |
 | --- | --- |
@@ -497,7 +505,7 @@ For the general principles of writing this file — progressive disclosure, spec
 | **Key modules** | A small table, one sentence of responsibility per module; detailed dependencies live in `module-deps.svg` |
 | **Key conventions** | Hard rules, no rationale. "All REST responses are wrapped in `Result`." "Database columns are snake_case, Java fields camelCase" |
 | **How to run it** | One sentence plus a link to the runbook in `docs/` |
-| **Forbidden zones** and **historical baggage** | The soul of a legacy project — see below |
+| **Forbidden zones** and **historical baggage** | The soul of a brownfield project — see below |
 
 **Leave out (5 kinds):** full architecture detail (that is what `architecture.svg` is for), the full interface inventory (`api-list.md` is already in `docs/`), the full data model (likewise), generic coding standards (not specific to your project — they only dilute), and background story (the agent does not need the project's origin myth to work).
 
@@ -515,7 +523,7 @@ Three pitfalls in the generated draft:
 
 ### Recover Business Context
 
-An agent-generated memory file never contains the genuinely valuable forbidden zones and historical baggage, because **that information is not in the code, not in `docs/`, and only in your head.** These two sections are what distinguishes a legacy project's memory file from a new project's.
+An agent-generated memory file never contains the genuinely valuable forbidden zones and historical baggage, because **that information is not in the code, not in `docs/`, and only in your head.** These two sections are what distinguishes a brownfield project's memory file from a new project's.
 
 **Forbidden zones** — which code cannot move, which columns have external dependents, which config changes cause incidents:
 
@@ -531,17 +539,17 @@ An agent-generated memory file never contains the genuinely valuable forbidden z
 
 **Why these two sections are worth a hundred times their length:** every line is something the agent could never infer — you learn it by talking to the original authors or by getting burned. With forbidden zones written down, the agent routes around them. With historical baggage explained, it does not convert the Vue component to React out of tidiness.
 
-How good a legacy project's memory file is comes down to how deep these two sections go. **If you cannot list a few of each right now, that is a signal: your understanding is not deep enough yet.** Go dig, talk to the people who were there, and read the strange commits in `git log`.
+How good a brownfield project's memory file is comes down to how deep these two sections go. **If you cannot list a few of each right now, that is a signal: your understanding is not deep enough yet.** Go dig, talk to the people who were there, and read the strange commits in `git log`.
 
 **Three review checks:**
 
-1. **Are forbidden zones and historical baggage present?** If not, something is missing — every legacy project has them. List one or two now and add more as you hit them.
+1. **Are forbidden zones and historical baggage present?** If not, something is missing — every brownfield project has them. List one or two now and add more as you hit them.
 2. **Is it too long?** Past 300 lines you have packed in detail. Find the paragraphs that can move down into `docs/` and leave one sentence plus a link.
 3. **Does it duplicate `docs/`?** If `architecture.svg` has been rewritten as prose, you are copying, not indexing.
 
 ### Skills: Capture Repeated Processes
 
-**Legacy projects and skills are a natural match.** On a new project, everything is being done for the first time; writing a skill barely changes the outcome. A legacy project's defining property is "many things done repeatedly, every time from memory" — skipping or misordering a step is normal. A skill turns a repeated but uncaptured process into an asset the agent can execute, which **pulls the whole team's floor up to its ceiling.**
+**Brownfield projects and skills are a natural match.** On a new project, everything is being done for the first time; writing a skill barely changes the outcome. A brownfield project's defining property is "many things done repeatedly, every time from memory" — skipping or misordering a step is normal. A skill turns a repeated but uncaptured process into an asset the agent can execute, which **pulls the whole team's floor up to its ceiling.**
 
 For skill mechanics — frontmatter, `description` writing, tool restriction — see [Agent Skills](../02-anatomy/skills.md). What matters here is which processes are worth capturing.
 
@@ -555,14 +563,14 @@ For skill mechanics — frontmatter, `description` writing, tool restriction —
 | **Parameterizable** | Only a few variables change; the skeleton is identical. "Add an endpoint" — different names and payloads, same process |
 | **Automatable** | A clear trigger and a clear artifact, not "I kept editing until it felt done" |
 
-**Four process families worth mining on a legacy project:**
+**Four process families worth mining on a brownfield project:**
 
-1. **Keeping technical docs current.** The interface inventory, data model, and architecture diagrams in `docs/` drift with every code change; without active syncing the documentation rots. **The single most common legacy pain point.**
+1. **Keeping technical docs current.** The interface inventory, data model, and architecture diagrams in `docs/` drift with every code change; without active syncing the documentation rots. **The single most common brownfield pain point.**
 2. **Pre-change health check.** Before editing: are the tests green, does it compile, is the middleware reachable?
 3. **Pre-PR checklist.** Tests run, formatted, changelog updated, related docs changed, reviewer identified.
 4. **Pre-endpoint alignment.** Before adding an endpoint, check existing path style, the standard response envelope, and error-code rules — so endpoints do not diverge per author.
 
-**How many skills a legacy project needs:** 5–10 is plenty, 5 or fewer is the recommendation depending on system complexity, and fewer than 3 is possible. Too many and one sentence matches several skills, leaving the agent unsure which to trigger. Skill count is not a measure of capability — **precision and use frequency are.** Suggested pace: mine the three highest-frequency processes, use them for a month, expand only if they proved useful.
+**How many skills a brownfield project needs:** 5–10 is plenty, 5 or fewer is the recommendation depending on system complexity, and fewer than 3 is possible. Too many and one sentence matches several skills, leaving the agent unsure which to trigger. Skill count is not a measure of capability — **precision and use frequency are.** Suggested pace: mine the three highest-frequency processes, use them for a month, expand only if they proved useful.
 
 **Have the agent mine them, in three steps:**
 
@@ -585,6 +593,8 @@ For skill mechanics — frontmatter, `description` writing, tool restriction —
 The agent can see and it obeys, and the output still is not directly usable. **Agents are strong at generating code and much weaker at judging whether code is correct.** The function may match the requirement perfectly and ignore a boundary condition; the main path may be right while concurrency is not; the tests may all pass, and **the agent wrote the tests.**
 
 The verification layer builds a **baseline outside the agent's output** and checks the agent against it.
+
+**This is where legacy diverges from brownfield generally.** A well-tested system you inherited already has most of this layer: the baseline exists, and your job is to keep the agent inside it. On a legacy system there is nothing to inherit — no tests, no documented expected behavior — so the baseline has to be manufactured from what the code currently does before any change is safe. That is what the rest of this section is about.
 
 | Practice | When | Key point |
 | --- | --- | --- |
@@ -613,13 +623,13 @@ Repository graphs describe structure and relationships. The tools below turn rul
 | Open source | **sourcefare** | Covers vulnerabilities, defects, duplication, and complexity without requiring a database |
 | Regional | **COBOT** | Developed by Peking University and PKU Software, CWE-conformance certified; covers quality defects, vulnerabilities, and architectural issues |
 
-On a legacy project, run the tools once and preserve the current state, then configure the gate to reject new findings. Requiring every historical warning to disappear at once buries real regressions under inherited debt. **SonarQube plus CodeQL** gives broad coverage: Sonar for standards and rot, CodeQL for semantic security.
+On a brownfield project, run the tools once and preserve the current state, then configure the gate to reject new findings. Requiring every historical warning to disappear at once buries real regressions under inherited debt. **SonarQube plus CodeQL** gives broad coverage: Sonar for standards and rot, CodeQL for semantic security.
 
 ### Agent-Assisted Testing
 
 Test frameworks, static analysis, CI, and cross-model review are not peripheral tooling — they *are* the external baseline. Agents write code far faster than humans review it, and human reading alone cannot keep up with the output rate.
 
-| Tool | Role in the baseline | Note for legacy work |
+| Tool | Role in the baseline | Note for brownfield work |
 | --- | --- | --- |
 | **The language's standard test framework** (pytest, Jest, JUnit, …) | Where characterization tests actually live | Use whatever the project already uses. A second framework is a tax, not an improvement |
 | **Playwright** | End-to-end verification through the real UI | The only way to pin behavior in an old system whose logic sits in the frontend. Cypress is the main alternative |
@@ -766,7 +776,7 @@ In one line:
 
 ## Summary
 
-This chapter is about **how to let coding agents work safely in legacy codebases**. The core problem is not that agents cannot write code, but that they lack context about the specific system: they cannot see historical decisions or tacit business contracts, they may change things outside the intended scope, and they cannot independently prove that their output is reliable. The real bottleneck in legacy work is therefore whether human understanding can be turned into engineering assets that an agent can read and obey and that the team can verify its work against.
+This chapter is about **how to let coding agents work safely in brownfield codebases**. The core problem is not that agents cannot write code, but that they lack context about the specific system: they cannot see historical decisions or tacit business contracts, they may change things outside the intended scope, and they cannot independently prove that their output is reliable. The real bottleneck in brownfield work is therefore whether human understanding can be turned into engineering assets that an agent can read and obey and that the team can verify its work against.
 
 The argument follows one continuous control chain:
 

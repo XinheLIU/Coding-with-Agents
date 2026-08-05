@@ -1,6 +1,6 @@
 # Level 3: Become a Power User
 
-Last updated: 2026-07-27
+Last updated: 2026-08-05
 
 > *The difference between using a coding agent and mastering one is like the difference between driving a car and running a fleet.*
 
@@ -16,7 +16,7 @@ below and not yet in the navigation. Progress is tracked in
 
 3. **Spec coding** — specification-first development in depth: writing specs that agents can execute against, the six-dimension requirements system, and the delivery loop from spec to verified change.
 
-4. **[Working with Legacy Codebases](legacy-codebases.md)** — power-user strategies for pointing agents at large existing systems: the three kinds of debt legacy work accrues, the three layers of control (comprehension, constraint, verification), and the characterization test → seam → incremental refactor workflow that keeps agent-driven changes reversible.
+4. **[Working with Brownfield Codebases](legacy-codebases.md)** — power-user strategies for pointing agents at large existing systems: the three kinds of debt brownfield work accrues, the three layers of control (comprehension, constraint, verification), and the characterization test → seam → incremental refactor workflow that keeps agent-driven changes reversible.
 
 ---
 

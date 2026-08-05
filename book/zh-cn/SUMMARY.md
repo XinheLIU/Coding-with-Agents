@@ -1,6 +1,6 @@
 # Summary
 
-Last updated: 2026-07-28
+Last updated: 2026-08-05
 
 * [首页](README.md)
 
@@ -28,7 +28,7 @@ Last updated: 2026-07-28
 ## Part II: Advanced Usage
 
 * [3. 成为高级玩家](03-power-user/README.md)
-    * [接手老代码库](03-power-user/legacy-codebases.md)
+    * [接手存量代码库](03-power-user/legacy-codebases.md)
 
 * [4. 团队级 AI 开发（草稿）](04-team/README.md)
     * [为什么团队级开发更需要工程化](04-team/why-team-level-development-is-harder.md)

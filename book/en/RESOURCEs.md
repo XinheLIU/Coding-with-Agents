@@ -1,6 +1,6 @@
 # Resources
 
-Last updated: 2026-07-27
+Last updated: 2026-08-05
 
 - [CS146S: the Modern Software Developer](https://themodernsoftware.dev/)
 - [DataWhale: Easy Vibe Project](https://github.com/datawhalechina/easy-vibe)
@@ -47,7 +47,7 @@ Last updated: 2026-07-27
 
 ## 03 Power User
 
-### Working with Legacy Codebases
+### Working with Brownfield Codebases
 
 [Comprehension Debt — Addy Osmani](https://addyosmani.com/blog/comprehension-debt/)
 [Sonar State of Code Developer Survey](https://www.sonarsource.com/state-of-code/)

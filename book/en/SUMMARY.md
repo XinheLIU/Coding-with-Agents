@@ -1,6 +1,6 @@
 # Summary
 
-Last updated: 2026-07-27
+Last updated: 2026-08-05
 
 * [Home](README.md)
 
@@ -28,7 +28,7 @@ Last updated: 2026-07-27
 ## Part II: Advanced Usage
 
 * [3. Become a Power User](03-power-user/README.md)
-    * [Working with Legacy Codebases](03-power-user/legacy-codebases.md)
+    * [Working with Brownfield Codebases](03-power-user/legacy-codebases.md)
 
 * [4. Team Development with Coding Agents (Draft)](04-team/README.md)
     * [Specs as Source of Truth](04-team/specs-as-source-of-truth.md)

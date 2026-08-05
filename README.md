@@ -1,6 +1,6 @@
 # Coding with Agents
 
-Last updated: 2026-07-27
+Last updated: 2026-08-05
 
 A **GitBook-style course** on how software engineers work effectively in the age of AI coding agents. The material is organized as a five-level curriculum—from prompting and how agents work, through power-user patterns and team workflows, to architectural thinking about software in an agent-assisted world.
 
@@ -23,7 +23,7 @@ See [`LANGS.md`](book/LANGS.md) for the language index used by GitBook-style set
 | --- | --- |
 | 1 | Prompting coding agents: principles, `AGENTS.md`, workflow and time management |
 | 2 | Anatomy of agents: how they work, autonomy, collaboration modes, Claude Code architecture, context management, sub-agents, skills/hooks/MCP |
-| 3 | Power usage (planned): orchestration layer, engineering frameworks, spec coding, legacy codebases |
+| 3 | Power usage (planned): orchestration layer, engineering frameworks, spec coding, brownfield codebases |
 | 4 | Teams: specs as source of truth, shared context, review and testing at AI scale |
 | 5 | Architecture: Software 3.0, builder mindset, future of software engineering |
 
