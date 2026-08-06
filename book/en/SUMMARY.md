@@ -41,6 +41,7 @@ Last updated: 2026-08-05
 ## Part III: The Bigger Picture
 
 * [5. Be an AI Architect (Draft)](05-architect/README.md)
+    * [Product Management in the AI Era](05-architect/pm-in-AI-era.md)
 
 ## Appendix
 

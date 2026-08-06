@@ -1,6 +1,6 @@
 # Writing Roadmap
 
-Last updated: 2026-07-27
+Last updated: 2026-08-06
 
 The single source of truth for what is written, what ships, and what to write
 next. Chapter status lives **only** here — `CLAUDE.md` and `book/en/AGENTS.md`
@@ -95,13 +95,15 @@ six English chapters are draft or stub.
 
 ### Level 5 — Be an AI Architect
 
-Entirely unwritten. All three chapters are gated out of nav in both trees; the
-level `README.md` pages still ship as placeholders.
+Four chapters, only `pm-in-AI-era.md` written — now in both trees and both
+navs. The other three are gated out of nav in both trees; the level `README.md`
+pages list the one shipped chapter and outline the rest.
 
 | Chapter | EN | ZH | In nav | Next step |
 |---|---|---|---|---|
 | `software-3-0.md` | stub | translation-pending | ❌ | Write from the Karpathy source cited inline |
 | `builders-mindset.md` | stub | translation-pending | ❌ | Write from `raw/ai-human-collobration.md`'s three-layer framework (the PRD system goes to `03-power-user/spec-coding.md` instead) |
+| `pm-in-AI-era.md` | done | done | ✅ | — |
 | `future-of-se.md` | stub | translation-pending | ❌ | Write the chapter (currently a 3-point objectives list) |
 
 ## Raw intake

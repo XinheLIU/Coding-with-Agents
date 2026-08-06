@@ -1,13 +1,17 @@
 # Level 5: Be an AI Architect
 
-Last updated: 2026-07-27
+Last updated: 2026-08-06
 
 > *The tools will keep changing. The mindset you build now determines whether you lead the change or react to it.*
 
 The first four chapters equipped you with progressively larger scopes: prompting (individual communication), anatomy (understanding the machine), power-user techniques (individual mastery), and team practices (scaling across people). This final chapter completes the arc by stepping back from the keyboard entirely. Here, we ask the bigger questions.
 
-This chapter is **not yet written**. Three pieces are planned, outlined below;
-none are in the navigation yet. Progress is tracked in
+## Reading Order
+
+1. **[Product Management in the AI Era](pm-in-AI-era.md)** — production shifts from an assembly line to overlapping roles (vibe working), and the PM becomes an AI builder. Once anyone can build the thing, survival moves to four stages outside the product: arena, traffic, retention, revenue.
+
+The remaining three pieces are outlined below and are **not yet written**; none
+are in the navigation yet. Progress is tracked in
 [`ROADMAP.md`](../../../ROADMAP.md).
 
 1. **The paradigm** — *Software 3.0* will introduce Karpathy's three-generation model of software: hand-written code (1.0), learned neural networks (2.0), and LLMs as programmable reasoning engines (3.0). Understanding this framing helps you see where today's tools fit in the larger arc of computing — and why prompt engineering and context management are genuinely new forms of programming, not just fads.

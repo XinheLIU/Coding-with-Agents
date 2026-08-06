@@ -1,6 +1,6 @@
 # Resources
 
-Last updated: 2026-08-05
+Last updated: 2026-08-06
 
 - [CS146S: the Modern Software Developer](https://themodernsoftware.dev/)
 - [DataWhale: Easy Vibe Project](https://github.com/datawhalechina/easy-vibe)
@@ -74,6 +74,14 @@ Last updated: 2026-08-05
 ### Maintain Context, Not Code
 
 [Specs Are the New Source Code](https://blog.ravi-mehta.com/p/specs-are-the-new-source-code)
+
+---
+
+## 05 Architect
+
+### The PM in the AI Era
+
+[Product management on the AI exponential — Cat Wu](https://claude.com/blog/product-management-on-the-ai-exponential)
 
 ---
 
