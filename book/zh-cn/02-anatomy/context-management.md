@@ -1,3 +1,15 @@
+---
+id: context-management
+locale: zh-CN
+title: 上下文管理
+status: published
+created: 2026-07-27
+updated: 2026-08-24
+tags:
+  - context
+  - agents
+---
+
 # 上下文管理
 
 Last updated: 2026-07-27

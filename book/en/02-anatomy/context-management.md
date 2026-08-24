@@ -1,3 +1,15 @@
+---
+id: context-management
+locale: en
+title: Context Management
+status: published
+created: 2026-07-27
+updated: 2026-08-24
+tags:
+  - context
+  - agents
+---
+
 # Context Management
 
 Last updated: 2026-07-27

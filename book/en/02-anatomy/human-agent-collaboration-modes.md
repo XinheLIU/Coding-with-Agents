@@ -1,3 +1,15 @@
+---
+id: human-agent-collaboration-modes
+locale: en
+title: Human-Agent Collaboration Modes
+status: published
+created: 2026-07-27
+updated: 2026-08-24
+tags:
+  - collaboration
+  - agents
+---
+
 # Human-Agent Collaboration Modes
 
 Last updated: 2026-07-27

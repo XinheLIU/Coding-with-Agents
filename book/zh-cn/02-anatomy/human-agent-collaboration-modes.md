@@ -1,3 +1,15 @@
+---
+id: human-agent-collaboration-modes
+locale: zh-CN
+title: 人机协作模式：从探索到可验证交付
+status: published
+created: 2026-07-27
+updated: 2026-08-24
+tags:
+  - collaboration
+  - agents
+---
+
 # 人机协作模式：从探索到可验证交付
 
 Last updated: 2026-07-27

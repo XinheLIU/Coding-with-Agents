@@ -1,3 +1,15 @@
+---
+id: how-agents-work
+locale: en
+title: How Coding Agents Work
+status: published
+created: 2026-07-27
+updated: 2026-08-24
+tags:
+  - agents
+  - context
+---
+
 # How Coding Agents Work
 
 Last updated: 2026-07-27

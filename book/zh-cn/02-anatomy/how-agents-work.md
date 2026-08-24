@@ -1,3 +1,15 @@
+---
+id: how-agents-work
+locale: zh-CN
+title: 编程智能体的工作原理
+status: published
+created: 2026-07-27
+updated: 2026-08-24
+tags:
+  - agents
+  - context
+---
+
 # 编程智能体的工作原理
 
 Last updated: 2026-07-27
