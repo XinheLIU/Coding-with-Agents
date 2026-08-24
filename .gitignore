@@ -20,3 +20,7 @@ DEVELOPMENT-PLAN.md
 # Honkit / GitBook
 book/_book/
 node_modules/
+
+# VitePress pilot app
+.vitepress/dist/
+.vitepress/cache/

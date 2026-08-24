@@ -1,0 +1,21 @@
+/* Pilot theme tweaks: echo the Honkit book's clean, readable look. */
+:root {
+  --vp-c-brand-1: #0b6fa4;
+  --vp-c-brand-2: #2a8ec4;
+  --vp-c-brand-3: #0b6fa4;
+}
+
+.vp-doc h1 {
+  font-size: 2em;
+  letter-spacing: -0.01em;
+}
+
+.vp-doc img {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 4px;
+}
+
+.vp-doc blockquote {
+  border-left: 3px solid var(--vp-c-brand-1);
+  background: var(--vp-c-bg-soft);
+}
