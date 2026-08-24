@@ -10,8 +10,8 @@ items:
     part: anatomy
     order: 2.1
     route:
-      en: /en/02-anatomy/how-agents-work/
-      zh-CN: /zh-cn/02-anatomy/how-agents-work/
+      en: /en/02-anatomy/how-agents-work.html
+      zh-CN: /zh-cn/02-anatomy/how-agents-work.html
     layout: chapter
   # Pilot item (book-first, link mode on the personal site).
   - id: human-agent-collaboration-modes
@@ -21,6 +21,6 @@ items:
     part: anatomy
     order: 2.3
     route:
-      en: /en/02-anatomy/human-agent-collaboration-modes/
-      zh-CN: /zh-cn/02-anatomy/human-agent-collaboration-modes/
+      en: /en/02-anatomy/human-agent-collaboration-modes.html
+      zh-CN: /zh-cn/02-anatomy/human-agent-collaboration-modes.html
     layout: chapter
