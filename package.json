@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "CS146S: The Modern Software Developer — GitBook-style course on AI coding agents",
   "scripts": {
-    "serve": "honkit serve ./book",
-    "build": "honkit build ./book",
-    "pilot:dev": "vitepress dev",
-    "pilot:build": "vitepress build",
-    "pilot:preview": "vitepress preview"
+    "serve": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
+    "serve:honkit": "honkit serve ./book",
+    "build:honkit": "honkit build ./book"
   },
   "devDependencies": {
     "honkit": "^4.0.0",

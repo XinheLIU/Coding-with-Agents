@@ -1,12 +1,17 @@
-/* Pilot theme tweaks: echo the Honkit book's clean, readable look. */
+/* Book theme: echoes the Honkit design (DM Sans + Instrument Serif, indigo accents). */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap');
+
 :root {
-  --vp-c-brand-1: #0b6fa4;
-  --vp-c-brand-2: #2a8ec4;
-  --vp-c-brand-3: #0b6fa4;
+  --vp-font-family-base: 'DM Sans', system-ui, sans-serif;
+  --vp-c-brand-1: #4f46e5;
+  --vp-c-brand-2: #6366f1;
+  --vp-c-brand-3: #4338ca;
+  --vp-c-brand-soft: rgba(99, 102, 241, 0.14);
 }
 
 .vp-doc h1 {
-  font-size: 2em;
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-weight: 400;
   letter-spacing: -0.01em;
 }
 

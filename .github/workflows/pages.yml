@@ -1,5 +1,5 @@
-# Build the Honkit book and deploy the `_book/` output to GitHub Pages.
-# After merging this file, set: Settings → Pages → Build and deployment → Source: GitHub Actions.
+# Build the VitePress book and deploy `.vitepress/dist/` to GitHub Pages.
+# One-time repo setting: Settings → Pages → Build and deployment → Source: GitHub Actions.
 
 name: Deploy GitHub Pages
 
@@ -33,7 +33,7 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: book/_book
+          path: .vitepress/dist
 
   deploy:
     needs: build
