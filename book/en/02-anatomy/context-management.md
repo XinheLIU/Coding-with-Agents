@@ -60,6 +60,13 @@ The emerging best practice follows three phases:
 
 **Implementation** — Execute the plan incrementally, compacting and updating context as tasks complete. Keep the context window lean — practitioners recommend staying under 40% utilization for best results.
 
+```mermaid
+flowchart LR
+    Research[Research] --> Plan[Plan] --> Implement[Implement] --> Compact[Compact & Update] --> Research
+```
+
+This workflow is the context strategy in action — see [How Coding Agents Work](content:how-agents-work) for the full agent loop behind it.
+
 The key insight: the prompts, specs, and plans you write *are* the product. The code is just the output. As one practitioner put it, "CLAUDE.md > prompts > research > plans > implementation." Focus your human effort on the highest-leverage part of the pipeline.
 
 ---
