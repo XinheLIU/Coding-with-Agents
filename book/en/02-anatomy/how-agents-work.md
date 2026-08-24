@@ -70,6 +70,15 @@ Never underestimate the tool descriptions. A great tool interface includes not j
 ### 3. Context Strategy — The Rhythm of Memory and Attention
 This is the "deep water" where tech giants compete. Any LLM's context window is finite—currently topping out around 128K to 200K tokens—and everything the agent "knows" during a task must fit inside this pipe. Context strategy determines what enters, what is protected, and what is cold-bloodedly discarded or compressed.
 
+The loop all of these tactics serve — read context, plan, act, observe, repeat:
+
+```mermaid
+flowchart LR
+    ReadContext[Read Context] --> Plan[Plan] --> Act[Act] --> Observe[Observe] --> ReadContext
+```
+
+Loop quality depends almost entirely on the first step; see [Context Management Principles](content:context-management) for the details.
+
 Elite agents use these core tactics:
 
 **RAG (Retrieval-Augmented Generation)** — Code is chunked, vectorized, and stored in a semantic database. When the agent needs to understand a module, the most relevant "fragments" are retrieved and injected into context. Top-tier tools now use Abstract Syntax Trees (AST) to chunk code along its semantic "skeleton" rather than arbitrary line counts.
