@@ -1,0 +1,34 @@
+# Blog-series publication manifest for Coding with Agents.
+# Contract: https://github.com/XinheLIU/XinheLIU.github.io/blob/source/docs/architecture/CONTENT-CONTRACT.md
+id: agentic-engineering
+items:
+  # Book-first: published in the book; the personal site shows an excerpt.
+  - id: how-agents-work
+    source:
+      en: book/en/02-anatomy/how-agents-work.md
+      zh-CN: book/zh-cn/02-anatomy/how-agents-work.md
+    published_at: 2026-08-24
+    mode: excerpt
+    book_url:
+      en: https://xinheliu.github.io/Coding-with-Agents/en/02-anatomy/how-agents-work.html
+      zh-CN: https://xinheliu.github.io/Coding-with-Agents/zh-cn/02-anatomy/how-agents-work.html
+  # Blog-first: series entry first; a book.yml entry comes when mature.
+  - id: context-management
+    source:
+      en: book/en/02-anatomy/context-management.md
+      zh-CN: book/zh-cn/02-anatomy/context-management.md
+    published_at: 2026-08-24
+    mode: full
+    book_url:
+      en: https://xinheliu.github.io/Coding-with-Agents/en/02-anatomy/context-management.html
+      zh-CN: https://xinheliu.github.io/Coding-with-Agents/zh-cn/02-anatomy/context-management.html
+  # Book-first: title and summary only; links to the book.
+  - id: human-agent-collaboration-modes
+    source:
+      en: book/en/02-anatomy/human-agent-collaboration-modes.md
+      zh-CN: book/zh-cn/02-anatomy/human-agent-collaboration-modes.md
+    published_at: 2026-08-24
+    mode: link
+    book_url:
+      en: https://xinheliu.github.io/Coding-with-Agents/en/02-anatomy/human-agent-collaboration-modes.html
+      zh-CN: https://xinheliu.github.io/Coding-with-Agents/zh-cn/02-anatomy/human-agent-collaboration-modes.html

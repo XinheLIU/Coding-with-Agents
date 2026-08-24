@@ -1,0 +1,22 @@
+# Book navigation and publication manifest for Coding with Agents.
+# Contract: https://github.com/XinheLIU/XinheLIU.github.io/blob/source/docs/architecture/CONTENT-CONTRACT.md
+id: coding-with-agents
+items:
+  # Pilot item (book-first): book order/route/layout live here, not in prose.
+  - id: how-agents-work
+    source:
+      en: book/en/02-anatomy/how-agents-work.md
+      zh-CN: book/zh-cn/02-anatomy/how-agents-work.md
+    part: anatomy
+    order: 2.1
+    route: /02-anatomy/how-agents-work/
+    layout: chapter
+  # Pilot item (book-first, link mode on the personal site).
+  - id: human-agent-collaboration-modes
+    source:
+      en: book/en/02-anatomy/human-agent-collaboration-modes.md
+      zh-CN: book/zh-cn/02-anatomy/human-agent-collaboration-modes.md
+    part: anatomy
+    order: 2.3
+    route: /02-anatomy/human-agent-collaboration-modes/
+    layout: chapter
