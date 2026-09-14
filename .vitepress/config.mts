@@ -107,6 +107,13 @@ export default withMermaid(
         })
       },
     },
+    vite: {
+      optimizeDeps: {
+        // pre-bundle mermaid so dev mode doesn't serve its ~2000-file ESM
+        // dependency tree (es-toolkit, dagre-d3-es, d3-*) as raw modules
+        include: ['mermaid'],
+      },
+    },
     themeConfig: {
       siteTitle: 'Coding with Agents',
       search: { provider: 'local' },
