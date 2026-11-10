@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="450" viewBox="0 0 1310 450" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif">
+  <rect width="1310" height="450" fill="#ffffff"/>
+
+  <text x="655" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#2b2b2b">Three kinds of codebase information, and where each belongs</text>
+
+  <!-- Column 1: What -->
+  <rect x="40" y="64" width="390" height="340" rx="16" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="235" y="102" text-anchor="middle" font-size="22" font-weight="700" fill="#2b2b2b">What</text>
+  <text x="235" y="130" text-anchor="middle" font-size="15" fill="#555555">What the system is and does</text>
+  <rect x="60" y="150" width="350" height="96" rx="10" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="235" y="182" text-anchor="middle" font-size="15" font-weight="700" fill="#3c5a85">Home: the code itself</text>
+  <text x="235" y="208" text-anchor="middle" font-size="14" fill="#3c5a85">Code · config · schema · git history</text>
+  <text x="235" y="230" text-anchor="middle" font-size="14" fill="#3c5a85">Compressed views derived by agents (cache)</text>
+  <rect x="60" y="266" width="350" height="56" rx="10" fill="#ffffff" stroke="#cfcfc0" stroke-width="1.5"/>
+  <text x="235" y="300" text-anchor="middle" font-size="15" fill="#2b2b2b">Memory keeps only: where to read it</text>
+  <text x="235" y="370" text-anchor="middle" font-size="14" font-style="italic" fill="#888888">Recitals lag behind and rot</text>
+
+  <!-- Column 2: How -->
+  <rect x="460" y="64" width="390" height="340" rx="16" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="655" y="102" text-anchor="middle" font-size="22" font-weight="700" fill="#2b2b2b">How</text>
+  <text x="655" y="130" text-anchor="middle" font-size="15" fill="#555555">How things are done, what counts as right</text>
+  <rect x="480" y="150" width="350" height="96" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="655" y="182" text-anchor="middle" font-size="15" font-weight="700" fill="#8a5f1a">Home: executable controls</text>
+  <text x="655" y="208" text-anchor="middle" font-size="14" fill="#8a5f1a">Lint · tests · hooks (constraints)</text>
+  <text x="655" y="230" text-anchor="middle" font-size="14" fill="#8a5f1a">Skills · scripts (procedures)</text>
+  <rect x="480" y="266" width="350" height="56" rx="10" fill="#ffffff" stroke="#cfcfc0" stroke-width="1.5"/>
+  <text x="655" y="294" text-anchor="middle" font-size="15" fill="#2b2b2b">Memory keeps only: which capabilities</text>
+  <text x="655" y="314" text-anchor="middle" font-size="15" fill="#2b2b2b">exist, triggered from where</text>
+  <text x="655" y="370" text-anchor="middle" font-size="14" font-style="italic" fill="#888888">What can be machine-decided should not rely on memory</text>
+
+  <!-- Column 3: Why (highlighted) -->
+  <rect x="880" y="64" width="390" height="340" rx="16" fill="#f3f9f6" stroke="#3d8b70" stroke-width="2"/>
+  <text x="1075" y="102" text-anchor="middle" font-size="22" font-weight="700" fill="#1f6a51">Why</text>
+  <text x="1075" y="130" text-anchor="middle" font-size="15" fill="#1f6a51">Why it is this way, why not that way</text>
+  <rect x="900" y="150" width="350" height="96" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="1075" y="182" text-anchor="middle" font-size="15" font-weight="700" fill="#1f6a51">Home: repo memory</text>
+  <text x="1075" y="208" text-anchor="middle" font-size="14" fill="#1f6a51">Intent · trade-offs · external constraints · history</text>
+  <text x="1075" y="230" text-anchor="middle" font-size="14" fill="#1f6a51">Only in human heads; code can't derive it</text>
+  <rect x="900" y="266" width="350" height="56" rx="10" fill="#ffffff" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="1075" y="294" text-anchor="middle" font-size="15" font-weight="700" fill="#1f6a51">Write it down in full,</text>
+  <text x="1075" y="314" text-anchor="middle" font-size="15" font-weight="700" fill="#1f6a51">with its expiry condition</text>
+  <text x="1075" y="370" text-anchor="middle" font-size="14" font-style="italic" fill="#1f6a51">The only information that must be handwritten</text>
+
+  <text x="655" y="436" text-anchor="middle" font-size="14" fill="#555555">Memory = Why + a map pointing at What + a capability list pointing at How</text>
+</svg>

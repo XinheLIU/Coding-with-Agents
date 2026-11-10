@@ -1,6 +1,6 @@
 # Summary
 
-Last updated: 2026-08-05
+Last updated: 2026-11-10
 
 * [首页](README.md)
 
@@ -28,6 +28,10 @@ Last updated: 2026-08-05
 ## Part II: Advanced Usage
 
 * [3. 成为高级玩家](03-power-user/README.md)
+    * [规格编码](03-power-user/spec-coding.md)
+    * [产品、业务与工程底座](03-power-user/product-business-engineering.md)
+    * [智能体前端开发](03-power-user/agentic-frontend.md)
+    * [代码库记忆：只存 Why](03-power-user/repo-memory.md)
     * [接手存量代码库](03-power-user/legacy-codebases.md)
 
 * [4. 团队级 AI 开发（草稿）](04-team/README.md)

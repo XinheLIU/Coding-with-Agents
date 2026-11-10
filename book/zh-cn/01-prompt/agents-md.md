@@ -506,6 +506,8 @@ AGENTS.md 是进入上下文工程最容易的入口。但它不是终点——A
 - *Addy Osmani: "Stop Using /init for AGENTS.md"* — 上下文文件的实用过滤原则
 - *"Memory in the Age of AI Agents: A Survey" (Tsinghua, 2025)* — 智能体记忆学术综述
 
+> 进入大代码库与多人协作后，本章原则的升级版见第三章[代码库记忆：只存 Why](../03-power-user/repo-memory.md)。
+
 ---
 
 **下一章：** 你现在已经知道如何提示智能体，以及如何给它持久化记忆。但这些智能体究竟是如何*工作*的？在[第二章：编程智能体解剖](../02-anatomy/README.md)中，我们将打开黑箱——理解智能体循环、自主性级别和失败模式，将让本章的每一项技术都更加有效。

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="470" viewBox="0 0 1310 470" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#8a8a7e"/>
+    </marker>
+  </defs>
+  <rect width="1310" height="470" fill="#ffffff"/>
+  <text x="655" y="40" text-anchor="middle" font-size="20" fill="#2b2b2b" font-weight="700">前端代码库里，真正「盲飞」的只是一条窄带</text>
+  <text x="60" y="100" text-anchor="start" font-size="15" fill="#555555" font-weight="700">收窄之前</text>
+  <rect x="60" y="115" width="180" height="80" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="150.0" y="160.25" text-anchor="middle" font-size="15" fill="#1f6a51">类型定义</text>
+  <rect x="246" y="115" width="180" height="80" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="336.0" y="160.25" text-anchor="middle" font-size="15" fill="#1f6a51">路由</text>
+  <rect x="432" y="115" width="180" height="80" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="522.0" y="160.25" text-anchor="middle" font-size="15" fill="#1f6a51">数据获取</text>
+  <rect x="618" y="115" width="180" height="80" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="708.0" y="160.25" text-anchor="middle" font-size="15" fill="#1f6a51">表单校验</text>
+  <rect x="804" y="115" width="180" height="80" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="894.0" y="160.25" text-anchor="middle" font-size="15" fill="#1f6a51">状态管理</text>
+  <rect x="990" y="115" width="260" height="80" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="1120.0" y="149.4" text-anchor="middle" font-size="14" fill="#8a5f1a">布局 · 样式 · 风格一致性</text>
+  <text x="1120.0" y="170.4" text-anchor="middle" font-size="14" fill="#8a5f1a">渲染结果与审美</text>
+  <text x="525" y="220" text-anchor="middle" font-size="14" fill="#1f6a51">像后端的部分：类型和测试兜得住，智能体照样可靠</text>
+  <text x="1120" y="220" text-anchor="middle" font-size="14" fill="#8a5f1a">需要眼睛：智能体盲飞</text>
+  <line x1="655" y1="245" x2="655" y2="285" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="675" y="270" text-anchor="start" font-size="14" fill="#8a8a7e" font-style="italic">做法一：把窄带收得更窄</text>
+  <text x="60" y="310" text-anchor="start" font-size="15" fill="#555555" font-weight="700">收窄之后</text>
+  <rect x="60" y="325" width="159" height="80" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="139.5" y="370.25" text-anchor="middle" font-size="15" fill="#1f6a51">类型定义</text>
+  <rect x="225" y="325" width="159" height="80" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="304.5" y="370.25" text-anchor="middle" font-size="15" fill="#1f6a51">路由</text>
+  <rect x="390" y="325" width="159" height="80" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="469.5" y="370.25" text-anchor="middle" font-size="15" fill="#1f6a51">数据获取</text>
+  <rect x="555" y="325" width="159" height="80" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="634.5" y="370.25" text-anchor="middle" font-size="15" fill="#1f6a51">表单校验</text>
+  <rect x="720" y="325" width="159" height="80" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="799.5" y="370.25" text-anchor="middle" font-size="15" fill="#1f6a51">状态管理</text>
+  <rect x="885" y="325" width="210" height="80" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="990.0" y="359.4" text-anchor="middle" font-size="14" fill="#1f6a51">组件白名单 · Token lint</text>
+  <text x="990.0" y="380.4" text-anchor="middle" font-size="14" fill="#1f6a51">reducer 单测</text>
+  <rect x="1101" y="325" width="149" height="80" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="1175.5" y="359.4" text-anchor="middle" font-size="14" fill="#8a5f1a">调性 · 语义</text>
+  <text x="1175.5" y="380.4" text-anchor="middle" font-size="14" fill="#8a5f1a">审美判断</text>
+  <text x="1175" y="432" text-anchor="middle" font-size="14" fill="#8a5f1a">只留给人</text>
+  <text x="490" y="432" text-anchor="middle" font-size="14" fill="#1f6a51">规则与测试能判定的，都交给机器</text>
+</svg>

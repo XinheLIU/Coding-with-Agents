@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="620" viewBox="0 0 1310 620" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#8a8a7e"/>
+    </marker>
+  </defs>
+  <rect width="1310" height="620" fill="#ffffff"/>
+  <text x="655" y="40" text-anchor="middle" font-size="20" fill="#2b2b2b" font-weight="700">验证阶梯：把每个问题压到能抓住它的最低一级</text>
+  <rect x="250" y="510" width="810" height="58" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <circle cx="282" cy="539" r="17" fill="#ffffff" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="282" y="545" text-anchor="middle" font-size="16" fill="#1f6a51" font-weight="700">1</text>
+  <text x="318" y="545" text-anchor="start" font-size="17" fill="#1f6a51" font-weight="700">类型检查 + Lint</text>
+  <text x="700" y="545" text-anchor="middle" font-size="14" fill="#2b2b2b">拼写、Props、裸色值、越界组件</text>
+  <text x="1040" y="545" text-anchor="end" font-size="14" fill="#1f6a51">秒级</text>
+  <rect x="250" y="436" width="810" height="58" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <circle cx="282" cy="465" r="17" fill="#ffffff" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="282" y="471" text-anchor="middle" font-size="16" fill="#1f6a51" font-weight="700">2</text>
+  <text x="318" y="471" text-anchor="start" font-size="17" fill="#1f6a51" font-weight="700">纯逻辑单测</text>
+  <text x="700" y="471" text-anchor="middle" font-size="14" fill="#2b2b2b">reducer · 状态机 · composable</text>
+  <text x="1040" y="471" text-anchor="end" font-size="14" fill="#1f6a51">秒级</text>
+  <rect x="250" y="362" width="810" height="58" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <circle cx="282" cy="391" r="17" fill="#ffffff" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="282" y="397" text-anchor="middle" font-size="16" fill="#1f6a51" font-weight="700">3</text>
+  <text x="318" y="397" text-anchor="start" font-size="17" fill="#1f6a51" font-weight="700">组件测试 / Story</text>
+  <text x="700" y="397" text-anchor="middle" font-size="14" fill="#2b2b2b">单个组件在各种 Props 与状态下</text>
+  <text x="1040" y="397" text-anchor="end" font-size="14" fill="#1f6a51">十秒级</text>
+  <rect x="250" y="288" width="810" height="58" rx="10" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <circle cx="282" cy="317" r="17" fill="#ffffff" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="282" y="323" text-anchor="middle" font-size="16" fill="#3c5a85" font-weight="700">4</text>
+  <text x="318" y="323" text-anchor="start" font-size="17" fill="#3c5a85" font-weight="700">浏览器验证</text>
+  <text x="700" y="323" text-anchor="middle" font-size="14" fill="#2b2b2b">页面集成 · 多断点 · 接口联调</text>
+  <text x="1040" y="323" text-anchor="end" font-size="14" fill="#3c5a85">分钟级</text>
+  <rect x="250" y="214" width="810" height="58" rx="10" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <circle cx="282" cy="243" r="17" fill="#ffffff" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="282" y="249" text-anchor="middle" font-size="16" fill="#3c5a85" font-weight="700">5</text>
+  <text x="318" y="249" text-anchor="start" font-size="17" fill="#3c5a85" font-weight="700">视觉回归</text>
+  <text x="700" y="249" text-anchor="middle" font-size="14" fill="#2b2b2b">截图对比：动了不该动的地方</text>
+  <text x="1040" y="249" text-anchor="end" font-size="14" fill="#3c5a85">分钟级</text>
+  <rect x="250" y="140" width="810" height="58" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <circle cx="282" cy="169" r="17" fill="#ffffff" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="282" y="175" text-anchor="middle" font-size="16" fill="#8a5f1a" font-weight="700">6</text>
+  <text x="318" y="175" text-anchor="start" font-size="17" fill="#8a5f1a" font-weight="700">人的审美判断</text>
+  <text x="700" y="175" text-anchor="middle" font-size="14" fill="#2b2b2b">调性 · 语义 · 好不好看</text>
+  <text x="1040" y="175" text-anchor="end" font-size="14" fill="#8a5f1a">取决于你</text>
+  <line x1="200" y1="560" x2="200" y2="80" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="185" y="320" text-anchor="end" font-size="15" fill="#8a8a7e">成本</text>
+  <text x="185" y="342" text-anchor="end" font-size="15" fill="#8a8a7e">与延迟</text>
+  <path d="M 1100 140 L 1100 300" fill="none" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="1118" y="200" text-anchor="start" font-size="15" fill="#1f6a51" font-weight="700">规则一</text>
+  <text x="1118" y="222" text-anchor="start" font-size="14" fill="#1f6a51">向下压：能在低级</text>
+  <text x="1118" y="242" text-anchor="start" font-size="14" fill="#1f6a51">抓住就别等高级</text>
+  <path d="M 1100 560 L 1100 380" fill="none" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="1118" y="440" text-anchor="start" font-size="15" fill="#3c5a85" font-weight="700">规则二</text>
+  <text x="1118" y="462" text-anchor="start" font-size="14" fill="#3c5a85">按顺序上：行为</text>
+  <text x="1118" y="482" text-anchor="start" font-size="14" fill="#3c5a85">跑通后才上浏览器</text>
+  <text x="80" y="160" text-anchor="start" font-size="15" fill="#8a5f1a" font-weight="700">人只站</text>
+  <text x="80" y="182" text-anchor="start" font-size="15" fill="#8a5f1a" font-weight="700">在这一级</text>
+  <text x="80" y="470" text-anchor="start" font-size="15" fill="#1f6a51" font-weight="700">智能体</text>
+  <text x="80" y="492" text-anchor="start" font-size="15" fill="#1f6a51" font-weight="700">自己跑</text>
+  <text x="655" y="605" text-anchor="middle" font-size="14" fill="#8a8a7e" font-style="italic">你在浏览器里手点找 bug，说明阶梯缺了一级——补尺子，而不是继续手点</text>
+</svg>

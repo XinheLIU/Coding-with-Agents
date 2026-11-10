@@ -1,6 +1,6 @@
 # Writing Roadmap
 
-Last updated: 2026-08-06
+Last updated: 2026-11-10
 
 The single source of truth for what is written, what ships, and what to write
 next. Chapter status lives **only** here — `CLAUDE.md` and `book/en/AGENTS.md`
@@ -61,8 +61,8 @@ platform mastery.
 
 Re-scoped on 2026-07-27: the old toolkit chapters moved to Level 2, and this
 level is now planned material on real power-user engineering.
-`legacy-codebases.md` is written, translated, and in both navs; the other three
-chapters do not exist yet. The Chinese working drafts it was written from
+`legacy-codebases.md` is written, translated, and in both navs; three more are
+drafts and two are still outlines. The Chinese working drafts it was written from
 (`draft-2/tools.md` and `draft-2/understanding-exisiting-codebase.md`, which had
 themselves absorbed the earlier `draft-1/`) were verified as fully integrated and
 deleted on 2026-07-27 — they were never committed, so `raw/` and the chapter are
@@ -70,9 +70,12 @@ now the only records.
 
 | Chapter | EN | ZH | In nav | Next step |
 |---|---|---|---|---|
-| `orchestration-layer.md` | absent | absent | ❌ | Write: routing work across sessions/agents/workflows, autonomous vs interactive, composing pipelines |
-| `engineering-frameworks.md` | absent | absent | ❌ | Write: scaffolding, verification loops, task decomposition, agent-native frameworks |
-| `spec-coding.md` | absent | absent | ❌ | Write from `raw/ai-human-collobration.md` — six-dimension PRD system + Step 1–3 delivery loop |
+| `orchestration-layer.md` | absent | stub | ❌ | Write: routing work across sessions/agents/workflows, autonomous vs interactive, composing pipelines |
+| `engineering-frameworks.md` | absent | stub | ❌ | Write: scaffolding, verification loops, task decomposition, agent-native frameworks |
+| `spec-coding.md` | absent | draft | zh only | 2026-11-10: split step 4 into long-term memory vs working state, added the spec-lifecycle section linking `repo-memory.md`. Fold in `raw/ai-human-collobration.md`'s six-dimension PRD system + delivery loop; write the EN counterpart (ZH-first draft holds the AI-coding six-step process). When the EN chapter lands, add the matching cross-link in `book/en/05-architect/pm-in-AI-era.md` |
+| `repo-memory.md` | draft | draft | ✅ | ZH-first chapter (2026-11-10) synthesizing notes on codebase memory: store Why, push What to code and How to executable control. Deepened same day with the Harness Memory framing (six memory kinds, working/persistent mapping, code-vs-human-head constraints, presenter layer, eleven principles). EN counterpart written the same day with English versions of the 6 `Repo-Memory-*.svg` figures in `book/en/assets/`, plus the EN pointer from `01-prompt/agents-md.md` |
+| `product-business-engineering.md` | draft | draft | ✅ | ZH-first chapter (2026-11-10) from the Hify course notes: why product / business / engineering-foundation layers are separated, how each enters the agent workflow, plus two designs — project-start component initialization (reference slice) and evidence-driven refactoring / component extraction. Deepened the same day with the inner/outer double-loop framing. EN counterpart written the same day; its spec-coding and 04-team links point to the zh-cn chapters until EN versions exist. |
+| `agentic-frontend.md` | draft | draft | ✅ | Written ZH-first (2026-11-10) from the Hify frontend notes plus research; EN counterpart written the same day with English versions of the 12 `Frontend-*.svg` figures in `book/en/assets/`. Covers why frontend is harder for agents, the generation → taste → verification bottleneck shift, the Google / OpenAI / Anthropic comparison, the six-layer community Skill model, and four practices. References consolidated in `book/en/RESOURCEs.md`. |
 | `legacy-codebases.md` | done | done | ✅ | — |
 
 ### Level 4 — Team Development

@@ -1,6 +1,6 @@
 # The Agent Memory File: Your Codebase's Constitution
 
-Last updated: 2026-07-27
+Last updated: 2026-11-10
 
 > *"The gap between 'Claude, we use pnpm' every session and 'Claude already knows' is the difference between a tool and a teammate."*
 
@@ -435,6 +435,8 @@ For now: **a lean, human-written, regularly maintained memory file that contains
 - *Anthropic: Claude Code Best Practices* — Official CLAUDE.md guidance
 - *Addy Osmani: "Stop Using /init for AGENTS.md"* — Practical filter for context files
 - *"Memory in the Age of AI Agents: A Survey" (Tsinghua, 2025)* — Academic survey of agent memory
+
+> Once you move into large codebases and team collaboration, the upgraded version of this chapter's principles is Chapter 3's [Repo Memory: Store Only the Why](../03-power-user/repo-memory.md).
 
 ---
 

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="700" viewBox="0 0 1310 700" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#8a8a7e"/>
+    </marker>
+  </defs>
+  <rect width="1310" height="700" fill="#ffffff"/>
+  <text x="655" y="40" text-anchor="middle" font-size="20" fill="#2b2b2b" font-weight="700">OpenAI's route: define no design format; plug design sources into Codex</text>
+  <rect x="40" y="70" width="330" height="340" rx="16" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="205" y="104" text-anchor="middle" font-size="16" fill="#2b2b2b" font-weight="700">Design-source plugins (third party)</text>
+  <rect x="60" y="124" width="290" height="76" rx="10" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="205.0" y="156.4" text-anchor="middle" font-size="14" fill="#3c5a85" font-weight="700">Figma</text>
+  <text x="205.0" y="177.4" text-anchor="middle" font-size="14" fill="#3c5a85">Frames to code · Code Connect</text>
+  <rect x="60" y="216" width="290" height="76" rx="10" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="205.0" y="248.4" text-anchor="middle" font-size="14" fill="#3c5a85" font-weight="700">Stitch</text>
+  <text x="205.0" y="269.4" text-anchor="middle" font-size="14" fill="#3c5a85">A Codex plugin published by Google</text>
+  <rect x="60" y="308" width="290" height="76" rx="10" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="205.0" y="340.4" text-anchor="middle" font-size="14" fill="#3c5a85" font-weight="700">Canva · MagicPath · Lovable</text>
+  <text x="205.0" y="361.4" text-anchor="middle" font-size="14" fill="#3c5a85">Assets, component libraries, generators</text>
+  <rect x="470" y="150" width="370" height="180" rx="16" fill="#f8f1e4" stroke="#b07d2b" stroke-width="2"/>
+  <text x="655" y="192" text-anchor="middle" font-size="22" fill="#8a5f1a" font-weight="700">Codex</text>
+  <text x="655" y="222" text-anchor="middle" font-size="14" fill="#555555">GPT-5.x (taste trained into weights)</text>
+  <text x="655" y="248" text-anchor="middle" font-size="14" fill="#555555">Image Gen: concept image first</text>
+  <text x="655" y="274" text-anchor="middle" font-size="14" fill="#555555">In-app browser + comment mode</text>
+  <text x="655" y="304" text-anchor="middle" font-size="13" fill="#8a8a7e" font-style="italic">Plugin = Skills + app connectors + MCP</text>
+  <line x1="372" y1="240" x2="466" y2="240" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="940" y="70" width="330" height="340" rx="16" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="1105" y="104" text-anchor="middle" font-size="16" fill="#2b2b2b" font-weight="700">Official workflow plugins</text>
+  <rect x="960" y="124" width="290" height="76" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="1105.0" y="156.4" text-anchor="middle" font-size="14" fill="#8a5f1a" font-weight="700">Build Web Apps</text>
+  <text x="1105.0" y="177.4" text-anchor="middle" font-size="14" fill="#8a5f1a">Concept → build → compare</text>
+  <rect x="960" y="216" width="290" height="76" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="1105.0" y="248.4" text-anchor="middle" font-size="14" fill="#8a5f1a" font-weight="700">Product Design</text>
+  <text x="1105.0" y="269.4" text-anchor="middle" font-size="14" fill="#8a5f1a">Ideate · URL to code · design QA</text>
+  <rect x="960" y="308" width="290" height="76" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="1105.0" y="340.4" text-anchor="middle" font-size="14" fill="#8a5f1a" font-weight="700">Build Web Data Visualization</text>
+  <text x="1105.0" y="361.4" text-anchor="middle" font-size="14" fill="#8a5f1a">Charts and dashboards</text>
+  <line x1="842" y1="240" x2="936" y2="240" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="655" y="450" text-anchor="middle" font-size="17" fill="#2b2b2b" font-weight="700">frontend-app-builder in Build Web Apps: the concept image is the spec</text>
+  <rect x="50" y="480" width="180" height="56" rx="10" fill="#f2f2f2" stroke="#b5b5b5" stroke-width="1.5"/>
+  <text x="140.0" y="512.9" text-anchor="middle" font-size="14" fill="#777777">Image Gen concept</text>
+  <rect x="255" y="480" width="180" height="56" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="345.0" y="512.9" text-anchor="middle" font-size="14" fill="#8a5f1a">Human approves</text>
+  <line x1="232" y1="508" x2="253" y2="508" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="460" y="480" width="180" height="56" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="550.0" y="512.9" text-anchor="middle" font-size="14" fill="#1f6a51">Extract design system</text>
+  <line x1="437" y1="508" x2="458" y2="508" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="665" y="480" width="180" height="56" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="755.0" y="512.9" text-anchor="middle" font-size="14" fill="#1f6a51">Build section by section</text>
+  <line x1="642" y1="508" x2="663" y2="508" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="870" y="480" width="180" height="56" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="960.0" y="512.9" text-anchor="middle" font-size="14" fill="#1f6a51">Browser screenshot</text>
+  <line x1="847" y1="508" x2="868" y2="508" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="1075" y="480" width="180" height="56" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="1165.0" y="512.9" text-anchor="middle" font-size="14" fill="#8a5f1a">Compare + ledger</text>
+  <line x1="1052" y1="508" x2="1073" y2="508" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 1165 538 Q 1165 596 990 596 Q 805 596 805 542" fill="none" stroke="#8a8a7e" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+  <text x="985" y="620" text-anchor="middle" font-size="13" fill="#8a8a7e" font-style="italic">Keep fixing until "a design agency would sign off"</text>
+  <text x="655" y="660" text-anchor="middle" font-size="14" fill="#8a8a7e" font-style="italic">"Functional QA does not count as fidelity QA": clicks and builds cannot replace comparing concept and screenshot</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="540" viewBox="0 0 1310 540" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#8a8a7e"/>
+    </marker>
+  </defs>
+  <rect width="1310" height="540" fill="#ffffff"/>
+  <rect x="40" y="40" width="560" height="440" rx="14" fill="#fbfbf8" stroke="#cfcfc0" stroke-width="1.5"/>
+  <text x="60" y="72" text-anchor="start" font-size="18" fill="#2b2b2b" font-weight="700" font-family="Menlo, Consolas, monospace">DESIGN.md</text>
+  <rect x="60" y="92" width="520" height="170" rx="10" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="80" y="114" text-anchor="start" font-size="13" fill="#3c5a85" font-family="Menlo, Consolas, monospace">---</text>
+  <text x="80" y="133" text-anchor="start" font-size="13" fill="#3c5a85" font-family="Menlo, Consolas, monospace">colors:</text>
+  <text x="80" y="152" text-anchor="start" font-size="13" fill="#3c5a85" font-family="Menlo, Consolas, monospace">  primary: "#5B5BD6"</text>
+  <text x="80" y="171" text-anchor="start" font-size="13" fill="#3c5a85" font-family="Menlo, Consolas, monospace">rounded:</text>
+  <text x="80" y="190" text-anchor="start" font-size="13" fill="#3c5a85" font-family="Menlo, Consolas, monospace">  md: 8px</text>
+  <text x="80" y="209" text-anchor="start" font-size="13" fill="#3c5a85" font-family="Menlo, Consolas, monospace">spacing:</text>
+  <text x="80" y="228" text-anchor="start" font-size="13" fill="#3c5a85" font-family="Menlo, Consolas, monospace">  page: 24px</text>
+  <text x="80" y="247" text-anchor="start" font-size="13" fill="#3c5a85" font-family="Menlo, Consolas, monospace">---</text>
+  <text x="565" y="250" text-anchor="end" font-size="14" fill="#3c5a85" font-weight="700">Token：精确值</text>
+  <rect x="60" y="280" width="520" height="180" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="80" y="306" text-anchor="start" font-size="13" fill="#8a5f1a" font-weight="700" font-family="Menlo, Consolas, monospace">## Colors</text>
+  <text x="80" y="326" text-anchor="start" font-size="14" fill="#8a5f1a">状态色：禁用态用 info 灰，不用红色——</text>
+  <text x="80" y="346" text-anchor="start" font-size="14" fill="#8a5f1a">禁用不是错误。</text>
+  <text x="80" y="366" text-anchor="start" font-size="14" fill="#8a5f1a"></text>
+  <text x="80" y="386" text-anchor="start" font-size="13" fill="#8a5f1a" font-weight="700" font-family="Menlo, Consolas, monospace">## Layout</text>
+  <text x="80" y="406" text-anchor="start" font-size="14" fill="#8a5f1a">侧边栏用接近纯黑但不是纯黑的深色，</text>
+  <text x="80" y="426" text-anchor="start" font-size="14" fill="#8a5f1a">与浅色内容区形成对比。</text>
+  <text x="565" y="448" text-anchor="end" font-size="14" fill="#8a5f1a" font-weight="700">Why：选择的理由</text>
+  <line x1="604" y1="150" x2="700" y2="130" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="604" y1="200" x2="700" y2="220" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="705" y="100" width="545" height="56" rx="10" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="977.5" y="133.25" text-anchor="middle" font-size="15" fill="#3c5a85">落地成 CSS 变量：代码成为事实来源</text>
+  <rect x="705" y="192" width="545" height="56" rx="10" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="977.5" y="225.25" text-anchor="middle" font-size="15" fill="#3c5a85">lint：格式校验 + WCAG 对比度检查</text>
+  <line x1="604" y1="370" x2="700" y2="340" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="705" y="310" width="545" height="56" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="977.5" y="343.25" text-anchor="middle" font-size="15" fill="#8a5f1a">智能体在新页面、新场景里推出一致的选择</text>
+  <rect x="705" y="400" width="545" height="60" rx="10" fill="#f2f2f2" stroke="#b5b5b5" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="977" y="436" text-anchor="middle" font-size="14" fill="#777777">不放进来：组件实现步骤 · 逐页样式（会过期）</text>
+  <text x="655" y="515" text-anchor="middle" font-size="15" fill="#8a8a7e" font-style="italic">Tokens give agents exact values. Prose tells them why.</text>
+</svg>

@@ -1,6 +1,6 @@
 # Resources
 
-Last updated: 2026-08-06
+Last updated: 2026-11-10
 
 - [CS146S: the Modern Software Developer](https://themodernsoftware.dev/)
 - [DataWhale: Easy Vibe Project](https://github.com/datawhalechina/easy-vibe)
@@ -47,6 +47,30 @@ Last updated: 2026-08-06
 
 ## 03 Power User
 
+### Product, Business, and Engineering Foundation
+
+[Matt Pocock: Skills for Real Engineers](https://github.com/mattpocock/skills)
+[Martin Fowler: Strangler Fig Application](https://martinfowler.com/bliki/StranglerFigApplication.html)
+[Alistair Cockburn: Walking Skeleton](https://wiki.c2.com/?WalkingSkeleton)
+
+### Agentic Frontend Development
+
+[Frontend is WAY harder for AI than backend — Matt Pocock](https://x.com/mattpocockuk/status/2010728707997278296)
+[Essential AI Coding Feedback Loops For TypeScript Projects — Matt Pocock](https://www.aihero.dev/essential-ai-coding-feedback-loops-for-type-script-projects)
+[How do we make this change fully verifiable? — Matt Pocock](https://x.com/mattpocockuk/status/2118313863917564136)
+[Effective harnesses for long-running agents — Anthropic](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)
+[Improving frontend design through Skills — Anthropic](https://claude.com/blog/improving-frontend-design-through-skills)
+[Stitch: a new way to design UIs — Google](https://developers.googleblog.com/stitch-a-new-way-to-design-uis/)
+[Stitch updates at I/O 2026 — Google](https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-updates/)
+[DESIGN.md spec — Google Labs](https://github.com/google-labs-code/design.md)
+[stitch-skills — Google Labs](https://github.com/google-labs-code/stitch-skills)
+[Build with Google Antigravity — Google](https://developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform/)
+[Chrome DevTools MCP — Chrome for Developers](https://developer.chrome.com/blog/chrome-devtools-mcp)
+[Designing delightful frontends with GPT-5.4 — OpenAI](https://developers.openai.com/blog/designing-delightful-frontends-with-gpt-5-4)
+[Codex plugins — OpenAI](https://developers.openai.com/plugins/build/plugins)
+[Build Web Apps plugin — OpenAI](https://github.com/openai/plugins/tree/main/plugins/build-web-apps)
+[awesome-design-md — VoltAgent](https://github.com/VoltAgent/awesome-design-md)
+
 ### Working with Brownfield Codebases
 
 [Comprehension Debt — Addy Osmani](https://addyosmani.com/blog/comprehension-debt/)
@@ -62,6 +86,12 @@ Last updated: 2026-08-06
 [Army of Juniors — OX Security](https://www.ox.security/research/army-of-juniors/)
 [Graphify overview](https://blog.csdn.net/zhangay1998/article/details/161003084)
 [《Claude Code 企业级老项目改造实战》— 极客时间](https://time.geekbang.org/column/article/976338)
+
+### Repo Memory: Store Only the Why
+
+[Evaluating AGENTS.md — ETH Zurich (2026)](https://arxiv.org/abs/2602.11988)
+[Matt Pocock: Skills for Real Engineers](https://github.com/mattpocock/skills)
+[Addy Osmani: AGENTS.md](https://addyosmani.com/blog/agents-md/)
 
 ---
 

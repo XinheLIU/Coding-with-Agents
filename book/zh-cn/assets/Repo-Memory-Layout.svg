@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="520" viewBox="0 0 1310 520" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <rect width="1310" height="520" fill="#ffffff"/>
+
+  <text x="655" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#2b2b2b">Repo Memory 布局：按加载时机分层</text>
+  <text x="150" y="74" text-anchor="middle" font-size="14" font-weight="700" fill="#8a8a7e">加载时机</text>
+  <text x="560" y="74" text-anchor="middle" font-size="14" font-weight="700" fill="#8a8a7e">放在哪里</text>
+  <text x="1030" y="74" text-anchor="middle" font-size="14" font-weight="700" fill="#8a8a7e">放什么</text>
+
+  <!-- Row 1 -->
+  <rect x="40" y="88" width="1230" height="64" rx="12" fill="#e9f3ee" stroke="#3d8b70" stroke-width="2"/>
+  <text x="150" y="126" text-anchor="middle" font-size="16" font-weight="700" fill="#1f6a51">每次会话常驻</text>
+  <text x="560" y="126" text-anchor="middle" font-size="15" fill="#1f6a51">根目录 AGENTS.md / CLAUDE.md</text>
+  <text x="1030" y="126" text-anchor="middle" font-size="15" fill="#1f6a51">全局 Why · 地图 · 能力清单（越短越好）</text>
+
+  <!-- Row 2 -->
+  <rect x="40" y="164" width="1230" height="64" rx="12" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="150" y="202" text-anchor="middle" font-size="16" font-weight="700" fill="#1f6a51">进入路径时加载</text>
+  <text x="560" y="202" text-anchor="middle" font-size="15" fill="#1f6a51">子目录 CLAUDE.md · .claude/rules/（paths）</text>
+  <text x="1030" y="202" text-anchor="middle" font-size="15" fill="#1f6a51">局部 Why · 禁区 · 历史包袱</text>
+
+  <!-- Row 3 -->
+  <rect x="40" y="240" width="1230" height="64" rx="12" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5"/>
+  <text x="150" y="278" text-anchor="middle" font-size="16" font-weight="700" fill="#2b2b2b">按需读取</text>
+  <text x="560" y="278" text-anchor="middle" font-size="15" fill="#2b2b2b">docs/decisions/ · docs/derived/ · Skills</text>
+  <text x="1030" y="278" text-anchor="middle" font-size="15" fill="#2b2b2b">决策记录 · 派生视图 · 流程</text>
+
+  <!-- Row 4 -->
+  <rect x="40" y="316" width="1230" height="64" rx="12" fill="#f4f4f0" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="150" y="354" text-anchor="middle" font-size="16" font-weight="700" fill="#8a8a7e">只在任务期间</text>
+  <text x="560" y="354" text-anchor="middle" font-size="15" fill="#8a8a7e">work/&lt;task&gt;/ · Spec · plan · progress</text>
+  <text x="1030" y="354" text-anchor="middle" font-size="15" fill="#8a8a7e">工作状态——结束即蒸馏 Why 后归档</text>
+
+  <!-- Row 5 -->
+  <rect x="40" y="392" width="1230" height="64" rx="12" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="150" y="430" text-anchor="middle" font-size="16" font-weight="700" fill="#3c5a85">不在记忆里</text>
+  <text x="560" y="430" text-anchor="middle" font-size="15" fill="#3c5a85">代码 · Schema · 测试 · lint · hook · CI</text>
+  <text x="1030" y="430" text-anchor="middle" font-size="15" fill="#3c5a85">What 与 How 的本体，由记忆指向它们</text>
+
+  <text x="655" y="494" text-anchor="middle" font-size="14" font-style="italic" fill="#555555">越往上越贵：每多一行常驻内容，每次会话都要为它付出注意力</text>
+</svg>

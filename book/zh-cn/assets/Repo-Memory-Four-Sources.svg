@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="560" viewBox="0 0 1310 560" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#8a8a7e"/>
+    </marker>
+  </defs>
+  <rect width="1310" height="560" fill="#ffffff"/>
+
+  <text x="655" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#2b2b2b">Repo Memory 是机制，不是一份文件：四个来源与知识循环</text>
+
+  <!-- Top-left: human-written -->
+  <rect x="80" y="70" width="440" height="170" rx="16" fill="#e9f3ee" stroke="#3d8b70" stroke-width="2"/>
+  <text x="300" y="108" text-anchor="middle" font-size="19" font-weight="700" fill="#1f6a51">① 人写的</text>
+  <text x="300" y="138" text-anchor="middle" font-size="15" fill="#1f6a51">地图 · 约定 · 意图 · Why</text>
+  <text x="300" y="168" text-anchor="middle" font-size="14" fill="#1f6a51">写导航，不写复述</text>
+  <text x="300" y="196" text-anchor="middle" font-size="14" font-style="italic" fill="#1f6a51">AGENTS.md · docs/decisions/</text>
+
+  <!-- Top-right: system -->
+  <rect x="790" y="70" width="440" height="170" rx="16" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="1010" y="108" text-anchor="middle" font-size="19" font-weight="700" fill="#3c5a85">② 系统原有的</text>
+  <text x="1010" y="138" text-anchor="middle" font-size="15" fill="#3c5a85">代码 · 配置 · Schema · git 历史</text>
+  <text x="1010" y="168" text-anchor="middle" font-size="14" fill="#3c5a85">What 唯一可信的来源</text>
+  <text x="1010" y="196" text-anchor="middle" font-size="14" font-style="italic" fill="#3c5a85">几乎不产生新文字，只需指路</text>
+
+  <!-- Bottom-right: derived -->
+  <rect x="790" y="320" width="440" height="170" rx="16" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="1010" y="358" text-anchor="middle" font-size="19" font-weight="700" fill="#2b2b2b">③ 智能体派生的</text>
+  <text x="1010" y="388" text-anchor="middle" font-size="15" fill="#555555">索引 · 服务边界图 · 调用链流程图</text>
+  <text x="1010" y="418" text-anchor="middle" font-size="14" fill="#555555">可重建的缓存，代码优先</text>
+  <text x="1010" y="446" text-anchor="middle" font-size="14" font-style="italic" fill="#555555">docs/derived/（标注出处与 commit）</text>
+
+  <!-- Bottom-left: sedimented -->
+  <rect x="80" y="320" width="440" height="170" rx="16" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="300" y="358" text-anchor="middle" font-size="19" font-weight="700" fill="#8a5f1a">④ 智能体沉淀的</text>
+  <text x="300" y="388" text-anchor="middle" font-size="15" fill="#8a5f1a">决策 · 踩坑 · 纠正 · 待确认</text>
+  <text x="300" y="418" text-anchor="middle" font-size="14" fill="#8a5f1a">新 Why 的主要来源</text>
+  <text x="300" y="446" text-anchor="middle" font-size="14" font-style="italic" fill="#8a5f1a">先作为提议，审核后才进入 ①</text>
+
+  <!-- Cycle arrows -->
+  <line x1="1010" y1="246" x2="1010" y2="312" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="1030" y="284" font-size="13" fill="#8a8a7e">读代码、跑工具</text>
+  <line x1="784" y1="405" x2="528" y2="405" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="656" y="395" text-anchor="middle" font-size="13" fill="#8a8a7e">执行任务时用上，暴露缺口</text>
+  <line x1="300" y1="314" x2="300" y2="248" stroke="#3d8b70" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="320" y="284" font-size="13" font-weight="700" fill="#1f6a51">写回闸门：人审核</text>
+  <line x1="526" y1="155" x2="782" y2="155" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="654" y="145" text-anchor="middle" font-size="13" fill="#8a8a7e">指向源头</text>
+
+  <text x="655" y="532" text-anchor="middle" font-size="14" font-style="italic" fill="#555555">每一个问题只需要被解决一次：第一次是未知，第二次已经在记忆里</text>
+</svg>

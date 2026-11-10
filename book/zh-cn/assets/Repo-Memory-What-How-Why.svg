@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="450" viewBox="0 0 1310 450" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <rect width="1310" height="450" fill="#ffffff"/>
+
+  <text x="655" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#2b2b2b">代码库的三类信息，各自归到哪里</text>
+
+  <!-- Column 1: What -->
+  <rect x="40" y="64" width="390" height="340" rx="16" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="235" y="102" text-anchor="middle" font-size="22" font-weight="700" fill="#2b2b2b">What</text>
+  <text x="235" y="130" text-anchor="middle" font-size="15" fill="#555555">系统是什么、在做什么</text>
+  <rect x="60" y="150" width="350" height="96" rx="10" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="235" y="182" text-anchor="middle" font-size="15" font-weight="700" fill="#3c5a85">归宿：代码本身</text>
+  <text x="235" y="208" text-anchor="middle" font-size="14" fill="#3c5a85">代码 · 配置 · Schema · git 历史</text>
+  <text x="235" y="230" text-anchor="middle" font-size="14" fill="#3c5a85">压缩视图由智能体派生（缓存）</text>
+  <rect x="60" y="266" width="350" height="56" rx="10" fill="#ffffff" stroke="#cfcfc0" stroke-width="1.5"/>
+  <text x="235" y="300" text-anchor="middle" font-size="15" fill="#2b2b2b">记忆里只放：到哪去读</text>
+  <text x="235" y="370" text-anchor="middle" font-size="14" font-style="italic" fill="#888888">复述会滞后、会腐烂</text>
+
+  <!-- Column 2: How -->
+  <rect x="460" y="64" width="390" height="340" rx="16" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="655" y="102" text-anchor="middle" font-size="22" font-weight="700" fill="#2b2b2b">How</text>
+  <text x="655" y="130" text-anchor="middle" font-size="15" fill="#555555">怎么做事、怎么算做对</text>
+  <rect x="480" y="150" width="350" height="96" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="655" y="182" text-anchor="middle" font-size="15" font-weight="700" fill="#8a5f1a">归宿：可执行的控制</text>
+  <text x="655" y="208" text-anchor="middle" font-size="14" fill="#8a5f1a">lint · 测试 · hook（约束）</text>
+  <text x="655" y="230" text-anchor="middle" font-size="14" fill="#8a5f1a">Skill · 脚本（流程）</text>
+  <rect x="480" y="266" width="350" height="56" rx="10" fill="#ffffff" stroke="#cfcfc0" stroke-width="1.5"/>
+  <text x="655" y="300" text-anchor="middle" font-size="15" fill="#2b2b2b">记忆里只放：有哪些能力、从哪触发</text>
+  <text x="655" y="370" text-anchor="middle" font-size="14" font-style="italic" fill="#888888">能被判定的，就不要靠记住</text>
+
+  <!-- Column 3: Why (highlighted) -->
+  <rect x="880" y="64" width="390" height="340" rx="16" fill="#f3f9f6" stroke="#3d8b70" stroke-width="2"/>
+  <text x="1075" y="102" text-anchor="middle" font-size="22" font-weight="700" fill="#1f6a51">Why</text>
+  <text x="1075" y="130" text-anchor="middle" font-size="15" fill="#1f6a51">为什么是这样、为什么不能那样</text>
+  <rect x="900" y="150" width="350" height="96" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="1075" y="182" text-anchor="middle" font-size="15" font-weight="700" fill="#1f6a51">归宿：Repo Memory</text>
+  <text x="1075" y="208" text-anchor="middle" font-size="14" fill="#1f6a51">意图 · 取舍 · 外部约束 · 历史原因</text>
+  <text x="1075" y="230" text-anchor="middle" font-size="14" fill="#1f6a51">只在人的脑子里，代码推不出来</text>
+  <rect x="900" y="266" width="350" height="56" rx="10" fill="#ffffff" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="1075" y="300" text-anchor="middle" font-size="15" font-weight="700" fill="#1f6a51">完整写下来，并写明失效条件</text>
+  <text x="1075" y="370" text-anchor="middle" font-size="14" font-style="italic" fill="#1f6a51">唯一必须手写的信息</text>
+
+  <text x="655" y="436" text-anchor="middle" font-size="14" fill="#555555">记忆 = Why + 指向 What 的地图 + 指向 How 的能力清单</text>
+</svg>

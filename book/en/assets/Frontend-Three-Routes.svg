@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="640" viewBox="0 0 1310 640" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#8a8a7e"/>
+    </marker>
+  </defs>
+  <rect width="1310" height="640" fill="#ffffff"/>
+  <rect x="40" y="40" width="350" height="380" rx="16" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="215" y="80" text-anchor="middle" font-size="21" fill="#2b2b2b" font-weight="700">Google</text>
+  <rect x="60" y="102" width="310" height="64" rx="10" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="74" y="126" text-anchor="start" font-size="12" fill="#8a8a7e">Entry point</text>
+  <text x="215" y="150" text-anchor="middle" font-size="15" fill="#3c5a85">Design side: Stitch → Antigravity</text>
+  <rect x="60" y="178" width="310" height="64" rx="10" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="74" y="202" text-anchor="start" font-size="12" fill="#8a8a7e">Taste lives in</text>
+  <text x="215" y="226" text-anchor="middle" font-size="15" fill="#3c5a85" font-weight="700">Stitch canvas + DESIGN.md</text>
+  <rect x="60" y="254" width="310" height="64" rx="10" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="74" y="278" text-anchor="start" font-size="12" fill="#8a8a7e">Verification lives in</text>
+  <text x="215" y="302" text-anchor="middle" font-size="15" fill="#3c5a85" font-weight="700">Chrome: browser subagent · DevTools</text>
+  <rect x="60" y="330" width="310" height="64" rx="10" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="74" y="354" text-anchor="start" font-size="12" fill="#8a8a7e">Where humans step in</text>
+  <text x="215" y="378" text-anchor="middle" font-size="15" fill="#3c5a85">Design canvas · review recordings</text>
+  <line x1="215" y1="424" x2="501.0" y2="486" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="480" y="40" width="350" height="380" rx="16" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="655" y="80" text-anchor="middle" font-size="21" fill="#2b2b2b" font-weight="700">OpenAI</text>
+  <rect x="500" y="102" width="310" height="64" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="514" y="126" text-anchor="start" font-size="12" fill="#8a8a7e">Entry point</text>
+  <text x="655" y="150" text-anchor="middle" font-size="15" fill="#8a5f1a">Model + Codex plugin marketplace</text>
+  <rect x="500" y="178" width="310" height="64" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="514" y="202" text-anchor="start" font-size="12" fill="#8a8a7e">Taste lives in</text>
+  <text x="655" y="226" text-anchor="middle" font-size="15" fill="#8a5f1a" font-weight="700">Model + concept image as spec</text>
+  <rect x="500" y="254" width="310" height="64" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="514" y="278" text-anchor="start" font-size="12" fill="#8a8a7e">Verification lives in</text>
+  <text x="655" y="302" text-anchor="middle" font-size="15" fill="#8a5f1a" font-weight="700">Codex: in-app browser · image diff</text>
+  <rect x="500" y="330" width="310" height="64" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="514" y="354" text-anchor="start" font-size="12" fill="#8a8a7e">Where humans step in</text>
+  <text x="655" y="378" text-anchor="middle" font-size="15" fill="#8a5f1a">Comment on the rendered page</text>
+  <line x1="655" y1="424" x2="655.0" y2="486" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="920" y="40" width="350" height="380" rx="16" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="1095" y="80" text-anchor="middle" font-size="21" fill="#2b2b2b" font-weight="700">Anthropic</text>
+  <rect x="940" y="102" width="310" height="64" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="954" y="126" text-anchor="start" font-size="12" fill="#8a8a7e">Entry point</text>
+  <text x="1095" y="150" text-anchor="middle" font-size="15" fill="#1f6a51">Agent harness: Claude Code</text>
+  <rect x="940" y="178" width="310" height="64" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="954" y="202" text-anchor="start" font-size="12" fill="#8a8a7e">Taste lives in</text>
+  <text x="1095" y="226" text-anchor="middle" font-size="15" fill="#1f6a51" font-weight="700">Skill text + community ecosystem</text>
+  <rect x="940" y="254" width="310" height="64" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="954" y="278" text-anchor="start" font-size="12" fill="#8a8a7e">Verification lives in</text>
+  <text x="1095" y="302" text-anchor="middle" font-size="15" fill="#1f6a51" font-weight="700">Harness: Chrome integration · MCP</text>
+  <rect x="940" y="330" width="310" height="64" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="954" y="354" text-anchor="start" font-size="12" fill="#8a8a7e">Where humans step in</text>
+  <text x="1095" y="378" text-anchor="middle" font-size="15" fill="#1f6a51">Edit Skills · review evidence</text>
+  <line x1="1095" y1="424" x2="809.0" y2="486" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="40" y="490" width="1230" height="120" rx="16" fill="#f3f9f6" stroke="#3d8b70" stroke-width="2"/>
+  <text x="655" y="522" text-anchor="middle" font-size="18" fill="#2b2b2b" font-weight="700">The 2026 convergence: one triad</text>
+  <rect x="110" y="540" width="350" height="52" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="285.0" y="571.6" text-anchor="middle" font-size="16" fill="#1f6a51">Written design context</text>
+  <rect x="480" y="540" width="350" height="52" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="655.0" y="571.6" text-anchor="middle" font-size="16" fill="#1f6a51">A model that sees images</text>
+  <rect x="850" y="540" width="350" height="52" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="1025.0" y="571.6" text-anchor="middle" font-size="16" fill="#1f6a51">A browser in the loop</text>
+</svg>

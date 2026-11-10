@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="580" viewBox="0 0 1310 580" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#8a8a7e"/>
+    </marker>
+  </defs>
+  <rect width="1310" height="580" fill="#ffffff"/>
+  <text x="655" y="40" text-anchor="middle" font-size="20" fill="#2b2b2b" font-weight="700">设计 Skill 生态的六层：按「它主要产出什么」区分</text>
+  <rect x="200" y="70" width="1070" height="58" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="222" y="106" text-anchor="start" font-size="17" fill="#1f6a51" font-weight="700">① 品味 / 判断</text>
+  <text x="560" y="106" text-anchor="middle" font-size="15" fill="#2b2b2b">该不该往这个方向走？</text>
+  <text x="1250" y="106" text-anchor="end" font-size="14" fill="#1f6a51">frontend-design · Taste</text>
+  <rect x="200" y="140" width="1070" height="58" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="222" y="176" text-anchor="start" font-size="17" fill="#1f6a51" font-weight="700">② 设计知识</text>
+  <text x="560" y="176" text-anchor="middle" font-size="15" fill="#2b2b2b">合理的选项有哪些？</text>
+  <text x="1250" y="176" text-anchor="end" font-size="14" fill="#1f6a51">UI UX Pro Max</text>
+  <rect x="200" y="210" width="1070" height="58" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="222" y="246" text-anchor="start" font-size="17" fill="#1f6a51" font-weight="700">③ 设计方法</text>
+  <text x="560" y="246" text-anchor="middle" font-size="15" fill="#2b2b2b">怎样从方向走到系统？</text>
+  <text x="1250" y="246" text-anchor="end" font-size="14" fill="#1f6a51">Impeccable · Interface Design</text>
+  <rect x="200" y="280" width="1070" height="58" rx="10" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="222" y="316" text-anchor="start" font-size="17" fill="#3c5a85" font-weight="700">④ 模板与参考</text>
+  <text x="560" y="316" text-anchor="middle" font-size="15" fill="#2b2b2b">能否复用现成设计系统？</text>
+  <text x="1250" y="316" text-anchor="end" font-size="14" fill="#3c5a85">awesome-design-md</text>
+  <rect x="200" y="350" width="1070" height="58" rx="10" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="222" y="386" text-anchor="start" font-size="17" fill="#3c5a85" font-weight="700">⑤ 设计上下文</text>
+  <text x="560" y="386" text-anchor="middle" font-size="15" fill="#2b2b2b">决定如何跨会话保存？</text>
+  <text x="1250" y="386" text-anchor="end" font-size="14" fill="#3c5a85">DESIGN.md · Oh My Design</text>
+  <rect x="200" y="420" width="1070" height="58" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="222" y="456" text-anchor="start" font-size="17" fill="#8a5f1a" font-weight="700">⑥ 产出环境</text>
+  <text x="560" y="456" text-anchor="middle" font-size="15" fill="#2b2b2b">怎样做出原型和演示？</text>
+  <text x="1250" y="456" text-anchor="end" font-size="14" fill="#8a5f1a">Huashu · Open Design · Stitch</text>
+  <path d="M 180 70 L 168 70 L 168 268 L 180 268" fill="none" stroke="#3d8b70" stroke-width="2"/>
+  <text x="120" y="175.0" text-anchor="middle" font-size="17" fill="#1f6a51" font-weight="700">决定</text>
+  <path d="M 180 280 L 168 280 L 168 408 L 180 408" fill="none" stroke="#5a7aa6" stroke-width="2"/>
+  <text x="120" y="350.0" text-anchor="middle" font-size="17" fill="#3c5a85" font-weight="700">沉淀</text>
+  <path d="M 180 420 L 168 420 L 168 478 L 180 478" fill="none" stroke="#b07d2b" stroke-width="2"/>
+  <text x="120" y="455.0" text-anchor="middle" font-size="17" fill="#8a5f1a" font-weight="700">产出</text>
+  <text x="655" y="528" text-anchor="middle" font-size="15" fill="#8f3b38">常见错误：把还没决定的需求直接喂给 ⑥——它只渲染、不决定，得到的是精致的平庸</text>
+  <text x="655" y="556" text-anchor="middle" font-size="14" fill="#8a8a7e" font-style="italic">多数项目的上限：一个品味层 + 一个方法层 + 一份 DESIGN.md</text>
+</svg>

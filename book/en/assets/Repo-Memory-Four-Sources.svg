@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="560" viewBox="0 0 1310 560" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#8a8a7e"/>
+    </marker>
+  </defs>
+  <rect width="1310" height="560" fill="#ffffff"/>
+
+  <text x="655" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#2b2b2b">Repo memory is a mechanism, not a file: four sources and a knowledge cycle</text>
+
+  <!-- Top-left: human-written -->
+  <rect x="80" y="70" width="440" height="170" rx="16" fill="#e9f3ee" stroke="#3d8b70" stroke-width="2"/>
+  <text x="300" y="108" text-anchor="middle" font-size="19" font-weight="700" fill="#1f6a51">① Human-written</text>
+  <text x="300" y="138" text-anchor="middle" font-size="15" fill="#1f6a51">Map · conventions · intent · Why</text>
+  <text x="300" y="168" text-anchor="middle" font-size="14" fill="#1f6a51">Navigation, never recital</text>
+  <text x="300" y="196" text-anchor="middle" font-size="14" font-style="italic" fill="#1f6a51">AGENTS.md · docs/decisions/</text>
+
+  <!-- Top-right: system -->
+  <rect x="790" y="70" width="440" height="170" rx="16" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="1010" y="108" text-anchor="middle" font-size="19" font-weight="700" fill="#3c5a85">② Native to the system</text>
+  <text x="1010" y="138" text-anchor="middle" font-size="15" fill="#3c5a85">Code · config · schema · git history</text>
+  <text x="1010" y="168" text-anchor="middle" font-size="14" fill="#3c5a85">The only trustworthy source of What</text>
+  <text x="1010" y="196" text-anchor="middle" font-size="14" font-style="italic" fill="#3c5a85">Produces almost no new text; just point at it</text>
+
+  <!-- Bottom-right: derived -->
+  <rect x="790" y="320" width="440" height="170" rx="16" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="1010" y="358" text-anchor="middle" font-size="19" font-weight="700" fill="#2b2b2b">③ Agent-derived</text>
+  <text x="1010" y="388" text-anchor="middle" font-size="15" fill="#555555">Indexes · service maps · call-chain diagrams</text>
+  <text x="1010" y="418" text-anchor="middle" font-size="14" fill="#555555">Rebuildable caches; code wins</text>
+  <text x="1010" y="446" text-anchor="middle" font-size="14" font-style="italic" fill="#555555">docs/derived/ (provenance and commit stamped)</text>
+
+  <!-- Bottom-left: distilled -->
+  <rect x="80" y="320" width="440" height="170" rx="16" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="300" y="358" text-anchor="middle" font-size="19" font-weight="700" fill="#8a5f1a">④ Agent-distilled</text>
+  <text x="300" y="388" text-anchor="middle" font-size="15" fill="#8a5f1a">Decisions · pitfalls · corrections · unconfirmed</text>
+  <text x="300" y="418" text-anchor="middle" font-size="14" fill="#8a5f1a">The main source of new Why</text>
+  <text x="300" y="446" text-anchor="middle" font-size="14" font-style="italic" fill="#8a5f1a">Proposals first; enter ① only after review</text>
+
+  <!-- Cycle arrows -->
+  <line x1="1010" y1="246" x2="1010" y2="312" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="1030" y="284" font-size="13" fill="#8a8a7e">read code, run tools</text>
+  <line x1="784" y1="405" x2="528" y2="405" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="656" y="395" text-anchor="middle" font-size="13" fill="#8a8a7e">used during tasks; gaps get exposed</text>
+  <line x1="300" y1="314" x2="300" y2="248" stroke="#3d8b70" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="320" y="284" font-size="13" font-weight="700" fill="#1f6a51">write-back gate: human review</text>
+  <line x1="526" y1="155" x2="782" y2="155" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="654" y="145" text-anchor="middle" font-size="13" fill="#8a8a7e">points at the source</text>
+
+  <text x="655" y="532" text-anchor="middle" font-size="14" font-style="italic" fill="#555555">Every problem needs solving only once: the first time it is unknown, the second time it is already in memory</text>
+</svg>

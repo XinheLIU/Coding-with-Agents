@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="480" viewBox="0 0 1310 480" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#8a8a7e"/>
+    </marker>
+  </defs>
+  <rect width="1310" height="480" fill="#ffffff"/>
+
+  <text x="250" y="40" text-anchor="middle" font-size="18" font-weight="700" fill="#2b2b2b">实现之前</text>
+  <text x="900" y="40" text-anchor="middle" font-size="18" font-weight="700" fill="#2b2b2b">实现之后：Spec 的每一部分搬到新家</text>
+
+  <!-- Spec panel -->
+  <rect x="40" y="60" width="420" height="360" rx="16" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="250" y="100" text-anchor="middle" font-size="19" font-weight="700" fill="#2b2b2b">Spec · 施工图</text>
+  <text x="250" y="124" text-anchor="middle" font-size="14" font-style="italic" fill="#8a8a7e">What 与 How 唯一的家，写细是对的</text>
+  <rect x="60" y="150" width="380" height="44" rx="10" fill="#ffffff" stroke="#cfcfc0" stroke-width="1.5"/>
+  <text x="250" y="177" text-anchor="middle" font-size="15" fill="#2b2b2b">PRD：功能、接口、数据</text>
+  <rect x="60" y="208" width="380" height="44" rx="10" fill="#ffffff" stroke="#cfcfc0" stroke-width="1.5"/>
+  <text x="250" y="235" text-anchor="middle" font-size="15" fill="#2b2b2b">设计标准 · 编码规范</text>
+  <rect x="60" y="266" width="380" height="44" rx="10" fill="#ffffff" stroke="#cfcfc0" stroke-width="1.5"/>
+  <text x="250" y="293" text-anchor="middle" font-size="15" fill="#2b2b2b">tasks.json · progress.md</text>
+  <rect x="60" y="324" width="380" height="44" rx="10" fill="#ffffff" stroke="#cfcfc0" stroke-width="1.5"/>
+  <text x="250" y="351" text-anchor="middle" font-size="15" fill="#2b2b2b">架构方案：为什么选 A 不选 B</text>
+
+  <!-- Arrows -->
+  <line x1="446" y1="172" x2="676" y2="100" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="446" y1="230" x2="676" y2="196" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="446" y1="288" x2="676" y2="292" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="446" y1="346" x2="676" y2="388" stroke="#3d8b70" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="560" y="420" text-anchor="middle" font-size="13" fill="#1f6a51">蒸馏</text>
+
+  <!-- Destinations -->
+  <rect x="685" y="72" width="585" height="64" rx="12" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="705" y="100" font-size="16" font-weight="700" fill="#3c5a85">What → 代码、Schema、OpenAPI</text>
+  <text x="705" y="124" font-size="14" fill="#3c5a85">记忆只留指针；压缩视图由智能体派生</text>
+
+  <rect x="685" y="168" width="585" height="64" rx="12" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="705" y="196" font-size="16" font-weight="700" fill="#8a5f1a">How → lint、测试、hook、Skill</text>
+  <text x="705" y="220" font-size="14" fill="#8a5f1a">能判定的交给工具，重复的流程交给 Skill</text>
+
+  <rect x="685" y="264" width="585" height="64" rx="12" fill="#f4f4f0" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="705" y="292" font-size="16" font-weight="700" fill="#8a8a7e">工作状态 → 归档或删除</text>
+  <text x="705" y="316" font-size="14" fill="#8a8a7e">本轮交付结束即失效，不进长期记忆</text>
+
+  <rect x="685" y="360" width="585" height="64" rx="12" fill="#e9f3ee" stroke="#3d8b70" stroke-width="2"/>
+  <text x="705" y="388" font-size="16" font-weight="700" fill="#1f6a51">Why → docs/decisions/ 与 AGENTS.md</text>
+  <text x="705" y="412" font-size="14" fill="#1f6a51">取舍、被放弃的方案、失效条件——唯一长期留下的部分</text>
+
+  <text x="655" y="462" text-anchor="middle" font-size="14" font-style="italic" fill="#b5453c">实现后仍把整份 Spec 当记忆 = 同一个事实维护两份，其中一份必然腐烂</text>
+</svg>

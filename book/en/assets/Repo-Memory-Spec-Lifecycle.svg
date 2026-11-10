@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="480" viewBox="0 0 1310 480" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#8a8a7e"/>
+    </marker>
+  </defs>
+  <rect width="1310" height="480" fill="#ffffff"/>
+
+  <text x="250" y="40" text-anchor="middle" font-size="18" font-weight="700" fill="#2b2b2b">Before implementation</text>
+  <text x="900" y="40" text-anchor="middle" font-size="18" font-weight="700" fill="#2b2b2b">After implementation: every part of the spec moves to a new home</text>
+
+  <!-- Spec panel -->
+  <rect x="40" y="60" width="420" height="360" rx="16" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="250" y="100" text-anchor="middle" font-size="19" font-weight="700" fill="#2b2b2b">Spec · construction drawing</text>
+  <text x="250" y="124" text-anchor="middle" font-size="14" font-style="italic" fill="#8a8a7e">The only home What and How have; fine detail is right</text>
+  <rect x="60" y="150" width="380" height="44" rx="10" fill="#ffffff" stroke="#cfcfc0" stroke-width="1.5"/>
+  <text x="250" y="177" text-anchor="middle" font-size="15" fill="#2b2b2b">PRD: features, APIs, data</text>
+  <rect x="60" y="208" width="380" height="44" rx="10" fill="#ffffff" stroke="#cfcfc0" stroke-width="1.5"/>
+  <text x="250" y="235" text-anchor="middle" font-size="15" fill="#2b2b2b">Design standards · coding conventions</text>
+  <rect x="60" y="266" width="380" height="44" rx="10" fill="#ffffff" stroke="#cfcfc0" stroke-width="1.5"/>
+  <text x="250" y="293" text-anchor="middle" font-size="15" fill="#2b2b2b">tasks.json · progress.md</text>
+  <rect x="60" y="324" width="380" height="44" rx="10" fill="#ffffff" stroke="#cfcfc0" stroke-width="1.5"/>
+  <text x="250" y="351" text-anchor="middle" font-size="15" fill="#2b2b2b">Architecture: why A over B</text>
+
+  <!-- Arrows -->
+  <line x1="446" y1="172" x2="676" y2="100" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="446" y1="230" x2="676" y2="196" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="446" y1="288" x2="676" y2="292" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="446" y1="346" x2="676" y2="388" stroke="#3d8b70" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="560" y="420" text-anchor="middle" font-size="13" fill="#1f6a51">distill</text>
+
+  <!-- Destinations -->
+  <rect x="685" y="72" width="585" height="64" rx="12" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="705" y="100" font-size="16" font-weight="700" fill="#3c5a85">What → code, schema, OpenAPI</text>
+  <text x="705" y="124" font-size="14" fill="#3c5a85">Memory keeps pointers only; compressed views derived by agents</text>
+
+  <rect x="685" y="168" width="585" height="64" rx="12" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="705" y="196" font-size="16" font-weight="700" fill="#8a5f1a">How → lint, tests, hooks, Skills</text>
+  <text x="705" y="220" font-size="14" fill="#8a5f1a">Decidable rules go to tools; recurring procedures go to Skills</text>
+
+  <rect x="685" y="264" width="585" height="64" rx="12" fill="#f4f4f0" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="705" y="292" font-size="16" font-weight="700" fill="#8a8a7e">Working state → archive or delete</text>
+  <text x="705" y="316" font-size="14" fill="#8a8a7e">Expires when this delivery ends; never enters long-term memory</text>
+
+  <rect x="685" y="360" width="585" height="64" rx="12" fill="#e9f3ee" stroke="#3d8b70" stroke-width="2"/>
+  <text x="705" y="388" font-size="16" font-weight="700" fill="#1f6a51">Why → docs/decisions/ and AGENTS.md</text>
+  <text x="705" y="412" font-size="14" fill="#1f6a51">Trade-offs, rejected alternatives, expiry conditions — the only part that stays</text>
+
+  <text x="655" y="462" text-anchor="middle" font-size="14" font-style="italic" fill="#b5453c">Keeping the whole spec as memory after implementation = maintaining one fact twice; one copy will rot</text>
+</svg>

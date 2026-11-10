@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="500" viewBox="0 0 1310 500" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#8a8a7e"/>
+    </marker>
+  </defs>
+  <rect width="1310" height="500" fill="#ffffff"/>
+
+  <!-- Guide panel -->
+  <rect x="40" y="40" width="400" height="330" rx="16" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="240" y="82" text-anchor="middle" font-size="19" font-weight="700" fill="#2b2b2b">Guidance · fills context</text>
+  <text x="240" y="106" text-anchor="middle" font-size="14" font-style="italic" fill="#8a8a7e">Before acting: raises the odds of doing it right</text>
+  <rect x="60" y="134" width="360" height="44" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="240" y="161" text-anchor="middle" font-size="15" fill="#1f6a51">Repo memory: the Why</text>
+  <rect x="60" y="192" width="360" height="44" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="240" y="219" text-anchor="middle" font-size="15" fill="#1f6a51">Map and pointers: where to read the What</text>
+  <rect x="60" y="250" width="360" height="44" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="240" y="277" text-anchor="middle" font-size="15" fill="#1f6a51">Capability list: which Skills exist</text>
+  <rect x="60" y="308" width="360" height="44" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="240" y="335" text-anchor="middle" font-size="15" fill="#1f6a51">This task's intent and acceptance criteria</text>
+
+  <!-- Action -->
+  <line x1="446" y1="205" x2="546" y2="205" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="555" y="150" width="200" height="110" rx="16" fill="#ffffff" stroke="#2b2b2b" stroke-width="1.8"/>
+  <text x="655" y="198" text-anchor="middle" font-size="19" font-weight="700" fill="#2b2b2b">Action</text>
+  <text x="655" y="224" text-anchor="middle" font-size="14" fill="#555555">Agent writes code, runs commands</text>
+  <line x1="761" y1="205" x2="861" y2="205" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Sensor panel -->
+  <rect x="870" y="40" width="400" height="330" rx="16" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="1070" y="82" text-anchor="middle" font-size="19" font-weight="700" fill="#2b2b2b">Sensors · control</text>
+  <text x="1070" y="106" text-anchor="middle" font-size="14" font-style="italic" fill="#8a8a7e">After acting: proves whether it was done right</text>
+  <rect x="890" y="134" width="360" height="44" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="1070" y="161" text-anchor="middle" font-size="15" fill="#8a5f1a">Lint · formatters · type checks</text>
+  <rect x="890" y="192" width="360" height="44" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="1070" y="219" text-anchor="middle" font-size="15" fill="#8a5f1a">Unit tests · architecture tests · characterization tests</text>
+  <rect x="890" y="250" width="360" height="44" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="1070" y="277" text-anchor="middle" font-size="15" fill="#8a5f1a">Hooks · CI gates</text>
+  <rect x="890" y="308" width="360" height="44" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="1070" y="335" text-anchor="middle" font-size="15" fill="#8a5f1a">Human review and correction</text>
+
+  <!-- Steer loop -->
+  <path d="M1070,376 L1070,410 L240,410 L240,376" fill="none" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="655" y="434" text-anchor="middle" font-size="14" fill="#8a8a7e">Control: continue · correct · retry · stop — newly learned Whys write back into guidance after review</text>
+
+  <text x="655" y="476" text-anchor="middle" font-size="14" font-style="italic" fill="#b5453c">Anti-pattern: writing the sensors' job into guidance — the same rule written ten times, still enforcing nothing</text>
+</svg>

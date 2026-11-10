@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="440" viewBox="0 0 1310 440" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#8a8a7e"/>
+    </marker>
+  </defs>
+  <rect width="1310" height="440" fill="#ffffff"/>
+
+  <!-- Input -->
+  <rect x="40" y="70" width="190" height="80" rx="14" fill="#ffffff" stroke="#2b2b2b" stroke-width="1.8"/>
+  <text x="135" y="106" text-anchor="middle" font-size="17" font-weight="700" fill="#2b2b2b">Any line</text>
+  <text x="135" y="130" text-anchor="middle" font-size="17" font-weight="700" fill="#2b2b2b">in memory</text>
+  <line x1="236" y1="110" x2="290" y2="110" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Q1 -->
+  <rect x="300" y="60" width="270" height="100" rx="14" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="435" y="96" text-anchor="middle" font-size="15" font-weight="700" fill="#2b2b2b">Q1</text>
+  <text x="435" y="122" text-anchor="middle" font-size="15" fill="#2b2b2b">Obtainable by reading code</text>
+  <text x="435" y="144" text-anchor="middle" font-size="15" fill="#2b2b2b">or running one command?</text>
+  <line x1="576" y1="110" x2="640" y2="110" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="608" y="100" text-anchor="middle" font-size="13" fill="#8a8a7e">no</text>
+
+  <!-- Q2 -->
+  <rect x="650" y="60" width="270" height="100" rx="14" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="785" y="96" text-anchor="middle" font-size="15" font-weight="700" fill="#2b2b2b">Q2</text>
+  <text x="785" y="122" text-anchor="middle" font-size="15" fill="#2b2b2b">When violated, can a tool</text>
+  <text x="785" y="144" text-anchor="middle" font-size="15" fill="#2b2b2b">decide that automatically?</text>
+  <line x1="926" y1="110" x2="990" y2="110" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="958" y="100" text-anchor="middle" font-size="13" fill="#8a8a7e">no</text>
+
+  <!-- Q3 / Keep -->
+  <rect x="1000" y="50" width="270" height="120" rx="14" fill="#e9f3ee" stroke="#3d8b70" stroke-width="2"/>
+  <text x="1135" y="88" text-anchor="middle" font-size="17" font-weight="700" fill="#1f6a51">This is Why: keep it</text>
+  <text x="1135" y="116" text-anchor="middle" font-size="14" fill="#1f6a51">Write the reason and expiry condition</text>
+  <text x="1135" y="140" text-anchor="middle" font-size="14" fill="#1f6a51">Bind it where it constrains</text>
+
+  <!-- Yes branches -->
+  <line x1="435" y1="166" x2="435" y2="244" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="452" y="210" font-size="13" fill="#8a8a7e">yes</text>
+  <rect x="300" y="254" width="270" height="110" rx="14" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="435" y="292" text-anchor="middle" font-size="16" font-weight="700" fill="#3c5a85">This is What</text>
+  <text x="435" y="320" text-anchor="middle" font-size="14" fill="#3c5a85">Delete it, or make it a pointer</text>
+  <text x="435" y="344" text-anchor="middle" font-size="14" fill="#3c5a85">Need a compressed view? Let the agent derive it</text>
+
+  <line x1="785" y1="166" x2="785" y2="244" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="802" y="210" font-size="13" fill="#8a8a7e">yes</text>
+  <rect x="650" y="254" width="270" height="110" rx="14" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="785" y="292" text-anchor="middle" font-size="16" font-weight="700" fill="#8a5f1a">This is How</text>
+  <text x="785" y="320" text-anchor="middle" font-size="14" fill="#8a5f1a">Move it to lint, a test, or a hook</text>
+  <text x="785" y="344" text-anchor="middle" font-size="14" fill="#8a5f1a">Extract procedures into a Skill</text>
+
+  <text x="655" y="414" text-anchor="middle" font-size="14" font-style="italic" fill="#555555">Deleted lines have not disappeared: they went back to a more reliable home</text>
+</svg>

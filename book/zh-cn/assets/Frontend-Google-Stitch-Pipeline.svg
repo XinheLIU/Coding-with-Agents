@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="640" viewBox="0 0 1310 640" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#8a8a7e"/>
+    </marker>
+  </defs>
+  <rect width="1310" height="640" fill="#ffffff"/>
+  <text x="655" y="40" text-anchor="middle" font-size="20" fill="#2b2b2b" font-weight="700">Google 的管线：设计在 Stitch，契约是 DESIGN.md，落地在 Antigravity</text>
+  <rect x="40" y="70" width="230" height="400" rx="16" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="155" y="104" text-anchor="middle" font-size="17" fill="#2b2b2b" font-weight="700">输入</text>
+  <rect x="60" y="124" width="190" height="50" rx="10" fill="#f2f2f2" stroke="#b5b5b5" stroke-width="1.5"/>
+  <text x="155.0" y="153.9" text-anchor="middle" font-size="14" fill="#777777">文字 · 语音</text>
+  <rect x="60" y="188" width="190" height="50" rx="10" fill="#f2f2f2" stroke="#b5b5b5" stroke-width="1.5"/>
+  <text x="155.0" y="217.9" text-anchor="middle" font-size="14" fill="#777777">草图 · 截图</text>
+  <rect x="60" y="252" width="190" height="50" rx="10" fill="#f2f2f2" stroke="#b5b5b5" stroke-width="1.5"/>
+  <text x="155.0" y="281.9" text-anchor="middle" font-size="14" fill="#777777">现有代码库</text>
+  <rect x="60" y="316" width="190" height="50" rx="10" fill="#f2f2f2" stroke="#b5b5b5" stroke-width="1.5"/>
+  <text x="155.0" y="345.9" text-anchor="middle" font-size="14" fill="#777777">设计文件</text>
+  <rect x="320" y="70" width="300" height="400" rx="16" fill="#eef2f7" stroke="#5a7aa6" stroke-width="2"/>
+  <text x="470" y="104" text-anchor="middle" font-size="17" fill="#3c5a85" font-weight="700">Stitch（设计侧）</text>
+  <rect x="340" y="124" width="260" height="68" rx="10" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="470.0" y="152.4" text-anchor="middle" font-size="14" fill="#3c5a85" font-weight="700">无限画布</text>
+  <text x="470.0" y="173.4" text-anchor="middle" font-size="14" fill="#3c5a85">多屏 · 多变体并排</text>
+  <rect x="340" y="206" width="260" height="68" rx="10" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="470.0" y="234.4" text-anchor="middle" font-size="14" fill="#3c5a85" font-weight="700">Stitch Agent</text>
+  <text x="470.0" y="255.4" text-anchor="middle" font-size="14" fill="#3c5a85">实时在画布上生成</text>
+  <rect x="340" y="288" width="260" height="68" rx="10" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="470.0" y="316.4" text-anchor="middle" font-size="14" fill="#3c5a85" font-weight="700">Stitch MCP + SDK</text>
+  <text x="470.0" y="337.4" text-anchor="middle" font-size="14" fill="#3c5a85">让任何智能体调用</text>
+  <rect x="340" y="370" width="260" height="68" rx="10" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="470.0" y="398.4" text-anchor="middle" font-size="14" fill="#3c5a85" font-weight="700">code-to-design</text>
+  <text x="470.0" y="419.4" text-anchor="middle" font-size="14" fill="#3c5a85">代码反向变回设计</text>
+  <line x1="272" y1="270" x2="316" y2="270" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="670" y="210" width="190" height="120" rx="14" fill="#e9f3ee" stroke="#3d8b70" stroke-width="2"/>
+  <text x="765" y="248" text-anchor="middle" font-size="19" fill="#1f6a51" font-weight="700">DESIGN.md</text>
+  <text x="765" y="274" text-anchor="middle" font-size="14" fill="#1f6a51">Token + Why</text>
+  <text x="765" y="298" text-anchor="middle" font-size="13" fill="#8a8a7e">开放规范 · lint</text>
+  <line x1="622" y1="270" x2="666" y2="270" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="920" y="80" width="350" height="84" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="940" y="108" text-anchor="start" font-size="16" fill="#1f6a51" font-weight="700">Antigravity</text>
+  <text x="940" y="132" text-anchor="start" font-size="13" fill="#555555">本地智能体 IDE：补后端逻辑</text>
+  <text x="940" y="152" text-anchor="start" font-size="13" fill="#8a8a7e">浏览器子智能体自测 · 录屏为证</text>
+  <line x1="862" y1="270" x2="916" y2="122" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="920" y="178" width="350" height="84" rx="10" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="940" y="206" text-anchor="start" font-size="16" fill="#3c5a85" font-weight="700">AI Studio</text>
+  <text x="940" y="230" text-anchor="start" font-size="13" fill="#555555">接上 Gemini 能力</text>
+  <text x="940" y="250" text-anchor="start" font-size="13" fill="#8a8a7e">生成可分享的原型链接</text>
+  <line x1="862" y1="270" x2="916" y2="220" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="920" y="276" width="350" height="84" rx="10" fill="#f2f2f2" stroke="#b5b5b5" stroke-width="1.5"/>
+  <text x="940" y="304" text-anchor="start" font-size="16" fill="#777777" font-weight="700">Netlify</text>
+  <text x="940" y="328" text-anchor="start" font-size="13" fill="#555555">直接发布</text>
+  <text x="940" y="348" text-anchor="start" font-size="13" fill="#8a8a7e">静态站点 / 营销页</text>
+  <line x1="862" y1="270" x2="916" y2="318" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="920" y="374" width="350" height="84" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="940" y="402" text-anchor="start" font-size="16" fill="#8a5f1a" font-weight="700">其他智能体</text>
+  <text x="940" y="426" text-anchor="start" font-size="13" fill="#555555">stitch-skills + Stitch MCP</text>
+  <text x="940" y="446" text-anchor="start" font-size="13" fill="#8a8a7e">Claude Code · Codex · Cursor</text>
+  <line x1="862" y1="270" x2="916" y2="416" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="320" y="500" width="950" height="62" rx="12" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="795" y="528" text-anchor="middle" font-size="15" fill="#555555">贯穿全程的是 Chrome：DevTools MCP 让任何智能体读 DOM、Console 与性能 trace</text>
+  <text x="795" y="550" text-anchor="middle" font-size="13" fill="#8a8a7e">Gemini 的多模态（截图、视频理解）则是每一环「看得见」的前提</text>
+  <text x="655" y="610" text-anchor="middle" font-size="14" fill="#8a8a7e" font-style="italic">Google 押注的是管线上游：谁产出 DESIGN.md，谁就是设计的事实来源；下游交给自家 IDE，也开放给别家智能体</text>
+</svg>

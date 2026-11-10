@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="470" viewBox="0 0 1310 470" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#8a8a7e"/>
+    </marker>
+  </defs>
+  <rect width="1310" height="470" fill="#ffffff"/>
+  <text x="655" y="40" text-anchor="middle" font-size="20" fill="#2b2b2b" font-weight="700">Frontend rhythm: small steps, automated checks, humans judge taste</text>
+  <rect x="50" y="80" width="180" height="70" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="140" y="112" text-anchor="middle" font-size="16" fill="#1f6a51" font-weight="700">Plan / draft</text>
+  <text x="140" y="136" text-anchor="middle" font-size="13" fill="#1f6a51">Agent</text>
+  <line x1="232" y1="115" x2="254" y2="115" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="256" y="80" width="180" height="70" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="346" y="112" text-anchor="middle" font-size="16" fill="#8a5f1a" font-weight="700">Human confirms</text>
+  <text x="346" y="136" text-anchor="middle" font-size="13" fill="#8a5f1a">You</text>
+  <line x1="438" y1="115" x2="460" y2="115" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="462" y="80" width="180" height="70" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="552" y="112" text-anchor="middle" font-size="16" fill="#1f6a51" font-weight="700">Small step</text>
+  <text x="552" y="136" text-anchor="middle" font-size="13" fill="#1f6a51">Agent</text>
+  <line x1="644" y1="115" x2="666" y2="115" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="668" y="80" width="180" height="70" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="758" y="112" text-anchor="middle" font-size="16" fill="#1f6a51" font-weight="700">Auto-verify</text>
+  <text x="758" y="136" text-anchor="middle" font-size="13" fill="#1f6a51">Rungs 1–5</text>
+  <line x1="850" y1="115" x2="872" y2="115" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="874" y="80" width="180" height="70" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="964" y="112" text-anchor="middle" font-size="16" fill="#8a5f1a" font-weight="700">Human judges taste</text>
+  <text x="964" y="136" text-anchor="middle" font-size="13" fill="#8a5f1a">You</text>
+  <line x1="1056" y1="115" x2="1078" y2="115" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="1080" y="80" width="180" height="70" rx="10" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="1170" y="112" text-anchor="middle" font-size="16" fill="#3c5a85" font-weight="700">Write to DESIGN.md</text>
+  <text x="1170" y="136" text-anchor="middle" font-size="13" fill="#3c5a85">Record the why</text>
+  <path d="M 1185 152 L 1185 190 L 552 190 L 552 156" fill="none" stroke="#8a8a7e" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+  <text x="868" y="210" text-anchor="middle" font-size="13" fill="#8a8a7e" font-style="italic">next round</text>
+  <text x="655" y="262" text-anchor="middle" font-size="17" fill="#2b2b2b" font-weight="700">Autonomy follows verification coverage</text>
+  <defs><linearGradient id="cov" x1="0" x2="1"><stop offset="0" stop-color="#f8f1e4"/><stop offset="1" stop-color="#e9f3ee"/></linearGradient></defs>
+  <rect x="80" y="284" width="1150" height="26" rx="13" fill="url(#cov)" stroke="#cfcfc0" stroke-width="1.5"/>
+  <text x="80" y="330" text-anchor="start" font-size="13" fill="#8a8a7e">Low coverage</text>
+  <text x="1230" y="330" text-anchor="end" font-size="13" fill="#8a8a7e">High coverage</text>
+  <rect x="90" y="350" width="270" height="80" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="225" y="382" text-anchor="middle" font-size="15" fill="#8a5f1a" font-weight="700">Pure visual exploration</text>
+  <text x="225" y="408" text-anchor="middle" font-size="14" fill="#8a5f1a">Variants + human picks</text>
+  <rect x="380" y="350" width="270" height="80" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="515" y="382" text-anchor="middle" font-size="15" fill="#8a5f1a" font-weight="700">Type checks only</text>
+  <text x="515" y="408" text-anchor="middle" font-size="14" fill="#8a5f1a">Add rulers first, then let go</text>
+  <rect x="670" y="350" width="270" height="80" rx="10" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="805" y="382" text-anchor="middle" font-size="15" fill="#3c5a85" font-weight="700">+ unit + browser tests</text>
+  <text x="805" y="408" text-anchor="middle" font-size="14" fill="#3c5a85">Small commits, check screenshots</text>
+  <rect x="960" y="350" width="270" height="80" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="1095" y="382" text-anchor="middle" font-size="15" fill="#1f6a51" font-weight="700">+ visual regression</text>
+  <text x="1095" y="408" text-anchor="middle" font-size="14" fill="#1f6a51">Safe to run long and unattended</text>
+</svg>

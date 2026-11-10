@@ -1,6 +1,6 @@
 # Summary
 
-Last updated: 2026-08-05
+Last updated: 2026-11-10
 
 * [Home](README.md)
 
@@ -28,6 +28,9 @@ Last updated: 2026-08-05
 ## Part II: Advanced Usage
 
 * [3. Become a Power User](03-power-user/README.md)
+    * [Product, Business, and Engineering Foundation](03-power-user/product-business-engineering.md)
+    * [Agentic Frontend Development](03-power-user/agentic-frontend.md)
+    * [Repo Memory: Store Only the Why](03-power-user/repo-memory.md)
     * [Working with Brownfield Codebases](03-power-user/legacy-codebases.md)
 
 * [4. Team Development with Coding Agents (Draft)](04-team/README.md)

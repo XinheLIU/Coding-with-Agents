@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="500" viewBox="0 0 1310 500" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#8a8a7e"/>
+    </marker>
+  </defs>
+  <rect width="1310" height="500" fill="#ffffff"/>
+  <rect x="40" y="40" width="595" height="380" rx="16" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="337" y="84" text-anchor="middle" font-size="19" fill="#2b2b2b" font-weight="700">Backend: a closed loop</text>
+  <text x="337" y="108" text-anchor="middle" font-size="14" fill="#8a8a7e" font-style="italic">Every step yields a machine-readable signal</text>
+  <rect x="675" y="40" width="595" height="380" rx="16" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="972" y="84" text-anchor="middle" font-size="19" fill="#2b2b2b" font-weight="700">Frontend: a broken loop</text>
+  <text x="972" y="108" text-anchor="middle" font-size="14" fill="#8a8a7e" font-style="italic">By default, the agent cannot see the result</text>
+  <rect x="70" y="140" width="220" height="56" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="180.0" y="173.25" text-anchor="middle" font-size="15" fill="#1f6a51">Write code</text>
+  <rect x="385" y="140" width="220" height="56" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="495.0" y="173.25" text-anchor="middle" font-size="15" fill="#1f6a51">Run · test</text>
+  <rect x="385" y="300" width="220" height="56" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="495.0" y="333.25" text-anchor="middle" font-size="15" fill="#1f6a51">Read errors / failed asserts</text>
+  <rect x="70" y="300" width="220" height="56" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="180.0" y="333.25" text-anchor="middle" font-size="15" fill="#1f6a51">Locate and fix</text>
+  <line x1="292" y1="168" x2="381" y2="168" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="495" y1="198" x2="495" y2="296" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="383" y1="328" x2="294" y2="328" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="180" y1="298" x2="180" y2="200" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="337" y="245" text-anchor="middle" font-size="16" fill="#1f6a51" font-weight="700">Seconds</text>
+  <text x="337" y="268" text-anchor="middle" font-size="13" fill="#8a8a7e">Objective signal on every change</text>
+  <rect x="705" y="140" width="220" height="56" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="815.0" y="173.25" text-anchor="middle" font-size="15" fill="#1f6a51">Write code</text>
+  <rect x="1020" y="140" width="220" height="56" rx="10" fill="#f2f2f2" stroke="#b5b5b5" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="1130" y="165" text-anchor="middle" font-size="15" fill="#777777">Rendered result in browser</text>
+  <text x="1130" y="185" text-anchor="middle" font-size="12" fill="#777777" font-style="italic">invisible to the agent</text>
+  <rect x="1020" y="300" width="220" height="56" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="1130.0" y="333.25" text-anchor="middle" font-size="15" fill="#8a5f1a">Human eyeballs it</text>
+  <rect x="705" y="300" width="220" height="56" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="815.0" y="333.25" text-anchor="middle" font-size="15" fill="#8a5f1a">Describes what looks wrong</text>
+  <line x1="927" y1="168" x2="1016" y2="168" stroke="#8a8a7e" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+  <text x="972" y="158" text-anchor="middle" font-size="18" fill="#b85450" font-weight="700">?</text>
+  <line x1="1130" y1="198" x2="1130" y2="296" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="1018" y1="328" x2="929" y2="328" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="815" y1="298" x2="815" y2="200" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="972" y="245" text-anchor="middle" font-size="16" fill="#8a5f1a" font-weight="700">Minutes to hours</text>
+  <text x="972" y="268" text-anchor="middle" font-size="13" fill="#8a8a7e">Feedback waits on a human</text>
+  <text x="655" y="466" text-anchor="middle" font-size="15" fill="#8a8a7e" font-style="italic">Frontend lacks not capability but a machine-checkable signal; every practice in this chapter supplies one</text>
+</svg>

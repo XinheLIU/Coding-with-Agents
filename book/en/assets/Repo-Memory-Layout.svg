@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="520" viewBox="0 0 1310 520" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif">
+  <rect width="1310" height="520" fill="#ffffff"/>
+
+  <text x="655" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#2b2b2b">Repo memory layout: layered by load timing</text>
+  <text x="150" y="74" text-anchor="middle" font-size="14" font-weight="700" fill="#8a8a7e">When it loads</text>
+  <text x="560" y="74" text-anchor="middle" font-size="14" font-weight="700" fill="#8a8a7e">Where it lives</text>
+  <text x="1030" y="74" text-anchor="middle" font-size="14" font-weight="700" fill="#8a8a7e">What goes there</text>
+
+  <!-- Row 1 -->
+  <rect x="40" y="88" width="1230" height="64" rx="12" fill="#e9f3ee" stroke="#3d8b70" stroke-width="2"/>
+  <text x="150" y="126" text-anchor="middle" font-size="16" font-weight="700" fill="#1f6a51">Resident every session</text>
+  <text x="560" y="126" text-anchor="middle" font-size="15" fill="#1f6a51">Root AGENTS.md / CLAUDE.md</text>
+  <text x="1030" y="126" text-anchor="middle" font-size="15" fill="#1f6a51">Global Why · map · capability list (the shorter the better)</text>
+
+  <!-- Row 2 -->
+  <rect x="40" y="164" width="1230" height="64" rx="12" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="150" y="202" text-anchor="middle" font-size="16" font-weight="700" fill="#1f6a51">On entering a path</text>
+  <text x="560" y="202" text-anchor="middle" font-size="15" fill="#1f6a51">Subdirectory CLAUDE.md · .claude/rules/ (paths)</text>
+  <text x="1030" y="202" text-anchor="middle" font-size="15" fill="#1f6a51">Local Why · forbidden zones · historical baggage</text>
+
+  <!-- Row 3 -->
+  <rect x="40" y="240" width="1230" height="64" rx="12" fill="#f7f7ee" stroke="#cfcfc0" stroke-width="1.5"/>
+  <text x="150" y="278" text-anchor="middle" font-size="16" font-weight="700" fill="#2b2b2b">Read on demand</text>
+  <text x="560" y="278" text-anchor="middle" font-size="15" fill="#2b2b2b">docs/decisions/ · docs/derived/ · Skills</text>
+  <text x="1030" y="278" text-anchor="middle" font-size="15" fill="#2b2b2b">Decision records · derived views · procedures</text>
+
+  <!-- Row 4 -->
+  <rect x="40" y="316" width="1230" height="64" rx="12" fill="#f4f4f0" stroke="#cfcfc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="150" y="354" text-anchor="middle" font-size="16" font-weight="700" fill="#8a8a7e">Task-lifetime only</text>
+  <text x="560" y="354" text-anchor="middle" font-size="15" fill="#8a8a7e">work/&lt;task&gt;/ · spec · plan · progress</text>
+  <text x="1030" y="354" text-anchor="middle" font-size="15" fill="#8a8a7e">Working state — distill the Why, then archive</text>
+
+  <!-- Row 5 -->
+  <rect x="40" y="392" width="1230" height="64" rx="12" fill="#eef2f7" stroke="#5a7aa6" stroke-width="1.5"/>
+  <text x="150" y="430" text-anchor="middle" font-size="16" font-weight="700" fill="#3c5a85">Not in memory</text>
+  <text x="560" y="430" text-anchor="middle" font-size="15" fill="#3c5a85">Code · schema · tests · lint · hooks · CI</text>
+  <text x="1030" y="430" text-anchor="middle" font-size="15" fill="#3c5a85">The substance of What and How; memory points at them</text>
+
+  <text x="655" y="494" text-anchor="middle" font-size="14" font-style="italic" fill="#555555">The higher the tier, the higher the cost: every resident line taxes every session's attention</text>
+</svg>

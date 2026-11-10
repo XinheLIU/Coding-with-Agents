@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="470" viewBox="0 0 1310 470" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#8a8a7e"/>
+    </marker>
+  </defs>
+  <rect width="1310" height="470" fill="#ffffff"/>
+  <text x="655" y="40" text-anchor="middle" font-size="20" fill="#2b2b2b" font-weight="700">In a frontend codebase, only a narrow band is truly "flying blind"</text>
+  <text x="60" y="100" text-anchor="start" font-size="15" fill="#555555" font-weight="700">Before narrowing</text>
+  <rect x="60" y="115" width="180" height="80" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="150.0" y="160.25" text-anchor="middle" font-size="15" fill="#1f6a51">Types</text>
+  <rect x="246" y="115" width="180" height="80" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="336.0" y="160.25" text-anchor="middle" font-size="15" fill="#1f6a51">Routing</text>
+  <rect x="432" y="115" width="180" height="80" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="522.0" y="160.25" text-anchor="middle" font-size="15" fill="#1f6a51">Data fetching</text>
+  <rect x="618" y="115" width="180" height="80" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="708.0" y="160.25" text-anchor="middle" font-size="15" fill="#1f6a51">Validation</text>
+  <rect x="804" y="115" width="180" height="80" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="894.0" y="160.25" text-anchor="middle" font-size="15" fill="#1f6a51">State</text>
+  <rect x="990" y="115" width="260" height="80" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="1120.0" y="149.4" text-anchor="middle" font-size="14" fill="#8a5f1a">Layout · style · consistency</text>
+  <text x="1120.0" y="170.4" text-anchor="middle" font-size="14" fill="#8a5f1a">Rendering and taste</text>
+  <text x="525" y="220" text-anchor="middle" font-size="14" fill="#1f6a51">Backend-like parts: types and tests hold, the agent stays reliable</text>
+  <text x="1120" y="220" text-anchor="middle" font-size="14" fill="#8a5f1a">Needs eyes: agent flies blind</text>
+  <line x1="655" y1="245" x2="655" y2="285" stroke="#8a8a7e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="675" y="270" text-anchor="start" font-size="14" fill="#8a8a7e" font-style="italic">Practice 1: narrow the band further</text>
+  <text x="60" y="310" text-anchor="start" font-size="15" fill="#555555" font-weight="700">After narrowing</text>
+  <rect x="60" y="325" width="159" height="80" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="139.5" y="370.25" text-anchor="middle" font-size="15" fill="#1f6a51">Types</text>
+  <rect x="225" y="325" width="159" height="80" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="304.5" y="370.25" text-anchor="middle" font-size="15" fill="#1f6a51">Routing</text>
+  <rect x="390" y="325" width="159" height="80" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="469.5" y="370.25" text-anchor="middle" font-size="15" fill="#1f6a51">Data fetching</text>
+  <rect x="555" y="325" width="159" height="80" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="634.5" y="370.25" text-anchor="middle" font-size="15" fill="#1f6a51">Validation</text>
+  <rect x="720" y="325" width="159" height="80" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="799.5" y="370.25" text-anchor="middle" font-size="15" fill="#1f6a51">State</text>
+  <rect x="885" y="325" width="210" height="80" rx="10" fill="#e9f3ee" stroke="#3d8b70" stroke-width="1.5"/>
+  <text x="990.0" y="359.4" text-anchor="middle" font-size="14" fill="#1f6a51">Allowlist · token lint</text>
+  <text x="990.0" y="380.4" text-anchor="middle" font-size="14" fill="#1f6a51">reducer unit tests</text>
+  <rect x="1101" y="325" width="149" height="80" rx="10" fill="#f8f1e4" stroke="#b07d2b" stroke-width="1.5"/>
+  <text x="1175.5" y="359.4" text-anchor="middle" font-size="14" fill="#8a5f1a">Tone · meaning</text>
+  <text x="1175.5" y="380.4" text-anchor="middle" font-size="14" fill="#8a5f1a">Aesthetic judgment</text>
+  <text x="1175" y="432" text-anchor="middle" font-size="14" fill="#8a5f1a">Left to humans</text>
+  <text x="490" y="432" text-anchor="middle" font-size="14" fill="#1f6a51">Whatever rules and tests can decide goes to the machine</text>
+</svg>
